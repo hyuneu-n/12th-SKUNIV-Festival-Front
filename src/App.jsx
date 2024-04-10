@@ -1,9 +1,20 @@
-import Footer from './components/Footer';
+import { GlobalStyle } from './styles/components/GlobalStyles.js';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+import HomePage from './pages/HomePage.jsx';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <HomePage />,
+  },
+]);
 
 function App() {
   return (
     <>
-      <Footer />
+      <GlobalStyle />
+      <RouterProvider router={router} />
     </>
   );
 }

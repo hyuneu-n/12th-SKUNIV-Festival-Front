@@ -2,15 +2,18 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const FooterLayout = styled.div`
-  width: 30vh;
+  width: 80%;
   margin: auto;
 `;
 
 export const FooterCol = styled.div`
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 `;
 
 export const FooterHead = styled.p`
