@@ -44,3 +44,9 @@ export const FooterInstaLink = styled(Link)`
 export const FooterInstaImg = styled.img`
   width: 100%;
 `;
+
+export const FooterLine = styled.hr`
+  width: 100%;
+  border: 1px solid;
+  margin-bottom: 5px;
+`;

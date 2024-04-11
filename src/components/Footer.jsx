@@ -7,7 +7,7 @@ import github from '../../public/footer/github.svg';
 export default function Footer() {
   return (
     <S.FooterLayout>
-      <hr />
+      <S.FooterLine />
       <S.FooterCol>
         <S.FooterHead>서경대학교 멋쟁이 사자처럼</S.FooterHead>
         <S.FooterParagraph>likelion_skuniv</S.FooterParagraph>
