@@ -1,6 +1,5 @@
 import { GlobalStyle } from './styles/components/GlobalStyles.js';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
 import HomePage from './pages/HomePage.jsx';
 import BoothPage from './pages/BoothPage.jsx';
 

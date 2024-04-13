@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Sheet from 'react-modal-sheet';
 
 export const BoothItemLayout = styled.div`
   width: 100%;
@@ -23,3 +24,23 @@ export const BoothItemInfoBox = styled.div`
 `;
 
 export const BoothItemNumberP = styled.p``;
+
+export const CustomSheet = styled(Sheet)`
+  .react-modal-sheet-backdrop {
+    /* custom styles */
+  }
+  .react-modal-sheet-container {
+    width: ${({ $width }) => `${$width}px`} !important;
+    left: ${({ $left }) => `${$left}px`} !important;
+    height: ${({ $height }) => `calc(100% - ${$height}px)`} !important;
+  }
+  .react-modal-sheet-header {
+    /* custom styles */
+  }
+  .react-modal-sheet-drag-indicator {
+    /* custom styles */
+  }
+  .react-modal-sheet-content {
+    /* custom styles */
+  }
+`;
