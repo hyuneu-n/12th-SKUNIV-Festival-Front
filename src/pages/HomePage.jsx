@@ -1,6 +1,7 @@
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
+import MenuBar from '../components/MenuBar';
 
 const Layout = styled.div`
   background-image: url('../../public/background.svg');
@@ -8,6 +9,7 @@ const Layout = styled.div`
 export default function HomePage() {
   return (
     <div className="app">
+      <MenuBar></MenuBar>
       <motion.div
         animate={{
           scale: [1, 2, 2, 1, 1],

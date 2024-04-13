@@ -1,0 +1,76 @@
+/* 버거 버튼 */
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+}
+
+/* 버거 바 */
+.bm-burger-bars {
+    background: #000000;
+}
+
+/* 버거 바 호버*/
+.bm-burger-bars-hover {
+    background: #7bd317;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 524px;
+    width: 54px;
+}
+
+/* 닫기(x) 버튼 색상 */
+/* .bm-cross {
+    background: #bdc3c7;
+} */
+
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+    left: 0px;
+}
+
+/* 메뉴 배경 */
+.bm-menu {
+    background: #ffffff;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    display: flex;
+    justify-content: center;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+
+}
+
+/* 스크롤 */
+.bm-item-list {
+    padding: 0.8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 아이템  */
+.bm-item {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
