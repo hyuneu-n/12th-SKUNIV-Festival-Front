@@ -1,4 +1,4 @@
-import * as S from '../styles/components/BoothItem';
+import * as S from '../styles/components/BoothItem.styled';
 import Sheet from 'react-modal-sheet';
 import { useState } from 'react';
 
