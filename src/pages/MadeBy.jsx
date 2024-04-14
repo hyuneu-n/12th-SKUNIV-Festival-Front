@@ -19,7 +19,7 @@ const Logo = styled.img`
 const Info = styled.h1`
     margin-top: 16px;
     font-size: 15px;
-    font-family: Pretendard Variable, sans-serif;
+    font-family: Pretendard, sans-serif;
     font-style: bold;
 `
 const Script = styled.h1`
