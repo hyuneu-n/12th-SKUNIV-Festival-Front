@@ -1,8 +1,11 @@
- import styled from 'styled-components';
-import MenuBar from '../components/MenuBar'; 
-import vector from '../../public/timetable/Vector.svg'
-import AdditionalInfo from '../components/AdditionalInfo';
-import { Link } from 'react-router-dom'; 
+import styled from 'styled-components';
+import play from '../../public/timetable/play.svg';
+import PerformanceComponent from '../../src/components/Performance';
+import SpecialComponent from '../../src/components/Specialguest';
+import Footer from '../components/Footer';
+
+ 
+ 
 
 const Layout = styled.div`
   background-image: url('../../public/background.svg');
@@ -15,8 +18,11 @@ const Title = styled.h1`
     font-style: extra-bold;
     font-weight: bold; /* 굵기 추가 */
     text-align: center; /* 가운데 정렬 */
+    display: flex;
+    justify-content: start;
     
 `;
+
 
 const DateContainer = styled.div`
     display: flex;
@@ -89,32 +95,48 @@ margin-left: 10%;
 `;
 
 
+const TitleText = styled.div`
+margin-left: 10%;
+`;
+
+const TitleText2 = styled.div`
+margin-left: 30%;
+`;
+
+const Textdiv = styled.div`
+display: flex;
+flex-direction: row; /* 가로로 정렬 */
+ 
+`;
 
 
-
-export default function TimeTable() {
+export default function TimeTable2() {
   return (
     <div className="app">
-      <MenuBar></MenuBar>
-      <Title>TIME TABLE</Title>
+       
+      <Title><SmallIcon src={play}></SmallIcon><TitleText>TIME TABLE</TitleText></Title>
       <DateContainer>
           <DateRow>
               <NumberFirst>9</NumberFirst>
-              <NumberSecond>
-             <Link to="/TimeTable2">10</Link>
-            </NumberSecond>
+              <NumberSecond>10</NumberSecond>
           </DateRow>
           <DateRow>
               <Day>thu</Day>
               <Day>fri</Day>
-          </DateRow>
+          </DateRow> 
       </DateContainer>
-      <TimeTableContainer> 
-      <SmallTitle><SmallIcon src={vector}></SmallIcon> TIME TABLE</SmallTitle>
-     <AdditionalInfo/>
-     <AdditionalInfo/>
-     
-      </TimeTableContainer>
+        <Textdiv>
+        <TitleText>performance</TitleText> 
+        <TitleText2>special guest</TitleText2>
+        </Textdiv>
+        <Textdiv>
+        <PerformanceComponent></PerformanceComponent>
+        <SpecialComponent></SpecialComponent>
+        </Textdiv>
+       
+        
+        <Footer />
+      
       
       
     </div>
