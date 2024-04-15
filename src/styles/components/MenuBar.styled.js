@@ -5,6 +5,7 @@ export const styles = {
     height: '18px',
     left: '25px',
     top: '25px',
+    zIndex: '1200',
   },
   bmBurgerBars: {
     height: '15%',
@@ -16,9 +17,6 @@ export const styles = {
   bmCrossButton: {
     height: '524px',
     width: '54px',
-  },
-  bmCross: {
-    background: '#bdc3c7',
   },
   bmMenuWrap: {
     position: 'fixed',
