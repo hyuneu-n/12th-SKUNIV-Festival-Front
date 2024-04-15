@@ -3,11 +3,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import HomePage from './pages/HomePage.jsx';
 import BoothPage from './pages/BoothPage.jsx';
-import MadeBy from './pages/MadeBy.jsx';
-
+import AboutPage from './pages/AboutPage.jsx';
+import NoticePage from './pages/NoticePage.jsx';
+import TimeTablePage from './pages/TimeTablePage.jsx';
 import FallingAni from './components/FallingAni.jsx';
-import Notice from './pages/Notice.jsx';
-import TimeTable from './pages/TimeTable.jsx';
 
 const router = createBrowserRouter([
   {
@@ -19,16 +18,16 @@ const router = createBrowserRouter([
     element: <BoothPage />,
   },
   {
-    path: '/TimeTable',
-    element: <TimeTable />,
+    path: '/timetable',
+    element: <TimeTablePage />,
   },
   {
-    path: '/Notice',
-    element: <Notice />,
+    path: '/notice',
+    element: <NoticePage />,
   },
   {
-    path: '/MadeBy',
-    element: <MadeBy />,
+    path: '/about',
+    element: <AboutPage />,
   },
 ]);
 

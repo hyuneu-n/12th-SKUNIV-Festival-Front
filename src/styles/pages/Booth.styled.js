@@ -10,23 +10,23 @@ export const BoothLayout = styled.div`
 `;
 
 export const BoothMapImg = styled.img`
-  width: 80%;
+  width: 90%;
   height: 50vh;
   margin-bottom: 5px;
 `;
 
 export const BoothListBox = styled.div`
-  width: 80%;
+  width: 90%;
 `;
 
 export const BoothLine = styled.hr`
-  width: 80%;
+  width: 90%;
   border: 1px solid;
   margin-bottom: 5px;
 `;
 
 export const BoothItemBox = styled.div`
-  width: 80%;
+  width: 90%;
   height: 35vh;
   overflow: scroll;
 `;
