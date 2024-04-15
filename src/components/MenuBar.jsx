@@ -22,7 +22,7 @@ export default function MenuBar() {
     >
       <MenuBarImg src={SconMain} />
       <MenuBarLine />
-      <Link href="/">Home</Link>
+      <Link to="/">Home</Link>
       <Link to="/booth">부스안내</Link>
       <Link to="/timetable">공연안내</Link>
       <Link to="/notice">총학공지</Link>
