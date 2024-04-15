@@ -48,6 +48,7 @@ export const styles = {
     marginBottom: '10px',
   },
   bmOverlay: {
+    width: '100vw',
     background: 'rgba(0, 0, 0, 0.3)',
   },
 };
