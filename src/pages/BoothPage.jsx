@@ -4,6 +4,7 @@ import { boothData } from '../utils/boothData';
 import Footer from '../components/Footer';
 import BoothItem from '../components/BoothItem';
 import { useEffect, useRef, useState } from 'react';
+import Header from '../components/Header';
 
 export default function BoothPage() {
   const [height, setHeight] = useState(0);
@@ -20,6 +21,7 @@ export default function BoothPage() {
 
   return (
     <S.BoothLayout>
+      <Header />
       <S.BoothMapImg src={map} ref={test} />
       <S.BoothLine />
       <S.BoothItemBox ref={test1}>

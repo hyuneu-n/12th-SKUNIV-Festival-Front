@@ -5,7 +5,6 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-y: scroll;
   }
   ul, ol {
     list-style: none;
@@ -23,6 +22,13 @@ export const GlobalStyle = createGlobalStyle`
         height: 100vh;
         margin: auto;
         background-size : cover;
+        overflow-y: scroll;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        }
+      .app::-webkit-scrollbar {
+        display: none;
+      }
       }
     }
   }

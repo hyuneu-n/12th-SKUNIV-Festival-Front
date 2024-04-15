@@ -6,7 +6,6 @@ import BoothPage from './pages/BoothPage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import NoticePage from './pages/NoticePage.jsx';
 import TimeTablePage from './pages/TimeTablePage.jsx';
-import FallingAni from './components/FallingAni.jsx';
 
 const router = createBrowserRouter([
   {
