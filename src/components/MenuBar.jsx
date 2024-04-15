@@ -9,7 +9,7 @@ const BmImg = styled.img`
   width: 100%;
 `;
 const BmBar = styled.hr`
-  width: 100%;
+  width: 200%;
   margin-top: 10px;
 `;
 
@@ -18,7 +18,7 @@ export default function MenuBar() {
     <Menu width={'50%'}>
       <BmImg src={SconMain} />
       <BmBar></BmBar>
-      <Link className="menu-item" href="/" style={{ marginTop: '40px' }}>
+      <Link className="menu-item" to="/" style={{ marginTop: '40px' }}>
         Home
       </Link>
       <Link className="menu-item" to="/booth">
