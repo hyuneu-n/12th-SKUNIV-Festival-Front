@@ -13,13 +13,13 @@ export default function Footer() {
         <S.FooterParagraph>likelion_skuniv</S.FooterParagraph>
         <S.FooterImageBox>
           <S.FooterInstaLink>
-            <S.FooterInstaImg src={logo} />
+            <S.FooterLogoImg src={logo} />
           </S.FooterInstaLink>
           <S.FooterInstaLink to="https://www.instagram.com/">
-            <S.FooterInstaImg src={insta} />
+            <S.FooterLogoImg src={insta} />
           </S.FooterInstaLink>
           <S.FooterInstaLink to="/">
-            <S.FooterInstaImg src={github} />
+            <S.FooterLogoImg src={github} />
           </S.FooterInstaLink>
         </S.FooterImageBox>
       </S.FooterCol>

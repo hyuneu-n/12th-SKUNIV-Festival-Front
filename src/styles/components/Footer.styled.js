@@ -41,7 +41,7 @@ export const FooterInstaLink = styled(Link)`
   margin: 0 3px;
 `;
 
-export const FooterInstaImg = styled.img`
+export const FooterLogoImg = styled.img`
   width: 100%;
 `;
 

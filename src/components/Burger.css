@@ -64,10 +64,13 @@
 /* 아이템  */
 .bm-item {
     display: inline-block;
-    color: rgb(0, 0, 0);
+    color: rgb(128, 128, 128);
     text-decoration: none;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin : 22px;
+    font-family: Pretendard, sans-serif;
+    font-weight: 500;
 }
 
 /* Styling of overlay */
