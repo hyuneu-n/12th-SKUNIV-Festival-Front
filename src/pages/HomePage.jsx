@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import MenuBar from '../components/MenuBar';
 import MiniTimeTable from '../components/MiniTimeTable';
-
+import * as S from '../styles/pages/Booth.styled';
+import map from '../../public/map.svg';
 const Layout = styled.div`
   background-image: url('../../public/background.svg');
 `
@@ -23,18 +24,33 @@ const SemiTitle = styled.h1`
     font-style: extra-bold;
     text-align : center
 `
+export const BtnDirect = styled.a`
+    display: flex;
+    width: 30%; 
+    height: 5%;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-size: 0.75em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
 
+    margin : 5%  35%  50% 35%;
+    background-color: #f6f6f6;
+    color: #4D5359;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+`
 // 날짜 계산
 var today = new Date();
 const date1 = new Date('2024-05-09');
 const date2 = new Date('2024-05-10');
 const getDay = () => {
-  var day = "DAY 1";
+  var day = "0";
   if(today < date1){
-    day = "DAY 1";
+    day = "1";
   }
-  else{
-    day = "DAY 2";
+  else if(today >= date2){ 
+    day = "2";
   }
   return day
 }
@@ -56,9 +72,12 @@ export default function HomePage() {
         }}
       />
       <Title>BOOTH MAP</Title>
+      <S.BoothMapImg src={map}></S.BoothMapImg>
+      <BtnDirect href="/booth">부스 둘러보기</BtnDirect>
       <Title>TIME TABLE</Title>
-      <SemiTitle>{getDay()}</SemiTitle>
+      <SemiTitle>DAY {getDay()}</SemiTitle>
       <MiniTimeTable></MiniTimeTable>
+      <BtnDirect href="/booth">전체 일정 확인하기</BtnDirect>
       <Title>로고</Title>
       <Title>학생회장 한마디 </Title>
       <Footer />
