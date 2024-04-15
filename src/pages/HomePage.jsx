@@ -76,7 +76,7 @@ export default function HomePage() {
       <Title>TIME TABLE</Title>
       <SemiTitle>DAY {getDay()}</SemiTitle>
       <MiniTimeTable></MiniTimeTable>
-      <BtnDirect href="/booth">전체 일정 확인하기</BtnDirect>
+      <BtnDirect href="/timetable">전체 일정 확인하기</BtnDirect>
       <Title>로고</Title>
       <Title>학생회장 한마디 </Title>
       <Footer />
