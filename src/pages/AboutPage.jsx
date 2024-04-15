@@ -31,7 +31,6 @@ const Part = styled.h1`
   font-family: Pretendard, sans-serif;
   font-style: bold;
 `;
-
 export default function MadeBy() {
   return (
     <>
