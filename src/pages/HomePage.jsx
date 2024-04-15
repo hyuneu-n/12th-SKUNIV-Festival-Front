@@ -5,6 +5,7 @@ import MenuBar from '../components/MenuBar';
 import MiniTimeTable from '../components/MiniTimeTable';
 import * as S from '../styles/pages/Booth.styled';
 import map from '../../public/map.svg';
+import FallingAni from '../components/FallingAni';
 const Layout = styled.div`
   background-image: url('../../public/background.svg');
 `;
@@ -56,7 +57,7 @@ const getDay = () => {
 
 export default function HomePage() {
   return (
-    <div className="app">
+    <>
       <MenuBar></MenuBar>
       <motion.div
         animate={{
@@ -79,6 +80,7 @@ export default function HomePage() {
       <Title>로고</Title>
       <Title>학생회장 한마디 </Title>
       <Footer />
-    </div>
+      <FallingAni />
+    </>
   );
 }
