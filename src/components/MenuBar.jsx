@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { slide as Menu } from 'react-burger-menu';
+import * as S from '../styles/components/MenuBar.styled';
 import styled from 'styled-components';
 import SconMain from '../../public/Scon_Main.svg';
-import './Burger.css';
-
+import { slide as Menu } from 'react-burger-menu';
+import { styles } from '../styles/components/MenuBar.styled';
 const BmImg = styled.img`
   width: 100%;
 `;
@@ -15,24 +15,19 @@ const BmBar = styled.hr`
 
 export default function MenuBar() {
   return (
-    <Menu width={'50%'}>
+    <Menu
+      width={'70%'}
+      styles={styles}
+      pageWrapId={'page-wrap'}
+      outerContainerId={'outer-container'}
+    >
       <BmImg src={SconMain} />
       <BmBar></BmBar>
-      <Link className="menu-item" href="/" style={{ marginTop: '40px' }}>
-        Home
-      </Link>
-      <Link className="menu-item" to="/booth">
-        부스안내
-      </Link>
-      <Link className="menu-item" to="/timetable">
-        공연안내
-      </Link>
-      <Link className="menu-item" to="/notice">
-        총학공지
-      </Link>
-      <Link className="menu-item" to="/about">
-        만든사람들
-      </Link>
+      <Link href="/">Home</Link>
+      <Link to="/booth">부스안내</Link>
+      <Link to="/timetable">공연안내</Link>
+      <Link to="/notice">총학공지</Link>
+      <Link to="/about">만든사람들</Link>
     </Menu>
   );
 }

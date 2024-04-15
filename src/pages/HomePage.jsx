@@ -8,7 +8,7 @@ const Layout = styled.div`
 `;
 export default function HomePage() {
   return (
-    <div className="app">
+    <>
       <MenuBar></MenuBar>
       <motion.div
         animate={{
@@ -23,6 +23,6 @@ export default function HomePage() {
       />
       <p>test</p>
       <Footer />
-    </div>
+    </>
   );
 }

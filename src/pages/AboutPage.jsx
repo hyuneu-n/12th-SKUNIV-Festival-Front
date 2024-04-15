@@ -12,10 +12,6 @@ const Title = styled.h1`
   font-style: extra-bold;
 `;
 
-const Logo = styled.img`
-  width: 132px;
-  height: 132px;
-`;
 const Info = styled.h1`
   margin-top: 16px;
   font-size: 15px;
@@ -35,17 +31,7 @@ const Part = styled.h1`
   font-family: Pretendard, sans-serif;
   font-style: bold;
 `;
-const InfoBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-const InfoList = styled.div`
-  display: flex;
-  widtg: 100%;
-  margin: 0px 24px 0px 24px;
-  justify-content: center;
-`;
+
 export default function MadeBy() {
   return (
     <>
@@ -73,7 +59,7 @@ export default function MadeBy() {
           <Profile name="민동명" major="컴퓨터공학과" />
           <Profile name="민동명" major="컴퓨터공학과" />
         </S.AboutItemBox>
-        <Footer></Footer>
+        <Footer />
       </S.AboutLayout>
     </>
   );
