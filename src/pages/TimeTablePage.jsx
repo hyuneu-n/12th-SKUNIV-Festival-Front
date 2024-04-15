@@ -101,7 +101,7 @@ export default function TimeTable() {
           <DateRow>
               <NumberFirst>9</NumberFirst>
               <NumberSecond>
-             <Link to="/TimeTable2">10</Link>
+             <Link to="/timetable2">10</Link>
             </NumberSecond>
           </DateRow>
           <DateRow>
