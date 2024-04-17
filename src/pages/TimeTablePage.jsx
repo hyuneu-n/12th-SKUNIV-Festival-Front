@@ -78,7 +78,7 @@ const SmallIcon = styled.img`
 
 export default function TimeTable() {
   return (
-    <div className="app">
+    <>
       <MenuBar></MenuBar>
       <Title>TIME TABLE</Title>
       <DateContainer>
@@ -100,6 +100,6 @@ export default function TimeTable() {
         <AdditionalInfo />
         <AdditionalInfo />
       </TimeTableContainer>
-    </div>
+    </>
   );
 }

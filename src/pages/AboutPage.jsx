@@ -3,7 +3,7 @@ import LogoSquare from '../../public/LogoSquare.svg';
 import styled from 'styled-components';
 import Footer from '../components/Footer';
 import MenuBar from '../components/MenuBar';
-import * as S from '../styles/pages/About.styled';
+import * as S from '../styles/pages/AboutPage.styled';
 
 const Script = styled.h1`
   margin-top: 19px;

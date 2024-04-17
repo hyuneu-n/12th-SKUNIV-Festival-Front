@@ -1,4 +1,4 @@
-import * as S from '../styles/pages/Booth.styled';
+import * as S from '../styles/pages/BoothPage.styled';
 import map from '../../public/map.svg';
 import { boothData } from '../utils/boothData';
 import Footer from '../components/Footer';

@@ -1,46 +1,20 @@
-import Footer from '../components/Footer';
-import { motion } from 'framer-motion';
+import { LayoutGroup, motion } from 'framer-motion';
 import styled from 'styled-components';
+
+import * as S from '../styles/pages/HomPage.styled';
+import map from '../../public/map.svg';
+import pinkMuhly from '../../public/homePage/Pinkmuhly.svg';
+import test3 from '../..//public/homePage/test3.svg';
+
+import Footer from '../components/Footer';
 import MenuBar from '../components/MenuBar';
 import MiniTimeTable from '../components/MiniTimeTable';
-import * as S from '../styles/pages/Booth.styled';
-import map from '../../public/map.svg';
 import FallingAni from '../components/FallingAni';
-const Layout = styled.div`
-  background-image: url('../../public/background.svg');
-`;
-const Title = styled.h1`
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-size: 1.1em;
-  font-family: SUIT, sans-serif;
-  font-style: extra-bold;
-  text-align: center;
-`;
-const SemiTitle = styled.h1`
-  font-size: 1.1em;
-  font-family: Inter, sans-serif;
-  color: #808080;
-  font-weight: 600;
-  font-style: extra-bold;
-  text-align: center;
-`;
-export const BtnDirect = styled.a`
-  display: flex;
-  width: 30%;
-  height: 5%;
-  font-family: Inter, sans-serif;
-  font-weight: 700;
-  font-size: 0.75em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+import { Link } from 'react-router-dom';
 
-  margin: 5% 35% 50% 35%;
-  background-color: #f6f6f6;
-  color: #4d5359;
-  border-radius: 10px;
-  align-items: center;
-  justify-content: center;
-`;
+const Title = styled.h1``;
+const SemiTitle = styled.h1``;
+export const BtnDirect = styled.a``;
 // 날짜 계산
 var today = new Date();
 const date1 = new Date('2024-05-09');
@@ -58,29 +32,42 @@ const getDay = () => {
 export default function HomePage() {
   return (
     <>
-      <MenuBar></MenuBar>
-      <motion.div
-        animate={{
-          scale: [1, 2, 2, 1, 1],
-          rotate: [0, 0, 270, 270, 0],
-          backgroundImage: 'url(../../public/festivallogo.svg)',
-          height: '40%',
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
-          borderRadius: ['20%', '20%', '50%', '50%', '20%'],
-        }}
-      />
-      <Title>BOOTH MAP</Title>
-      <S.BoothMapImg src={map}></S.BoothMapImg>
-      <BtnDirect href="/booth">부스 둘러보기</BtnDirect>
-      <Title>TIME TABLE</Title>
-      <SemiTitle>DAY {getDay()}</SemiTitle>
-      <MiniTimeTable></MiniTimeTable>
-      <BtnDirect href="/timetable">전체 일정 확인하기</BtnDirect>
-      <Title>로고</Title>
-      <Title>학생회장 한마디 </Title>
+      <S.HomePageLayout>
+        <MenuBar></MenuBar>
+        <div style={{ width: '375px', height: '600px', position: 'relative' }}>
+          <img src={test3} />
+          <motion.img
+            src={pinkMuhly}
+            style={{
+              width: '375px',
+              zIndex: 1,
+              left: '1px',
+              position: 'absolute',
+            }}
+            animate={{
+              rotate: [0, -3, 3, -3, 3, 0],
+              transition: {
+                duration: 10,
+                repeat: 3,
+                repeatType: 'loop',
+                repeatDelay: 1,
+              },
+            }}
+          />
+        </div>
+
+        <S.HomePageTitleHeading>BOOTH MAP</S.HomePageTitleHeading>
+        <img src={map}></img>
+        <BtnDirect href="/booth">부스 둘러보기</BtnDirect>
+        <S.HomePageTitleHeading>TIME TABLE</S.HomePageTitleHeading>
+        <S.HomePageDayHeading>DAY {getDay()}</S.HomePageDayHeading>
+        <MiniTimeTable></MiniTimeTable>
+        <Link to="">전체 일정 확인하기</Link>
+        <S.HomePageTitleHeading>로고</S.HomePageTitleHeading>
+        <S.HomePageTitleHeading>학생회장 한마디 </S.HomePageTitleHeading>
+        <FallingAni />
+      </S.HomePageLayout>
       <Footer />
-      <FallingAni />
     </>
   );
 }
