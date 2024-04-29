@@ -1,6 +1,6 @@
 import * as S from '../styles/pages/BoothPage.styled';
 import map from '../../public/map.svg';
-import { boothData } from '../utils/boothdata';
+import { boothData } from '../utils/boothData';
 import Footer from '../components/Footer';
 import BoothItem from '../components/BoothItem';
 import { useEffect, useRef, useState } from 'react';

@@ -9,6 +9,7 @@ import Notice from './pages/NoticePage.jsx';
 import TimeTable from './pages/TimeTablePage.jsx';
 import TimeTable2 from './pages/TimeTable2.jsx';
 import LostPage from './pages/LostPage.jsx';
+import NoticeInput from './pages/NoticeInputPage.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
   {
     path: '/lostItems',
     element: <LostPage />,
+  },
+  {
+    path: '/noticeInput',
+    element: <NoticeInput />,
   },
 ]);
 
