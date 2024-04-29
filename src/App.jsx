@@ -31,10 +31,7 @@ const router = createBrowserRouter([
     path: '/MadeBy',
     element: <MadeBy />,
   },
-  {
-    path: '/TimeTable2',
-    element: <TimeTable2 />,
-  },
+  
   
 ]);
 
@@ -51,3 +48,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
+

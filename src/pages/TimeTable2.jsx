@@ -110,31 +110,6 @@ flex-direction: row; /* 가로로 정렬 */
  
 `;
 
-const linecontainer = style.div`
-position: relative;
-`;
-
-const verticalline = styled.div`
-width: 2px;
-height: 50%;
-background-color: black;
-transform: translateX(-50);
- 
-`;
-
-const circle = style.div`
-width: 20px;
-height: 20px;
-background-color: black;
-border-radius: 50%;
-position: absolute;
-top: 100px;
-left: 50%;
-transform: translateX(-50%, -50%);
-`;
-
-
- 
 
 
 
@@ -142,7 +117,7 @@ transform: translateX(-50%, -50%);
 export default function TimeTable2() {
   return (
     <div className="app">
-      <Title>  <Link to="/TimeTable"><SmallIcon src={play}/> </Link><TitleText>TIME TABLE</TitleText></Title>
+      <Title><SmallIcon src={play}/><TitleText>TIME TABLE</TitleText></Title>
       <DateContainer>
           <DateRow>
               <NumberFirst>9</NumberFirst>
@@ -159,7 +134,7 @@ export default function TimeTable2() {
         </Textdiv>
         <Textdiv>
         <PerformanceComponent></PerformanceComponent>
-       <linecontainer><verticalline><circle></circle></verticalline></linecontainer>
+        
         <SpecialComponent></SpecialComponent>
      
         </Textdiv>
