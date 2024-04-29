@@ -25,6 +25,7 @@ display: flex;
   font-size: 24px;
   font-weight: 400;
   color: #5e5e5e;
+  margin-bottom: 10%;
    
 `;
 
@@ -36,6 +37,7 @@ const AdditionalInfo = () => {
        
     </AdditionalInfoContainer>
     <Text>Tayeon</Text>
+
     </div>
   );
 };
