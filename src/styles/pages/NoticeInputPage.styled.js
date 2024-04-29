@@ -11,26 +11,28 @@ export const NoticeLayout = styled.div`
 `;
 
 export const NoticeHead = styled.form`
-  width: 84%;
-  margin: auto;
+  width: 100%;
+  height: 40px;
   display: flex;
-  position: relative;
   flex-direction: row;
-  justify-content: right;
+  justify-content: flex-end;
   margin: 7% 0% 0% 0%;
 `;
 export const NoticeBody = styled.div`
   width: 100%;
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 7% 0% 5% 0%;
+  margin: 7% 0% 15% 0%;
 `;
 export const NoticeBack = styled.button`
+  margin: 5% 0% 0% 5%;
   width: 20px;
   height: 29px;
+  position: absolute;
+  top: 0;
+  left: 0;
   border: none;
   background-color: #00000000;
   background-image: url('../../public/icon _play.svg');

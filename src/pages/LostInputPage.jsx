@@ -39,10 +39,10 @@ export default function Notice() {
       <S.NoticeLayout>
         <S.NoticeHead>
           <S.NoticeForm>
-            등록
+            분실물
             <S.NoticeWrite></S.NoticeWrite>
           </S.NoticeForm>
-          <Link to={"/notice"}><S.NoticeBack></S.NoticeBack></Link>
+          <Link to={"/lostItems"}><S.NoticeBack></S.NoticeBack></Link>
         </S.NoticeHead>
         <S.NoticeBody>
           <S.NoticeTitle type="text" placeholder="제목을 입력해주세요." id="bTitle" name="bTitle" />

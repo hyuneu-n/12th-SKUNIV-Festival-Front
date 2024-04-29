@@ -15,8 +15,8 @@ export default function Notice() {
         <Switch />
         <S.NoticeHead>
           <S.NoticeH1>NOTICE</S.NoticeH1>
-          <Link to="/lostItems">
-            <button></button>
+          <Link to="/noticeInput">
+            <S.NoticeWrite></S.NoticeWrite>
           </Link>
         </S.NoticeHead>
         <S.NoticeBody>

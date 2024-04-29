@@ -10,6 +10,8 @@ import TimeTable from './pages/TimeTablePage.jsx';
 import TimeTable2 from './pages/TimeTable2.jsx';
 import LostPage from './pages/LostPage.jsx';
 import NoticeInput from './pages/NoticeInputPage.jsx';
+import LostInput from './pages/LostInputPage.jsx';
+import LostFind from './pages/LostFindPage.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -42,6 +44,14 @@ const router = createBrowserRouter([
   {
     path: '/noticeInput',
     element: <NoticeInput />,
+  },
+  {
+    path: '/lostInput',
+    element: <LostInput />,
+  },
+  {
+    path: '/findItems',
+    element: <LostFind />,
   },
 ]);
 

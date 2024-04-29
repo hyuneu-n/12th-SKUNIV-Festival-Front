@@ -1,47 +1,42 @@
 import styled from 'styled-components';
 
-export const HomePageLayout = styled.div`
+export const LostLayout = styled.div`
   width: 100%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  a {
-    display: flex;
-    width: 40%;
-    height: 40px;
-    font-family: Inter, sans-serif;
-    font-weight: 700;
-    font-size: 0.75em;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
-
-    margin: 5% 35% 50% 35%;
-    background-color: #f6f6f6;
-    color: #4d5359;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-  }
+  justify-content: center;
+  margin: 0% 0% 0% 0%;
 `;
 
-export const HomePageTitleHeading = styled.h1`
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-size: 1.1em;
-  font-family: SUIT, sans-serif;
-  font-style: extra-bold;
-  text-align: center;
+export const LostHead = styled.div`
+  width: 84%;
+  margin: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  margin: 7% 0% 0% 0%;
+`;
+export const LostBody = styled.div`
+  width: 90%;
+  margin: 10% 0% 10% 0%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px; 
+  justify-items: center;
+  overflow-y: auto; 
+  max-height: 80vh; 
 `;
 
-export const HomePageDayHeading = styled.h1`
-  font-size: 1.1em;
-  font-family: Inter, sans-serif;
-  color: #808080;
-  font-weight: 600;
-  font-style: extra-bold;
-  text-align: center;
-`;
-export const HomePageImage = styled.img`
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 100%;
+export const LostWrite = styled.a`
+  width: 20px;
+  height: 20px;
+  background-image: url('../../public/penIcon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 `;
