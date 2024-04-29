@@ -26,6 +26,7 @@ export default function MenuBar() {
       <Link to="/booth">부스안내</Link>
       <Link to="/timetable">공연안내</Link>
       <Link to="/notice">총학공지</Link>
+      <Link to="/lostItems">분실문</Link>
       <Link to="/about">만든사람들</Link>
     </MenuBarLayout>
   );

@@ -40,3 +40,8 @@ export const HomePageDayHeading = styled.h1`
   font-style: extra-bold;
   text-align: center;
 `;
+export const HomePageImage = styled.img`
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+`;

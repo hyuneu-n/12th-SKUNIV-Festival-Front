@@ -5,6 +5,7 @@ import * as S from '../styles/pages/HomPage.styled';
 import map from '../../public/map.svg';
 import pinkMuhly from '../../public/homePage/Pinkmuhly.svg';
 import test3 from '../..//public/homePage/test3.svg';
+import AllLogo from '../..//public/homePage/AllLogo.svg';
 
 import Footer from '../components/Footer';
 import MenuBar from '../components/MenuBar';
@@ -63,8 +64,7 @@ export default function HomePage() {
         <S.HomePageDayHeading>DAY {getDay()}</S.HomePageDayHeading>
         <MiniTimeTable></MiniTimeTable>
         <Link to="">전체 일정 확인하기</Link>
-        <S.HomePageTitleHeading>로고</S.HomePageTitleHeading>
-        <S.HomePageTitleHeading>학생회장 한마디 </S.HomePageTitleHeading>
+        <S.HomePageImage src={AllLogo} />
         <FallingAni />
       </S.HomePageLayout>
       <Footer />

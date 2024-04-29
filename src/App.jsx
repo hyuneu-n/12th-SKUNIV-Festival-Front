@@ -8,6 +8,7 @@ import FallingAni from './components/FallingAni.jsx';
 import Notice from './pages/NoticePage.jsx';
 import TimeTable from './pages/TimeTablePage.jsx';
 import TimeTable2 from './pages/TimeTable2.jsx';
+import LostPage from './pages/LostPage.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: '/timetable2',
     element: <TimeTable2 />,
+  },
+  {
+    path: '/lostItems',
+    element: <LostPage />,
   },
   
 ]);

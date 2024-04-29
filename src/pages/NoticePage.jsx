@@ -1,22 +1,34 @@
 import Footer from '../components/Footer';
-import { motion } from 'framer-motion';
-import styled from 'styled-components';
 import MenuBar from '../components/MenuBar';
+import Switch from '../components/Switch';
+import * as S from '../styles/pages/NoticePage.styled';
+import NoticeBox from '../components/NoticeBox';
+import { Notices } from '../utils/NoticeData';
 
-const Layout = styled.div`
-  background-image: url('../../public/background.svg');
-`;
-const Title = styled.h1`
-  margin-top: 69px;
-  font-size: 15px;
-  font-family: SUIT Variable, sans-serif;
-  font-style: extra-bold;
-`;
+const getData = () => {
+
+};
+const getDate = () => { };
 export default function Notice() {
   return (
     <div className="app">
       <MenuBar></MenuBar>
-      <Title> 대충 공지</Title>
+      <Switch left = {true}></Switch>
+      <S.NoticeLayout>
+        <S.NoticeHead>
+          <S.NoticeH1>NOTICE</S.NoticeH1>
+          <S.NoticeWrite href={"/lostItems"}><butto></butto></S.NoticeWrite>
+        </S.NoticeHead>
+        <S.NoticeBody>
+          {
+            Notices.map((item) => {
+              return (
+                <NoticeBox key={item.id} title= {item.title} author={item.author} date= {item.date}></NoticeBox>
+              );
+            })}
+        </S.NoticeBody>
+      </S.NoticeLayout>
+
       <Footer />
     </div>
   );
