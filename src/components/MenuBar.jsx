@@ -1,28 +1,33 @@
-import React from 'react'
-import { slide as Menu } from 'react-burger-menu'
+import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
+import * as S from '../styles/components/MenuBar.styled';
 import styled from 'styled-components';
 import SconMain from '../../public/Scon_Main.svg';
-import './Burger.css';
-
-const BmImg = styled.img`
-    width: 100%;
-`
-const BmBar = styled.hr`
-    width: 100%;
-    margin-top: 10px;
-`
+import { slide as MenuBarLayout } from 'react-burger-menu';
+import { styles } from '../styles/components/MenuBar.styled';
+const MenuBarImg = styled.img`
+  width: 100%;
+`;
+const MenuBarLine = styled.hr`
+  width: 100%;
+  margin-top: 10px;
+`;
 
 export default function MenuBar() {
-    return (
-        <Menu width={'50%'}>
-            <BmImg src={SconMain}/>
-            <BmBar></BmBar>
-            <a className='menu-item' href="/" style={{marginTop : "40px"}}>Home</a>
-            <a className="menu-item" href="/booth">부스안내</a>
-            <a className="menu-item" href="/TimeTable">공연안내</a>
-            <a className="menu-item" href="/Notice">총학공지</a>
-            <a className="menu-item" href="/MadeBy">만든사람들</a>
-        </Menu>
-    );
-
+  return (
+    <MenuBarLayout
+      styles={styles}
+      pageWrapId={'app'}
+      // outerContainerId={'outer-container'}
+    >
+      <MenuBarImg src={SconMain} />
+      <MenuBarLine />
+      <Link to="/">Home</Link>
+      <Link to="/booth">부스안내</Link>
+      <Link to="/timetable">공연안내</Link>
+      <Link to="/notice">총학공지</Link>
+      <Link to="/lostItems">분실문</Link>
+      <Link to="/about">만든사람들</Link>
+    </MenuBarLayout>
+  );
 }

@@ -22,6 +22,13 @@ export const GlobalStyle = createGlobalStyle`
         height: 100vh;
         margin: auto;
         background-size : cover;
+        overflow-y: scroll;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        }
+      .app::-webkit-scrollbar {
+        display: none;
+      }
       }
     }
   }
