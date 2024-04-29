@@ -1,34 +1,21 @@
 import { LayoutGroup, motion } from 'framer-motion';
-import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { getDay } from '../utils/getday';
 
+// styled
 import * as S from '../styles/pages/HomPage.styled';
-import map from '../../public/map.svg';
-import pinkMuhly from '../../public/homePage/Pinkmuhly.svg';
-import test3 from '../..//public/homePage/test3.svg';
 import AllLogo from '../..//public/homePage/AllLogo.svg';
 
+// components
 import Footer from '../components/Footer';
 import MenuBar from '../components/MenuBar';
 import MiniTimeTable from '../components/MiniTimeTable';
 import FallingAni from '../components/FallingAni';
-import { Link } from 'react-router-dom';
 
-const Title = styled.h1``;
-const SemiTitle = styled.h1``;
-export const BtnDirect = styled.a``;
-// 날짜 계산
-var today = new Date();
-const date1 = new Date('2024-05-09');
-const date2 = new Date('2024-05-10');
-const getDay = () => {
-  var day = '0';
-  if (today < date1) {
-    day = '1';
-  } else if (today >= date2) {
-    day = '2';
-  }
-  return day;
-};
+//svg
+import map from '../../public/map.svg';
+import pinkMuhly from '../../public/homePage/Pinkmuhly.svg';
+import test3 from '../..//public/homePage/test3.svg';
 
 export default function HomePage() {
   return (
@@ -59,7 +46,7 @@ export default function HomePage() {
 
         <S.HomePageTitleHeading>BOOTH MAP</S.HomePageTitleHeading>
         <img src={map}></img>
-        <BtnDirect href="/booth">부스 둘러보기</BtnDirect>
+        <Link to="/booth">부스 둘러보기</Link>
         <S.HomePageTitleHeading>TIME TABLE</S.HomePageTitleHeading>
         <S.HomePageDayHeading>DAY {getDay()}</S.HomePageDayHeading>
         <MiniTimeTable></MiniTimeTable>

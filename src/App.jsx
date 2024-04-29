@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     path: '/',
     element: <HomePage />,
   },
-  { 
+  {
     path: '/booth',
     element: <BoothPage />,
   },
@@ -38,7 +38,6 @@ const router = createBrowserRouter([
     path: '/lostItems',
     element: <LostPage />,
   },
-  
 ]);
 
 function App() {

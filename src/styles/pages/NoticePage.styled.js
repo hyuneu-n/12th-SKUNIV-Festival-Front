@@ -20,7 +20,7 @@ export const NoticeHead = styled.div`
   margin: 7% 0% 0% 0%;
 `;
 export const NoticeBody = styled.div`
-  width: 100%;
+  width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;

@@ -1,12 +1,21 @@
 import { Snowfall } from 'react-snowfall';
 
-const test = document.createElement('img');
-test.src = '../public/test.png';
+const flower1 = document.createElement('img');
+flower1.src = '../public/flower/ls1.svg';
 
-const test2 = document.createElement('img');
-test2.src = '../public/test2.png';
+const flower2 = document.createElement('img');
+flower2.src = '../public/flower/ls2.svg';
 
-const images = [test, test2];
+const flower3 = document.createElement('img');
+flower3.src = '../public/flower/ls3.svg';
+
+const flower4 = document.createElement('img');
+flower4.src = '../public/flower/rs1.svg';
+
+const flower5 = document.createElement('img');
+flower5.src = '../public/flower/rs2.svg';
+
+const images = [flower1, flower2, flower3, flower4, flower5];
 export default function FallingAni() {
   return (
     <Snowfall
@@ -15,7 +24,7 @@ export default function FallingAni() {
         width: '100vw',
         height: '100vh',
       }}
-      radius={[30, 40]}
+      radius={[40, 50]}
       images={images}
       snowflakeCount={10}
       wind={[3, 5]}
