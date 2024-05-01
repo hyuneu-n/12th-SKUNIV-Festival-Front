@@ -29,4 +29,22 @@ export const Notices = [
     author: 'test',
     title: '공지사항5',
   },
+  {
+    id: 6,
+    date : '2021-05-09',
+    author: 'test',
+    title: '공지사항6',
+  },
+  {
+    id: 7,
+    date : '2021-05-09',
+    author: 'test',
+    title: '공지사항7',
+  },
+  {
+    id: 8,
+    date : '2021-05-09',
+    author: 'test',
+    title: '공지사항8',
+  },
 ];

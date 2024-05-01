@@ -5,21 +5,22 @@ import * as S from '../styles/pages/NoticePage.styled';
 import NoticeBox from '../components/NoticeBox';
 import { Notices } from '../utils/NoticeData';
 import { Link } from 'react-router-dom';
-
+import InputButton from '../components/InputButton';
 export default function Notice() {
   return (
     <>
       <MenuBar></MenuBar>
 
       <S.NoticeLayout>
-        <Switch />
+
         <S.NoticeHead>
-          <S.NoticeH1>NOTICE</S.NoticeH1>
-          <Link to="/noticeInput">
-            <S.NoticeWrite></S.NoticeWrite>
-          </Link>
+          
+          <InputButton></InputButton>
+          
         </S.NoticeHead>
         <S.NoticeBody>
+          <S.WidthLine></S.WidthLine>
+          <S.NoticeH1>NOTICE</S.NoticeH1>
           {Notices.map((item) => {
             return (
               <NoticeBox

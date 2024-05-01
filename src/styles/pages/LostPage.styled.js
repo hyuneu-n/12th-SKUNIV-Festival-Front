@@ -16,7 +16,7 @@ export const LostHead = styled.div`
   display: flex;
   position: relative;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   margin: 7% 0% 0% 0%;
 `;
 export const LostBody = styled.div`

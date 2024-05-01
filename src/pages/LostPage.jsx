@@ -7,7 +7,7 @@ import { useState } from 'react';
 import ItemBox from '../components/ItemBox';
 import { LostData } from '../utils/LostData';
 import { Link } from 'react-router-dom';
-
+import InputButton from '../components/InputButton';
 export default function Lost() {
 
   return (
@@ -16,7 +16,7 @@ export default function Lost() {
       <S.LostLayout>
         <S.LostHead>
           <Link to="/lostInput">
-            <S.LostWrite></S.LostWrite>
+            <InputButton></InputButton>
           </Link>
         </S.LostHead>
         <ItemSwitch />

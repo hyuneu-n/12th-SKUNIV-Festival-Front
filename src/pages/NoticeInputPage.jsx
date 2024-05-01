@@ -1,10 +1,6 @@
 import Footer from '../components/Footer';
-import MenuBar from '../components/MenuBar';
-import Switch from '../components/Switch';
 import * as S from '../styles/pages/NoticeInputPage.styled';
-import NoticeBox from '../components/NoticeBox';
-import { Notices } from '../utils/NoticeData';
-import { Link } from 'react-router-dom';
+import InputButton from '../components/InputButton';
 const getData = () => {
 
 };
@@ -38,11 +34,7 @@ export default function Notice() {
     <div className="app">
       <S.NoticeLayout>
         <S.NoticeHead>
-          <S.NoticeForm>
-            등록
-            <S.NoticeWrite></S.NoticeWrite>
-          </S.NoticeForm>
-          <Link to={"/notice"}><S.NoticeBack></S.NoticeBack></Link>
+          <InputButton></InputButton>
         </S.NoticeHead>
         <S.NoticeBody>
           <S.NoticeTitle type="text" placeholder="제목을 입력해주세요." id="bTitle" name="bTitle" />

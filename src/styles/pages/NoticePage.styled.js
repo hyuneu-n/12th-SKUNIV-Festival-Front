@@ -13,20 +13,20 @@ export const NoticeLayout = styled.div`
 export const NoticeHead = styled.div`
   width: 84%;
   margin: auto;
-  display: flex;
-  position: relative;
+  display: flex; 
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   margin: 7% 0% 0% 0%;
 `;
 export const NoticeBody = styled.div`
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 7% 0% 5% 0%;
+width: 90%;
+margin: 10% 0% 10% 0%;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px; 
+justify-items: center;
+overflow-y: auto; 
+max-height: 80vh; 
 `;
 
 export const NoticeH1 = styled.h1`
@@ -44,4 +44,9 @@ export const NoticeWrite = styled.a`
   position: absolute;
   bottom: 0;
   right: 0;
+`;
+export const WidthLine = styled.hr`
+  width: 100%;
+  border: 1px solid;
+  margin-bottom: 5px;
 `;

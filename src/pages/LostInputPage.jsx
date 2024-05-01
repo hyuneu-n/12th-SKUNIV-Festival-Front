@@ -2,7 +2,7 @@ import Footer from '../components/Footer';
 import MenuBar from '../components/MenuBar';
 import Switch from '../components/Switch';
 import * as S from '../styles/pages/NoticeInputPage.styled';
-import NoticeBox from '../components/NoticeBox';
+import InputButton from '../components/InputButton';
 import { Notices } from '../utils/NoticeData';
 import { Link } from 'react-router-dom';
 const getData = () => {
@@ -38,15 +38,13 @@ export default function Notice() {
     <div className="app">
       <S.NoticeLayout>
         <S.NoticeHead>
-          <S.NoticeForm>
-            분실물
-            <S.NoticeWrite></S.NoticeWrite>
-          </S.NoticeForm>
+          <InputButton></InputButton>
           <Link to={"/lostItems"}><S.NoticeBack></S.NoticeBack></Link>
         </S.NoticeHead>
         <S.NoticeBody>
-          <S.NoticeTitle type="text" placeholder="제목을 입력해주세요." id="bTitle" name="bTitle" />
-          <S.NoticeContent type="text" placeholder="내용을 입력해주세요." id="bContent" name="bContent"></S.NoticeContent>
+          <S.NoticeTitle type="text" placeholder="날짜를 입력해주세요." id="lDate" name="lDate" />
+          <S.NoticeTitle type="text" placeholder="시간을 입력해주세요." id="lTime" name="lTime" />
+          <S.NoticeTitle type="text" placeholder="장소를 입력해주세요." id="lLocation" name="lLocation" />
         </S.NoticeBody>
       </S.NoticeLayout>
       <Footer />

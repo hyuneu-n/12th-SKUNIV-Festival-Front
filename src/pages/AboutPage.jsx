@@ -40,6 +40,7 @@ export default function MadeBy() {
           <Profile name="민동명" major="컴퓨터공학과" />
           <Profile name="민동명" major="컴퓨터공학과" />
         </S.AboutItemBox>
+        <Script>안녕하세요안녕하세요</Script>
         <Footer />
       </S.AboutLayout>
     </>
