@@ -6,7 +6,7 @@ import AboutPage from './pages/AboutPage.jsx';
 import BoothPage from './pages/BoothPage.jsx';
 import FallingAni from './components/FallingAni.jsx';
 import Notice from './pages/NoticePage.jsx';
-import TimeTable from './pages/TimeTablePage.jsx';
+import TimeTable from './pages/TimeTable.jsx';
 import TimeTable2 from './pages/TimeTable2.jsx';
 import LostPage from './pages/LostPage.jsx';
 import NoticeInput from './pages/NoticeInputPage.jsx';
