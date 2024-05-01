@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Group from '../../public/timetable/Mask group.svg'
+import Group from '../../public/timetable/Hawsa.svg'
 
 const AdditionalInfoContainer = styled.div`
   display: flex;
@@ -11,9 +11,9 @@ const AdditionalInfoContainer = styled.div`
 `;
 
 const CircleIcon = styled.img`
-  
-   width: 200px; /* 조정 */
-  height: 232px; /* 조정 */
+margin-top: 5%;
+   width: 160px; /* 조정 */
+  height: 140px; /* 조정 */
   
 `;
 
@@ -25,7 +25,8 @@ display: flex;
   font-size: 24px;
   font-weight: 400;
   color: #5e5e5e;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
+   
    
 `;
 
@@ -34,9 +35,8 @@ const AdditionalInfo = () => {
     <div>
     <AdditionalInfoContainer>
       <CircleIcon src={Group} alt="Circle Icon" />
-       
     </AdditionalInfoContainer>
-    <Text>Tayeon</Text>
+    <Text>Hwasa</Text>
 
     </div>
   );

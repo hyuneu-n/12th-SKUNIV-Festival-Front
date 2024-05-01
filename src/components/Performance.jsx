@@ -14,22 +14,7 @@ const Container = styled.div`
   margin-top: 5%;
   margin-bottom: 5%;
 `;
-
-const Container2 = styled.div`
-  position: relative;
-  width: 140px;
-  height: 80px;
-  margin-top: 50%;
-  margin-bottom: 50%;
-`;
-
-const Container3 = styled.div`
-  position: relative;
-  width: 140px;
-  height: 80px;
-  margin-top: 50%;
-  margin-bottom: 50%;
-`;
+ 
 
 const InnerContainer = styled.div`
   position: absolute;
@@ -38,23 +23,26 @@ const InnerContainer = styled.div`
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column; /* 컨테이너들을 세로로 배열 */
 `;
 
 const Text1 = styled.div`
-  position: absolute;
-  left: 59px;
-  top: 39px;
-  color: #55A060;
-  font-size: 22px;
-  font-family: 'Pretendard Variable';
-  font-weight: 900;
+ 
+position: relative;
+  text-align: center; 
+top: 25%; /* 위쪽 기준으로 가운데 정렬을 위해 50%로 설정 */
+color: #2E4966;
+font-size: 22px;
+font-family: 'Pretendard Variable';
+font-weight: 900;
 `;
 
 const Text2 = styled.div`
-  position: absolute;
-  left: 18px;
-  top: 15px;
-  color: black;
+position: relative;
+  text-align: center; /* 왼쪽 기준으로 가운데 정렬을 위해 50%로 설정 */
+top: 20%; /* 위쪽 기준으로 가운데 정렬을 위해 50%로 설정 */
+ color: black;
   font-size: 15px;
   font-family: 'Pretendard Variable';
   font-weight: 600;
@@ -64,29 +52,16 @@ const Text2 = styled.div`
 const PerformanceComponent = ({ name, time }) => {
   return (
     <Wrapper>
+       
       {/* 추가된 컨테이너 1 */}
       <Container>
         <InnerContainer />
-        <Text1>{name}</Text1>
         <Text2>{time}</Text2>
+        <Text1>{name}</Text1>
+       
       </Container>
       {/* 추가된 컨테이너 2 */}
-      <Container>
-        <InnerContainer />
-        <Text1>{name}</Text1>
-        <Text2>{time}</Text2>
-      </Container>
-      {/* 추가된 컨테이너 3 */}
-      <Container2>
-        <InnerContainer />
-        <Text1>{name}</Text1>
-        <Text2>{time}</Text2>
-      </Container2>
-      <Container3>
-        <InnerContainer />
-        <Text1>{name}</Text1>
-        <Text2>{time}</Text2>
-      </Container3>
+       
     </Wrapper>
   );
 };
