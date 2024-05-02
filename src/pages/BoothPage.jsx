@@ -1,17 +1,6 @@
 import * as S from '../styles/pages/BoothPage.styled';
 import map from '../../public/booth/boothMap.svg';
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 import { boothData } from '../utils/boothData';
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-import pin from '../../public/booth/pin.svg';
-import { boothData } from '../utils/boothdata';
->>>>>>> Stashed changes
 import Footer from '../components/Footer';
 import BoothItem from '../components/BoothItem';
 import { useEffect, useRef, useState } from 'react';
