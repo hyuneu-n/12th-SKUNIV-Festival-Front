@@ -9,6 +9,7 @@ export const BG = styled.div`
   margin: 10px 20% 0px 20%;
   position: absolute;
   z-index: 10;
+  top: 180px;
   right: 50px;
 `;
 export const MiniBox = styled.div`

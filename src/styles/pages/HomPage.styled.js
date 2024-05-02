@@ -15,7 +15,7 @@ export const HomePageLayout = styled.div`
     font-size: 0.75em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
 
-    margin: 5% 35% 50% 35%;
+    margin: 10% 35% 50% 35%;
     background-color: #f6f6f6;
     color: #4d5359;
     border-radius: 10px;
@@ -24,19 +24,29 @@ export const HomePageLayout = styled.div`
   }
 `;
 
+export const HomePageBox = styled.div`
+  width: 375px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 export const HomePageTitleHeading = styled.h1`
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-size: 1.1em;
   font-family: SUIT, sans-serif;
   font-style: extra-bold;
   text-align: center;
+  color: #404040;
 `;
 
 export const HomePageDayHeading = styled.h1`
+  margin-bottom: 20px;
   font-size: 1.1em;
   font-family: Inter, sans-serif;
-  color: #808080;
+  color: #404040;
   font-weight: 600;
   font-style: extra-bold;
   text-align: center;
