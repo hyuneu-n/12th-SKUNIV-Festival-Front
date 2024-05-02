@@ -2,13 +2,13 @@ import * as S from '../styles/components/BoothItem.styled';
 import Sheet from 'react-modal-sheet';
 import { useState } from 'react';
 
-export default function BoothItem({ height, left, width }) {
+export default function BoothItem({ height, left, width, setShowPin }) {
   const [isOpen, setOpen] = useState(false);
   return (
     <S.BoothItemLayout
       onClick={() => {
         setOpen(true);
-        console.log(left);
+        setShowPin(true);
       }}
     >
       <S.BoothItemGrayBox />
@@ -19,7 +19,10 @@ export default function BoothItem({ height, left, width }) {
       </S.BoothItemInfoBox>
       <S.CustomSheet
         isOpen={isOpen}
-        onClose={() => setOpen(false)}
+        onClose={() => {
+          setOpen(false);
+          setShowPin(false);
+        }}
         rootId="root"
         $height={height}
         $left={left}

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const FooterLayout = styled.div`
-  width: 80%;
+  width: 100%;
   margin: auto;
 `;
 

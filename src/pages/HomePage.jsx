@@ -16,12 +16,13 @@ import FallingAni from '../components/FallingAni';
 import map from '../../public/map.svg';
 import pinkMuhly from '../../public/homePage/Pinkmuhly.svg';
 import test3 from '../..//public/homePage/test3.svg';
+import cd from '../../public/homePage/cd.svg';
 
 export default function HomePage() {
   return (
     <>
+      <MenuBar></MenuBar>
       <S.HomePageLayout>
-        <MenuBar></MenuBar>
         <div style={{ width: '375px', height: '600px', position: 'relative' }}>
           <img src={test3} />
           <motion.img
@@ -45,12 +46,34 @@ export default function HomePage() {
         </div>
 
         <S.HomePageTitleHeading>BOOTH MAP</S.HomePageTitleHeading>
-        <img src={map}></img>
+        <img src={map} />
         <Link to="/booth">부스 둘러보기</Link>
-        <S.HomePageTitleHeading>TIME TABLE</S.HomePageTitleHeading>
-        <S.HomePageDayHeading>DAY {getDay()}</S.HomePageDayHeading>
-        <MiniTimeTable></MiniTimeTable>
-        <Link to="">전체 일정 확인하기</Link>
+        <div
+          style={{
+            position: 'relative',
+          }}
+        >
+          <S.HomePageTitleHeading>TIME TABLE</S.HomePageTitleHeading>
+          <S.HomePageDayHeading>DAY {getDay()}</S.HomePageDayHeading>
+          {/* <MiniTimeTable /> */}
+          <motion.img
+            src={cd}
+            style={{
+              width: '350px',
+              height: '350px',
+            }}
+            animate={{
+              rotate: [0, 360],
+              transition: {
+                duration: 2,
+                repeat: Infinity,
+                ease: 'linear',
+              },
+            }}
+          />
+          <Link to="">전체 일정 확인하기</Link>
+        </div>
+
         <S.HomePageImage src={AllLogo} />
         <FallingAni />
       </S.HomePageLayout>
