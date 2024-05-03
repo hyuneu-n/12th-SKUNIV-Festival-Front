@@ -12,11 +12,11 @@ import MiniTimeTable from '../components/MiniTimeTable';
 import FallingAni from '../components/FallingAni';
 
 //svg
-import map from '../assets/images/homePage/map.svg';
+import map from '../assets/images/homePage/booth.map';
 import pinkMuhly from '../assets/images/homePage/Pinkmuhly.svg';
 import test3 from '../assets/images/homePage/test3.svg';
-import cd from '../assets/images/homePage/cd.svg';
-import playlist from '../assets/images/homePage/playlist.svg';
+import cd from '../assets/images/homePage/cd.jpg';
+import playlist from '../assets/images/homePage/playlist.png';
 import AllLogo from '../assets/images/homePage/AllLogo.svg';
 
 export default function HomePage() {
@@ -84,7 +84,6 @@ export default function HomePage() {
         </S.HomePageBox>
 
         <S.HomePageImage src={AllLogo} />
-        <FallingAni />
       </S.HomePageLayout>
       <Footer />
     </>
