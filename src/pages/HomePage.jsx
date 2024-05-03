@@ -50,7 +50,7 @@ export default function HomePage() {
 
         <S.HomePageBox>
           <S.HomePageTitleHeading>BOOTH MAP</S.HomePageTitleHeading>
-          <S.HompageImg src={map} />
+          <img src={map} style={{ width: '350px', height: 'auto' }}/>
           <Link to="/booth">부스 둘러보기</Link>
         </S.HomePageBox>
 
@@ -76,7 +76,7 @@ export default function HomePage() {
             animate={{
               rotate: [0, 360],
               transition: {
-                duration: 2,
+                duration: 5,
                 repeat: Infinity,
                 ease: 'linear',
               },
