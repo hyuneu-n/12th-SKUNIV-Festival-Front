@@ -1,6 +1,5 @@
 import { GlobalStyle } from './styles/components/GlobalStyles.js';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import RouteChangeTracker from './components/RouteChangeTracker';
 
 import HomePage from './pages/HomePage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
@@ -75,12 +74,10 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <RouterProvider router={router}>
-        <div className="app">
-          <FallingAni />
-          <RouteChangeTracker />
-        </div>
-      </RouterProvider>
+      <div className="app">
+        <FallingAni />
+        <RouterProvider router={router} />
+      </div>
     </>
   );
 }
