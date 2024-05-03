@@ -69,13 +69,13 @@ const TimeTableContainer = styled.div`
   flex-direction: column;
   width: 360px;
   height: 95vh;
-  background: linear-gradient(90deg, rgba(244, 231, 228, 0.5) 0%, rgba(245, 248, 234, 0.5) 100%); // RGBA 형식으로 투명도 적용
+  background: linear-gradient(90deg, rgba(244, 231, 228, 0.5) 10%, rgba(245, 248, 234, 0.5) 100%); // RGBA 형식으로 투명도 적용
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
   border-radius: 30px;
   border: 1px solid #DCDCDC;
   border-radius: 20px;
   margin: auto;
-  margin-bottom: 20%;
+  margin-bottom: 5%;
 `;
 
 const SmallTitle = styled.div`
@@ -132,6 +132,21 @@ const StyledLink = styled(Link)`
 `;
 
 const NumberButton = ({ to, children }) => {
+  const [isActive, setIsActive] = useState(true);
+
+  const handleClick = () => {
+    setIsActive(!isActive);
+  };
+  return (
+    <NumberFirst>
+      <StyledLink to={to} active={isActive} onClick={handleClick}>
+        {children}
+      </StyledLink>
+    </NumberFirst>
+  );
+};
+
+const NumberButton2 = ({ to, children }) => {
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
@@ -156,9 +171,7 @@ export default function TimeTable() {
       <DateContainer>
         <DateRow>
         <NumberButton to="/timetable2">9</NumberButton>
-          <NumberSecond>
-            <Link to="/timetable2">10</Link>
-          </NumberSecond>
+        <NumberButton2 to="/timetable3">10</NumberButton2>
         </DateRow>
         <DateRow>
           <Day>thu</Day>
