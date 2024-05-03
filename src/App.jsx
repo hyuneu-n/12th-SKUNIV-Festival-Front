@@ -60,6 +60,7 @@ function App() {
     <>
       <GlobalStyle />
       <div className="app">
+        <FallingAni />
         <RouterProvider router={router} />
       </div>
     </>
