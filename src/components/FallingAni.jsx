@@ -5,13 +5,13 @@ import { Snowfall } from 'react-snowfall';
 // flower4.src = '../assets/images/flower/rs1.svg';
 
 const flower1 = document.createElement('img');
-flower1.src = 'public/1.png';
+flower1.src = '1.png';
 
 const flower2 = document.createElement('img');
-flower2.src = 'public/2.png';
+flower2.src = '2.png';
 
 const flower3 = document.createElement('img');
-flower3.src = 'public/3.png';
+flower3.src = '3.png';
 
 const images = [flower1, flower2, flower3];
 export default function FallingAni() {
