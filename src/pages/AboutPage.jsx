@@ -21,7 +21,7 @@ export default function MadeBy() {
     <>
       <MenuBar></MenuBar>
       <Header title="ABOUT" />
-      <S.AboutLayout>x
+      <S.AboutLayout>
         <S.AboutTitleHeading style={{ marginTop: '30px' }}></S.AboutTitleHeading>
         <S.AboutInfoHeading>멋쟁이사자처럼 서경대학교</S.AboutInfoHeading>
         <S.AboutLogoImg src={LogoSquare} style={{ width: '100px', height: 'auto', paddingTop: '23px', paddingBottom: '10px' }}></S.AboutLogoImg>
