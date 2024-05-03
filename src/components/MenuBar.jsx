@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import * as S from '../styles/components/MenuBar.styled';
 import styled from 'styled-components';
-import SconMain from '../../public/menubar/menubarImage.svg';
+import SconMain from '../assets/images/menubar/menubarImage.svg';
 import { slide as MenuBarLayout } from 'react-burger-menu';
 import { styles } from '../styles/components/MenuBar.styled';
 const MenuBarImg = styled.img`

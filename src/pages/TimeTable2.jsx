@@ -1,16 +1,15 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import play from '../../public/timetable/play.svg';
+import play from '../assets/images/timetable/play.svg';
 import PerformanceComponent from '../../src/components/Performance';
 import PerformanceComponent2 from '../../src/components/Performance2';
 import SpecialComponent from '../../src/components/Specialguest';
 import SpecialComponent2 from '../../src/components/Specialguest2';
 import Footer from '../components/Footer';
-import Haswa from '../../public/timetable/fromis9(2).svg'
- 
+import Haswa from '../assets/images/timetable/fromis9(2).svg';
 
 const Layout = styled.div`
-  background-image: url('../../public/background.svg');
+  background-image: url('../assets/background.svg');
 `;
 
 const Title = styled.h1`
@@ -22,7 +21,7 @@ const Title = styled.h1`
   text-align: center; /* 가운데 정렬 */
   display: flex;
   justify-content: start;
-  margin-left:5%;
+  margin-left: 5%;
 `;
 
 const DateContainer = styled.div`
@@ -88,47 +87,40 @@ const TitleText = styled.div`
   margin-left: 30%;
 `;
 
- 
-
 const TitleText2 = styled.div`
-margin-left: 35%;
-
+  margin-left: 35%;
 `;
 
 const Textdiv = styled.div`
-  display: flex;  
+  display: flex;
   flex-direction: row; /* 가로로 정렬 */
-   margin-left: 10%;
+  margin-left: 10%;
 `;
-
 
 const Textdiv2 = styled.div`
-  display: flex;  
+  display: flex;
   flex-direction: row; /* 가로로 정렬 */
-   margin-left: 5%;
-   margin-top: 10%;
+  margin-left: 5%;
+  margin-top: 10%;
 `;
 
-const Textdiv3= styled.div`
-  display: flex;  
+const Textdiv3 = styled.div`
+  display: flex;
   flex-direction: column; /* 가로로 정렬 */
-   
 `;
- 
 
 const Centerline = styled.div`
-border-left: thick solid #000;
-height:50%;
-left: 50%;
-position: absolute;
+  border-left: thick solid #000;
+  height: 50%;
+  left: 50%;
+  position: absolute;
 `;
- 
 
 const Circle = styled.div`
   position: absolute;
   width: 16px;
   height: 16px;
-  background-color: #55A060;
+  background-color: #55a060;
   border-radius: 50%;
 `;
 
@@ -142,18 +134,16 @@ const Container = styled.div`
 `;
 
 const Specaipadding = styled.div`
-margin-top: 120%;  
+  margin-top: 120%;
 `;
 
 const Divider = styled.div`
-  position: relative; 
+  position: relative;
   top: 0px;
   left: 15px;
   height: 100px; /* 구분선의 높이 설정 */
   width: 2px; /* 구분선의 너비 설정 */
   background-color: #000; /* 구분선의 색상 설정 */
-   
-   
 `;
 
 const Circle2 = styled.div`
@@ -163,7 +153,7 @@ const Circle2 = styled.div`
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
-  background: #2E4966;
+  background: #2e4966;
   border-radius: 9999px;
 `;
 const Circle3 = styled.div`
@@ -173,14 +163,13 @@ const Circle3 = styled.div`
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
-  background: #2E4966;
+  background: #2e4966;
   border-radius: 9999px;
 `;
 
-
 const DiverColmun = styled.div`
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 `;
 
 const WhiteContainer = styled.div`
@@ -188,12 +177,10 @@ const WhiteContainer = styled.div`
   margin-top: 35%;
 `;
 
-
-
 export default function TimeTable2() {
   return (
     <>
-    <Title>
+      <Title>
         {' '}
         <Link to="/timetable">
           <SmallIcon src={play} />{' '}
@@ -212,48 +199,53 @@ export default function TimeTable2() {
       </DateContainer>
       <Textdiv>
         <Textdiv3>
-        <PerformanceComponent name="SDR" time="16:30 ~ 17:00" /> 
-        
-        <PerformanceComponent name="철인28호" time="17:30 ~ 18:00" /> 
-       
-        <PerformanceComponent name="SDR" time="19:00 ~ 19:30" /> 
-        <WhiteContainer></WhiteContainer>
-        <WhiteContainer></WhiteContainer>
-        <SpecialComponent2
-             imageSrc={Haswa}
-               altText="프로미스나인 이미지"
+          <PerformanceComponent name="SDR" time="16:30 ~ 17:00" />
+
+          <PerformanceComponent name="철인28호" time="17:30 ~ 18:00" />
+
+          <PerformanceComponent name="SDR" time="19:00 ~ 19:30" />
+          <WhiteContainer></WhiteContainer>
+          <WhiteContainer></WhiteContainer>
+          <SpecialComponent2
+            imageSrc={Haswa}
+            altText="프로미스나인 이미지"
             timeText="21:30 ~ 22:00"
-               titleText="fromis_9"
-                />     
+            titleText="fromis_9"
+          />
         </Textdiv3>
         <DiverColmun>
-        <Divider><Circle2/><Circle3/></Divider>
-        <Divider><Circle2/><Circle3/></Divider>
-        <Divider><Circle2/><Circle3/></Divider>
-        <Divider><Circle3/> </Divider>
-        <Divider> <Circle3/> </Divider>
-        <Divider>  </Divider>
-        
-         
+          <Divider>
+            <Circle2 />
+            <Circle3 />
+          </Divider>
+          <Divider>
+            <Circle2 />
+            <Circle3 />
+          </Divider>
+          <Divider>
+            <Circle2 />
+            <Circle3 />
+          </Divider>
+          <Divider>
+            <Circle3 />{' '}
+          </Divider>
+          <Divider>
+            {' '}
+            <Circle3 />{' '}
+          </Divider>
+          <Divider> </Divider>
         </DiverColmun>
         <DiverColmun>
-        <WhiteContainer></WhiteContainer>
-        <PerformanceComponent2 name="SDR" time="19:00 ~ 19:30" /> 
-        <PerformanceComponent2 name="SDR" time="19:00 ~ 19:30" />          
-        <PerformanceComponent2 name="SDR" time="19:00 ~ 19:30" /> 
-         
-        <SpecialComponent></SpecialComponent>
+          <WhiteContainer></WhiteContainer>
+          <PerformanceComponent2 name="SDR" time="19:00 ~ 19:30" />
+          <PerformanceComponent2 name="SDR" time="19:00 ~ 19:30" />
+          <PerformanceComponent2 name="SDR" time="19:00 ~ 19:30" />
+
+          <SpecialComponent></SpecialComponent>
         </DiverColmun>
-       
-        
-      
       </Textdiv>
-     
-      
 
       <Footer />
     </>
-      
-     
   );
 }

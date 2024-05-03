@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 import MenuBar from '../components/MenuBar';
-import Vector from '../../public/timetable/Vector.svg'
+import Vector from '../assets/images/timetable/Vector.svg';
 import AdditionalInfo from '../components/AdditionalInfo';
 import AdditionalInfo2 from '../components/AdditionalInfo2';
 import AdditionalInfo3 from '../components/AdditionalInfo3';
 import { Link } from 'react-router-dom';
 
-
- 
 const Layout = styled.div`
   background-image: url('../../public/background.svg');
 `;
@@ -66,7 +64,7 @@ const TimeTableContainer = styled.div`
   background-color: white;
   border-radius: 20px;
   margin: auto;
-  margin-bottom: 10%; 
+  margin-bottom: 10%;
 `;
 
 const SmallTitle = styled.div`
@@ -74,7 +72,7 @@ const SmallTitle = styled.div`
   font-weight: bold; /* 굵기 추가 */
   font-size: 24px;
   margin-top: 10%;
-   margin-left: 7%;
+  margin-left: 7%;
 `;
 
 const SmallIcon = styled.img`
@@ -83,8 +81,8 @@ const SmallIcon = styled.img`
 `;
 
 const Container = styled.div`
-position: relative;
-margin-bottom: 10%;
+  position: relative;
+  margin-bottom: 10%;
 `;
 
 const GrayBackground = styled.div`
@@ -93,7 +91,7 @@ const GrayBackground = styled.div`
   left: 0;
   top: 1px;
   position: absolute;
-  background: #DCDCDC;
+  background: #dcdcdc;
   border-radius: 30px;
 `;
 
@@ -102,7 +100,7 @@ const Text = styled.div`
   top: 15px;
   position: absolute;
   text-align: center;
-  color: rgba(0, 0, 0, 0.70);
+  color: rgba(0, 0, 0, 0.7);
   font-size: 15px;
   font-family: 'Sumana';
   font-weight: 700;
@@ -110,26 +108,21 @@ const Text = styled.div`
 `;
 
 const VetcorIcon = styled.img`
-width: 10px;
-height: 10px;
+  width: 10px;
+  height: 10px;
 `;
- 
+
 export default function TimeTable() {
   return (
     <>
-     
       <MenuBar></MenuBar>
       <Title>TIME TABLE</Title>
-       
-     
+
       <DateContainer>
         <DateRow>
           <NumberFirst>
-          <Link to="/timetable2">
-            9
-          </Link>
-            
-            </NumberFirst>
+            <Link to="/timetable2">9</Link>
+          </NumberFirst>
           <NumberSecond>
             <Link to="/timetable2">10</Link>
           </NumberSecond>
@@ -141,19 +134,16 @@ export default function TimeTable() {
       </DateContainer>
       <TimeTableContainer>
         <SmallTitle>
-        <Container>
-      <GrayBackground />
-      <Text >TIME TABLE <VetcorIcon src={Vector} alt="Vetcor Icon" /></Text>
-     
-
-       
-    </Container>
+          <Container>
+            <GrayBackground />
+            <Text>
+              TIME TABLE <VetcorIcon src={Vector} alt="Vetcor Icon" />
+            </Text>
+          </Container>
         </SmallTitle>
         <AdditionalInfo />
-        <AdditionalInfo2/>
+        <AdditionalInfo2 />
         <AdditionalInfo3 />
-        
-
       </TimeTableContainer>
     </>
   );

@@ -1,4 +1,4 @@
-import MainLogo from '../../public/MainLogo.svg';
+import MainLogo from '../assets/images/MainLogo.svg';
 import * as S from '../styles/components/Profile.styled';
 
 export default function Profile({ name, major }) {

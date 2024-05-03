@@ -1,11 +1,11 @@
 import * as S from '../styles/pages/BoothPage.styled';
-import map from '../../public/booth/boothMap.svg';
+import map from '../assets/images/booth/boothMap.jpg';
 import { boothData } from '../utils/boothData';
 import Footer from '../components/Footer';
 import BoothItem from '../components/BoothItem';
 import { useEffect, useRef, useState } from 'react';
 import Header from '../components/Header';
-import pin from '../../public/booth/pin.svg';
+import pin from '../assets/images/booth/pin.svg';
 
 export default function BoothPage() {
   const [height, setHeight] = useState(0);
@@ -24,7 +24,6 @@ export default function BoothPage() {
   return (
     <S.BoothLayout>
       <Header />
-
       <S.BoothImageBox>
         <S.BoothMapImg src={map} ref={test} />
         <S.BoothPinImg

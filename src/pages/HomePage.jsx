@@ -4,7 +4,6 @@ import { getDay } from '../utils/getday';
 
 // styled
 import * as S from '../styles/pages/HomPage.styled';
-import AllLogo from '../..//public/homePage/AllLogo.svg';
 
 // components
 import Footer from '../components/Footer';
@@ -13,11 +12,12 @@ import MiniTimeTable from '../components/MiniTimeTable';
 import FallingAni from '../components/FallingAni';
 
 //svg
-import map from '../../public/homePage/map.svg';
-import pinkMuhly from '../../public/homePage/Pinkmuhly.svg';
-import test3 from '../..//public/homePage/test3.svg';
-import cd from '../../public/homePage/cd.svg';
-import playlist from '../../public/homePage/playlist.svg';
+import map from '../assets/images/homePage/map.svg';
+import pinkMuhly from '../assets/images/homePage/Pinkmuhly.svg';
+import test3 from '../assets/images/homePage/test3.svg';
+import cd from '../assets/images/homePage/cd.svg';
+import playlist from '../assets/images/homePage/playlist.svg';
+import AllLogo from '../assets/images/homePage/AllLogo.svg';
 
 export default function HomePage() {
   return (

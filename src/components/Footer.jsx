@@ -1,8 +1,8 @@
 import * as S from '../styles/components/Footer.styled';
 import { Link } from 'react-router-dom';
-import insta from '../../public/footer/insta.svg';
-import logo from '../../public/footer/logo.svg';
-import github from '../../public/footer/github.svg';
+import insta from '../assets/images/footer/insta.svg';
+import logo from '../assets/images/footer/logo.svg';
+import github from '../assets/images/footer/github.svg';
 
 export default function Footer() {
   return (

@@ -1,5 +1,5 @@
 import Profile from '../components/Profile';
-import LogoSquare from '../../public/LogoSquare.svg';
+import LogoSquare from '../assets//images/LogoSquare.svg';
 import styled from 'styled-components';
 import Footer from '../components/Footer';
 import MenuBar from '../components/MenuBar';
