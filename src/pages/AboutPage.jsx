@@ -1,6 +1,7 @@
 import Profile from '../components/Profile';
 import LogoSquare from '../assets//images/skulikelion_logo_1080.png';
 import Hansup from '../assets//images/HANSUP.png';
+import dong from '../assets//images/dong.png';
 import styled from 'styled-components';
 import Footer from '../components/Footer';
 import MenuBar from '../components/MenuBar';
@@ -20,7 +21,7 @@ export default function MadeBy() {
     <>
       <MenuBar></MenuBar>
       <Header title="ABOUT" />
-      <S.AboutLayout>
+      <S.AboutLayout>x
         <S.AboutTitleHeading style={{ marginTop: '30px' }}></S.AboutTitleHeading>
         <S.AboutInfoHeading>멋쟁이사자처럼 서경대학교</S.AboutInfoHeading>
         <S.AboutLogoImg src={LogoSquare} style={{ width: '100px', height: 'auto', paddingTop: '23px', paddingBottom: '10px' }}></S.AboutLogoImg>
@@ -28,20 +29,20 @@ export default function MadeBy() {
         <Script>페이지를 제작한 멋쟁이들~</Script>
         <S.AboutPartHeading style={{ marginBottom: '10px' }}>PM/DESIGN</S.AboutPartHeading>
         <S.AboutItemBox>
-          <Profile name="민동명" major="컴퓨터공학과22" />
-          <Profile name="민동명" major="컴퓨터공학과22" />
-          <Profile name="민동명" major="컴퓨터공학과22" />
+          <Profile name="민동명" major="컴퓨터공학과 22" image={dong} role="기능 아이디어 구상" />
+          <Profile name="민동명" major="컴퓨터공학과 22" image={dong} role="기능 아이디어 구상" />
+          <Profile name="민동명" major="컴퓨터공학과 22" image={dong} role="기능 아이디어 구상" />
         </S.AboutItemBox>
         <S.AboutPartHeading style={{ marginTop: '50px', marginBottom: '10px' }}>DEVELOPERS</S.AboutPartHeading>
         <S.AboutItemBox>
-          <Profile name="민동명" major="컴퓨터공학과" />
-          <Profile name="민동명" major="컴퓨터공학과" />
-          <Profile name="민동명" major="컴퓨터공학과" />
+          <Profile name="민동명" major="컴퓨터공학과 22" image={dong} role="기능 아이디어 구상" />
+          <Profile name="민동명" major="컴퓨터공학과 22" image={dong} role="기능 아이디어 구상" />
+          <Profile name="민동명" major="컴퓨터공학과 22" image={dong} role="기능 아이디어 구상" />
         </S.AboutItemBox>
         <S.AboutItemBox>
-          <Profile name="민동명" major="컴퓨터공학과" />
-          <Profile name="민동명" major="컴퓨터공학과" />
-          <Profile name="민동명" major="컴퓨터공학과" />
+          <Profile name="민동명" major="컴퓨터공학과 22" image={dong} role="기능 아이디어 구상" />
+          <Profile name="민동명" major="컴퓨터공학과 22" image={dong} role="기능 아이디어 구상" />
+          <Profile name="민동명" major="컴퓨터공학과 22" image={dong} role="기능 아이디어 구상" />
         </S.AboutItemBox>
 
         <S.AboutLogoImg src={Hansup} style={{ width: '130px', height: 'auto', paddingTop: '60px', paddingBottom: '0px' }}></S.AboutLogoImg>

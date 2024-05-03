@@ -42,3 +42,11 @@ export const ProfileMajorParagraph = styled.p`
   font-weight: 300;
   text-align: center;
 `;
+
+export const ProfileRoleParagraph = styled.p`
+  font-size: 12px;
+  width: 100%;
+  font-family: 'Pretendard Variable', arial;
+  font-weight: 300;
+  text-align: center;
+`;
