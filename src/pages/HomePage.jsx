@@ -25,7 +25,7 @@ export default function HomePage() {
       <MenuBar></MenuBar>
       <S.HomePageLayout>
         <S.HomePageBox>
-          <img src={test3} />
+          <img src={test3} fetchPriority="high" />
           <motion.img
             src={pinkMuhly}
             style={{
@@ -43,6 +43,7 @@ export default function HomePage() {
                 repeatDelay: 1,
               },
             }}
+            fetchPriority="high"
           />
         </S.HomePageBox>
 
