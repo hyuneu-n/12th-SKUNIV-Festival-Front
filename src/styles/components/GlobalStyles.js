@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     width: 100%;
     min-height: 100vh;
-    background-image: url('../assets/images/background.svg') ;
+    background-image: url('public/background.svg');
     @media only screen and (min-width: 360px) {
       .app {
         width: 375px;
