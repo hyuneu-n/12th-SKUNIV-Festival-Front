@@ -25,8 +25,8 @@ export const BoothPinImg = styled(motion.img)`
   height: 20px;
   width: 13px;
   position: absolute;
-  top: 145px;
-  left: 150px;
+  top: ${({ $top }) => `${$top}px`};
+  left: ${({ $left }) => `${$left}px`};
   visibility: ${({ $show }) => ($show ? 'visible' : 'hidden')};
 `;
 export const BoothListBox = styled.div`

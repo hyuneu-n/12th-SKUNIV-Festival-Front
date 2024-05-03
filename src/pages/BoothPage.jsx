@@ -12,6 +12,8 @@ export default function BoothPage() {
   const [left, setLeft] = useState(0);
   const [width, setWidth] = useState(0);
   const [showPin, setShowPin] = useState(false);
+  const [pinLeft, setPinLeft] = useState(0);
+  const [pinTop, setPinTop] = useState(0);
   const test = useRef();
   const test1 = useRef();
 
@@ -29,6 +31,8 @@ export default function BoothPage() {
         <S.BoothPinImg
           $show={showPin}
           src={pin}
+          $left={pinLeft}
+          $top={pinTop}
           initial={{ y: 0 }}
           animate={{ y: 3, transition: { duration: 1.5, repeat: Infinity } }}
         />
@@ -37,15 +41,25 @@ export default function BoothPage() {
       <S.BoothLine />
 
       <S.BoothItemBox ref={test1}>
-        <BoothItem
-          height={height}
-          left={left}
-          width={width}
-          setShowPin={setShowPin}
-        />
+        {boothData.map((prod) => {
+          return (
+            <BoothItem
+              key={prod.id}
+              height={height}
+              left={left}
+              width={width}
+              setShowPin={setShowPin}
+              pinLeft={prod.left}
+              pinTop={prod.top}
+              setPinLeft={setPinLeft}
+              setPinTop={setPinTop}
+            />
+          );
+        })}
+        {/* <BoothItem />
         <BoothItem height={height} left={left} width={width} />
         <BoothItem height={height} left={left} width={width} />
-        <BoothItem height={height} left={left} width={width} />
+        <BoothItem height={height} left={left} width={width} /> */}
       </S.BoothItemBox>
 
       <Footer />

@@ -46,5 +46,21 @@ export const boothData = [
       test2: '3000원',
     },
     account: '1234-5678-91011',
+    top: 25,
+    left: 122,
+  },
+  {
+    id: 2,
+    boothNumber: 2,
+    boothName: 'test',
+    major: 'computer Engineering',
+    intro: 'test',
+    menu: {
+      test1: '3000원',
+      test2: '3000원',
+    },
+    account: '1234-5678-91011',
+    top: 35,
+    left: 122,
   },
 ];
