@@ -15,7 +15,7 @@ import FallingAni from '../components/FallingAni';
 import map from '../assets/images/homePage/boothmap.png';
 import pinkMuhly from '../assets/images/homePage/Pinkmuhly.png';
 import test3 from '../assets/images/homePage/test3.png';
-import cd from '../assets/images/homePage/cd.jpg';
+import cd from '../assets/images/homePage/cd1.png';
 import playlist from '../assets/images/homePage/playlist.png';
 import AllLogo from '../assets/images/homePage/AllLogo.svg';
 
