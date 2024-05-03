@@ -12,7 +12,7 @@ import MiniTimeTable from '../components/MiniTimeTable';
 import FallingAni from '../components/FallingAni';
 
 //svg
-import map from '../assets/images/homePage/booth.map';
+import map from '../assets/images/homePage/boothmap.png';
 import pinkMuhly from '../assets/images/homePage/Pinkmuhly.svg';
 import test3 from '../assets/images/homePage/test3.svg';
 import cd from '../assets/images/homePage/cd.jpg';
