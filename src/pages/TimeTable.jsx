@@ -5,9 +5,16 @@ import AdditionalInfo from '../components/AdditionalInfo';
 import AdditionalInfo2 from '../components/AdditionalInfo2';
 import AdditionalInfo3 from '../components/AdditionalInfo3';
 import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import Backimage from '../assets/images/timetable/background.png';
+
 
 const Layout = styled.div`
-  background-image: url('../../public/background.svg');
+background-image: url(${Backimage}); 
+  min-height: 100vh; // 최소 높이를 화면 전체로 설정
+  background-size: cover; // 배경 이미지가 화면을 전체적으로 커버하도록 설정
+  background-position: center; // 배경 이미지를 중앙에 위치시킴
+  background-repeat: no-repeat; // 배경 이미지가 반복되지 않도록 설정
 `;
 
 const Title = styled.h1`
@@ -39,6 +46,7 @@ const NumberFirst = styled.h1`
   font-family: SUIT Variable, sans-serif;
   font-weight: bold; /* 굵기 추가 */
   margin: 0 30%;
+  color: #55A161;
 `;
 
 const NumberSecond = styled.h1`
@@ -61,10 +69,13 @@ const TimeTableContainer = styled.div`
   flex-direction: column;
   width: 360px;
   height: 95vh;
-  background-color: white;
+  background: linear-gradient(90deg, rgba(244, 231, 228, 0.5) 0%, rgba(245, 248, 234, 0.5) 100%); // RGBA 형식으로 투명도 적용
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 30px;
+  border: 1px solid #DCDCDC;
   border-radius: 20px;
   margin: auto;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
 `;
 
 const SmallTitle = styled.div`
@@ -86,13 +97,16 @@ const Container = styled.div`
 `;
 
 const GrayBackground = styled.div`
-  width: 140px;
+   width: 133px;
   height: 43px;
-  left: 0;
-  top: 1px;
   position: absolute;
-  background: #dcdcdc;
+  left: 0;
+  top: 0;
+  background: linear-gradient(90deg, rgba(244, 231, 228, 0.8) 0%, rgba(245, 248, 234, 0.5) 100%); // RGBA 형식으로 투명도 적용
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
   border-radius: 30px;
+  border: 1px #DCDCDC solid;
+  
 `;
 
 const Text = styled.div`
@@ -112,17 +126,36 @@ const VetcorIcon = styled.img`
   height: 10px;
 `;
 
+
+const StyledLink = styled(Link)`
+  color: ${({ active }) => (active ? '#55A161' : 'black')};
+`;
+
+const NumberButton = ({ to, children }) => {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = () => {
+    setIsActive(!isActive);
+  };
+  return (
+    <NumberFirst>
+      <StyledLink to={to} active={isActive} onClick={handleClick}>
+        {children}
+      </StyledLink>
+    </NumberFirst>
+  );
+};
+
+
 export default function TimeTable() {
   return (
-    <>
+    <Layout>
       <MenuBar></MenuBar>
       <Title>TIME TABLE</Title>
 
       <DateContainer>
         <DateRow>
-          <NumberFirst>
-            <Link to="/timetable2">9</Link>
-          </NumberFirst>
+        <NumberButton to="/timetable2">9</NumberButton>
           <NumberSecond>
             <Link to="/timetable2">10</Link>
           </NumberSecond>
@@ -145,6 +178,6 @@ export default function TimeTable() {
         <AdditionalInfo2 />
         <AdditionalInfo3 />
       </TimeTableContainer>
-    </>
+    </Layout>
   );
 }

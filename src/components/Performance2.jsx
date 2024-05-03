@@ -33,7 +33,7 @@ const Text1 = styled.div`
 position: relative;
   text-align: center; 
 top: 25%; /* 위쪽 기준으로 가운데 정렬을 위해 50%로 설정 */
-color: #2E4966;
+color: #55A161;;
 font-size: 22px;
 font-family: 'Pretendard Variable';
 font-weight: 900;

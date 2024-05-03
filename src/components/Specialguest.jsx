@@ -40,7 +40,7 @@ const Title = styled.div`
   position: relative;
   padding-top: 5%;
   text-align: center;
-  color: #2e4966;
+  color: #55A161;
   font-size: 22px;
   font-family: 'Pretendard Variable';
   font-weight: 900;
@@ -63,8 +63,8 @@ const SpecialComponent = () => {
       <SpecaiContainer>
         <ItemContainer>
           <ImageContainer>
-            <Image src={Haswa} alt="에스파 이미지" />
-            <Time>14:50 ~ 15:30</Time>
+            <Image src={Haswa} alt="화사 이미지" />
+            <Time>21:00 ~ 21:30</Time>
             <Title>화사</Title>
           </ImageContainer>
         </ItemContainer>
