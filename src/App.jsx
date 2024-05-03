@@ -8,6 +8,8 @@ import FallingAni from './components/FallingAni.jsx';
 import Notice from './pages/NoticePage.jsx';
 import TimeTable from './pages/TimeTable.jsx';
 import TimeTable2 from './pages/TimeTable2.jsx';
+import TimeTable3 from './pages/TimeTable3.jsx';
+import TimeTable4 from './pages/TimeTable4.jsx';
 import LostPage from './pages/LostPage.jsx';
 import NoticeInput from './pages/NoticeInputPage.jsx';
 import LostInput from './pages/LostInputPage.jsx';
@@ -32,6 +34,18 @@ const router = createBrowserRouter([
   {
     path: '/about',
     element: <AboutPage />,
+  },
+  {
+    path: '/timetable2',
+    element: <TimeTable2 />,
+  },
+  {
+    path: '/timetable3',
+    element: <TimeTable3 />,
+  },
+  {
+    path: '/timetable4',
+    element: <TimeTable4 />,
   },
   {
     path: '/timetable2',
