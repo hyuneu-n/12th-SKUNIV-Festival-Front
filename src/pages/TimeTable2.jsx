@@ -6,10 +6,16 @@ import PerformanceComponent2 from '../../src/components/Performance2';
 import SpecialComponent from '../../src/components/Specialguest';
 import SpecialComponent2 from '../../src/components/Specialguest2';
 import Footer from '../components/Footer';
-import Haswa from '../assets/images/timetable/fromis9(2).svg';
+import fromis9 from '../assets/images/timetable/fromis9(2).svg';
+import Backimage from '../assets/images/timetable/background.png';
+
 
 const Layout = styled.div`
-  background-image: url('../assets/background.svg');
+background-image: url(${Backimage}); 
+  min-height: 100vh; // 최소 높이를 화면 전체로 설정
+  background-size: cover; // 배경 이미지가 화면을 전체적으로 커버하도록 설정
+  background-position: center; // 배경 이미지를 중앙에 위치시킴
+  background-repeat: no-repeat; // 배경 이미지가 반복되지 않도록 설정
 `;
 
 const Title = styled.h1`
@@ -29,7 +35,7 @@ const DateContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 10%; /* 상단 여백 추가 */
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 `;
 
 const DateRow = styled.div`
@@ -43,7 +49,10 @@ const NumberFirst = styled.h1`
   font-size: 35px;
   font-family: SUIT Variable, sans-serif;
   font-weight: bold; /* 굵기 추가 */
+  color: #55A161;
   margin: 0 30%;
+  color: #55A161;
+  
 `;
 
 const NumberSecond = styled.h1`
@@ -143,7 +152,7 @@ const Divider = styled.div`
   left: 15px;
   height: 100px; /* 구분선의 높이 설정 */
   width: 2px; /* 구분선의 너비 설정 */
-  background-color: #000; /* 구분선의 색상 설정 */
+  background-color: #55A161;; /* 구분선의 색상 설정 */
 `;
 
 const Circle2 = styled.div`
@@ -153,7 +162,7 @@ const Circle2 = styled.div`
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
-  background: #2e4966;
+  background: #55A161;;
   border-radius: 9999px;
 `;
 const Circle3 = styled.div`
@@ -163,7 +172,7 @@ const Circle3 = styled.div`
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
-  background: #2e4966;
+  background: #55A161;;
   border-radius: 9999px;
 `;
 
@@ -176,10 +185,13 @@ const WhiteContainer = styled.div`
   position: relative;
   margin-top: 35%;
 `;
-
+const WhiteContainer2 = styled.div`
+  position: relative;
+  margin-top: 10;
+`;
 export default function TimeTable2() {
   return (
-    <>
+    <Layout>
       <Title>
         {' '}
         <Link to="/timetable">
@@ -203,11 +215,13 @@ export default function TimeTable2() {
 
           <PerformanceComponent name="철인28호" time="17:30 ~ 18:00" />
 
-          <PerformanceComponent name="SDR" time="19:00 ~ 19:30" />
+          <PerformanceComponent name="화락" time="19:00 ~ 19:30" />
+
+          <PerformanceComponent name="SDR" time="20:00 ~ 20:30" />
           <WhiteContainer></WhiteContainer>
-          <WhiteContainer></WhiteContainer>
+ 
           <SpecialComponent2
-            imageSrc={Haswa}
+            imageSrc={fromis9}
             altText="프로미스나인 이미지"
             timeText="21:30 ~ 22:00"
             titleText="fromis_9"
@@ -218,34 +232,44 @@ export default function TimeTable2() {
             <Circle2 />
             <Circle3 />
           </Divider>
+          
           <Divider>
             <Circle2 />
             <Circle3 />
+            
           </Divider>
           <Divider>
             <Circle2 />
             <Circle3 />
+
           </Divider>
           <Divider>
-            <Circle3 />{' '}
+          <Circle2 />
+            
           </Divider>
           <Divider>
             {' '}
-            <Circle3 />{' '}
+            <Circle2/>{' '}
+            
           </Divider>
-          <Divider> </Divider>
+          <Divider>
+          <Circle2 />
+             </Divider>
+             <Divider>
+              
+            </Divider>
         </DiverColmun>
         <DiverColmun>
           <WhiteContainer></WhiteContainer>
-          <PerformanceComponent2 name="SDR" time="19:00 ~ 19:30" />
-          <PerformanceComponent2 name="SDR" time="19:00 ~ 19:30" />
-          <PerformanceComponent2 name="SDR" time="19:00 ~ 19:30" />
+          <PerformanceComponent2 name="유드림" time="17:00 ~ 17:30" />
+          <PerformanceComponent2 name="그라미" time="18:30 ~ 19:00" />
+          <PerformanceComponent2 name="꽃과 어린왕자" time="19:30 ~ 20:00" />
 
           <SpecialComponent></SpecialComponent>
         </DiverColmun>
       </Textdiv>
 
       <Footer />
-    </>
+    </Layout>
   );
 }

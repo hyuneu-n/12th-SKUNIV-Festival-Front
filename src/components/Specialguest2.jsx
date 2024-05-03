@@ -9,9 +9,9 @@ const Wrapper = styled.div`
 `;
 // 부모 컨테이너 스타일
 const SpecaiContainer = styled.div`
-  margin-top: 30%;
+  margin-top: 5%;
   margin-left: 0%;
-  margin-botoom: 30%;
+  margin-botoom: 5%;
 `;
 
 // 자식 컨테이너 스타일
@@ -38,7 +38,7 @@ const Image = styled.img`
 const Title = styled.div`
   position: relative;
   padding-top: 5%;
-  color: #2e4966;
+  color: #55A161;
   font-size: 22px;
   font-family: 'Pretendard Variable';
   font-weight: 900;
