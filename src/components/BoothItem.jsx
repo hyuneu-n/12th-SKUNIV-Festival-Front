@@ -2,13 +2,24 @@ import * as S from '../styles/components/BoothItem.styled';
 import Sheet from 'react-modal-sheet';
 import { useState } from 'react';
 
-export default function BoothItem({ height, left, width, setShowPin }) {
+export default function BoothItem({
+  height,
+  left,
+  width,
+  setShowPin,
+  pinLeft,
+  pinTop,
+  setPinLeft,
+  setPinTop,
+}) {
   const [isOpen, setOpen] = useState(false);
   return (
     <S.BoothItemLayout
       onClick={() => {
         setOpen(true);
         setShowPin(true);
+        setPinTop(pinTop);
+        setPinLeft(pinLeft);
       }}
     >
       <S.BoothItemGrayBox />

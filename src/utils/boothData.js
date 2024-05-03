@@ -463,7 +463,5 @@ export const boothData = [
       스계후: '-원',
       묵사발: '-원',
     },
-    account: '-',
-    snsLink: 'https://www.instagram.com/sku_n.c.b.e/'
   },
 ];
