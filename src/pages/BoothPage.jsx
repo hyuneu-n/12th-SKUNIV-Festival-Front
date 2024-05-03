@@ -25,7 +25,7 @@ export default function BoothPage() {
 
   return (
     <S.BoothLayout>
-      <Header />
+      <Header title="BOOTH MAP" />
       <S.BoothImageBox>
         <S.BoothMapImg src={map} ref={test} />
         <S.BoothPinImg

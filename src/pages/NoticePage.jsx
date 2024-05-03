@@ -10,7 +10,7 @@ export default function Notice() {
   return (
     <>
       <MenuBar></MenuBar>
-
+      
       <S.NoticeLayout>
 
         <S.NoticeHead>

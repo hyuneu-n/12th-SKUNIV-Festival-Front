@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Footer from '../components/Footer';
 import MenuBar from '../components/MenuBar';
 import * as S from '../styles/pages/AboutPage.styled';
+import Header from '../components/Header';
 
 const Script = styled.h1`
   margin-top: 19px;
@@ -18,8 +19,9 @@ export default function MadeBy() {
   return (
     <>
       <MenuBar></MenuBar>
+      <Header title="ABOUT" />
       <S.AboutLayout>
-        <S.AboutTitleHeading> Made By</S.AboutTitleHeading>
+        <S.AboutTitleHeading style={{ marginTop: '30px' }}></S.AboutTitleHeading>
         <S.AboutInfoHeading>멋쟁이사자처럼 서경대학교</S.AboutInfoHeading>
         <S.AboutLogoImg src={LogoSquare} style={{ width: '100px', height: 'auto', paddingTop: '23px', paddingBottom: '10px' }}></S.AboutLogoImg>
         
