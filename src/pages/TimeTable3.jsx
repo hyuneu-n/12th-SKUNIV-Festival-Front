@@ -7,6 +7,7 @@ import AdditionalInfo6 from '../components/AdditionalInfo6';
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import Backimage from '../assets/images/timetable/background.png';
+import Header from '../components/Header';
 
 
 const Layout = styled.div`
@@ -166,7 +167,7 @@ export default function TimeTable3() {
   return (
     <Layout>
       <MenuBar></MenuBar>
-      <Title>TIME TABLE</Title>
+      <Header title="TIME TABLE" />
 
       <DateContainer>
         <DateRow>

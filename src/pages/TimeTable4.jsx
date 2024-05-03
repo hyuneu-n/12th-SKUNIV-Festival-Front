@@ -9,6 +9,7 @@ import Footer from '../components/Footer';
 import Heize2 from '../assets/images/timetable/Heize2.png';
 import Day6 from '../assets/images/timetable/Day6(2).svg';
 import DJ2 from '../assets/images/timetable/DJ2.svg';
+import Header from '../components/Header';
 
 
 import Backimage from '../assets/images/timetable/background.png';
@@ -201,7 +202,6 @@ export default function TimeTable4() {
         <Link to="/timetable">
           <SmallIcon src={play} />{' '}
         </Link>
-        <TitleText>TIME TABLE</TitleText>
       </Title>
       <DateContainer>
         <DateRow>
