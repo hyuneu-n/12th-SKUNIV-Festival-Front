@@ -8,14 +8,14 @@ export default function Footer() {
   return (
     <S.FooterLayout>
       <S.FooterLine />
-      <S.FooterCol>
-        <S.FooterHead>서경대학교 멋쟁이 사자처럼</S.FooterHead>
+      <S.FooterCol style={{ marginTop: '30px' }}>
+        <S.FooterHead>멋쟁이사자처럼 서경대학교</S.FooterHead>
         <S.FooterParagraph>likelion_skuniv</S.FooterParagraph>
         <S.FooterImageBox>
-          <S.FooterInstaLink>
+          <S.FooterInstaLink style={{ marginTop: '7px', marginBottom: '10px' }}>
             <S.FooterLogoImg src={logo} />
-          </S.FooterInstaLink>
-          <S.FooterInstaLink to="https://www.instagram.com/">
+          </S.FooterInstaLink >
+          <S.FooterInstaLink to="https://www.instagram.com/likelion_skuniv/">
             <S.FooterLogoImg src={insta} />
           </S.FooterInstaLink>
           <S.FooterInstaLink to="/">

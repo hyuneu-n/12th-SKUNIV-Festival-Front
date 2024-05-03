@@ -1,5 +1,6 @@
 import Profile from '../components/Profile';
-import LogoSquare from '../assets//images/LogoSquare.svg';
+import LogoSquare from '../assets//images/skulikelion_logo_1080.png';
+import Hansup from '../assets//images/HANSUP.png';
 import styled from 'styled-components';
 import Footer from '../components/Footer';
 import MenuBar from '../components/MenuBar';
@@ -19,28 +20,31 @@ export default function MadeBy() {
       <MenuBar></MenuBar>
       <S.AboutLayout>
         <S.AboutTitleHeading> Made By</S.AboutTitleHeading>
-        <S.AboutLogoImg src={LogoSquare}></S.AboutLogoImg>
-        <S.AboutInfoHeading>멋쟁이 사자처럼</S.AboutInfoHeading>
-        <Script>안녕하세요안녕하세요</Script>
-        <S.AboutPartHeading>PM/DESIGN</S.AboutPartHeading>
+        <S.AboutInfoHeading>멋쟁이사자처럼 서경대학교</S.AboutInfoHeading>
+        <S.AboutLogoImg src={LogoSquare} style={{ width: '100px', height: 'auto', paddingTop: '23px', paddingBottom: '10px' }}></S.AboutLogoImg>
+        
+        <Script>페이지를 제작한 멋쟁이들~</Script>
+        <S.AboutPartHeading style={{ marginBottom: '10px' }}>PM/DESIGN</S.AboutPartHeading>
         <S.AboutItemBox>
           <Profile name="민동명" major="컴퓨터공학과22" />
           <Profile name="민동명" major="컴퓨터공학과22" />
           <Profile name="민동명" major="컴퓨터공학과22" />
         </S.AboutItemBox>
-        <S.AboutPartHeading>BACKEND</S.AboutPartHeading>
+        <S.AboutPartHeading style={{ marginTop: '50px', marginBottom: '10px' }}>DEVELOPERS</S.AboutPartHeading>
         <S.AboutItemBox>
           <Profile name="민동명" major="컴퓨터공학과" />
           <Profile name="민동명" major="컴퓨터공학과" />
           <Profile name="민동명" major="컴퓨터공학과" />
         </S.AboutItemBox>
-        <S.AboutTitleHeading>FRONTEND</S.AboutTitleHeading>
         <S.AboutItemBox>
           <Profile name="민동명" major="컴퓨터공학과" />
           <Profile name="민동명" major="컴퓨터공학과" />
           <Profile name="민동명" major="컴퓨터공학과" />
         </S.AboutItemBox>
-        <Script>안녕하세요안녕하세요</Script>
+
+        <S.AboutLogoImg src={Hansup} style={{ width: '130px', height: 'auto', paddingTop: '60px', paddingBottom: '0px' }}></S.AboutLogoImg>
+        <S.AboutPartHeading style={{ marginBottom: '3px' }}>총학생회 한마디</S.AboutPartHeading>
+        <Script>멋사야 고맙다</Script>
         <Footer />
       </S.AboutLayout>
     </>
