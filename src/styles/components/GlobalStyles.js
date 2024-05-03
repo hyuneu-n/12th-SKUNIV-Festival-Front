@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none
   }
+ 
   body {
     width: 100%;
     min-height: 100vh;

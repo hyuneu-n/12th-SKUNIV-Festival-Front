@@ -25,14 +25,14 @@ export default function HomePage() {
       <MenuBar></MenuBar>
       <S.HomePageLayout>
         <S.HomePageBox>
-          <img src={test3} fetchPriority="high" />
+          <S.HompageImg src={test3} />
           <motion.img
             src={pinkMuhly}
             style={{
               width: '375px',
               zIndex: 1,
-              left: '10px',
-              top: '160px',
+              left: '0px',
+              top: '120px',
               position: 'absolute',
             }}
             animate={{
@@ -50,7 +50,7 @@ export default function HomePage() {
 
         <S.HomePageBox>
           <S.HomePageTitleHeading>BOOTH MAP</S.HomePageTitleHeading>
-          <img src={map} />
+          <S.HompageImg src={map} />
           <Link to="/booth">부스 둘러보기</Link>
         </S.HomePageBox>
 
@@ -85,7 +85,7 @@ export default function HomePage() {
           <Link to="">전체 일정 확인하기</Link>
         </S.HomePageBox>
 
-        <S.HomePageImage src={AllLogo} />
+        <S.HomePageBottomImage src={AllLogo} />
       </S.HomePageLayout>
       <Footer />
     </>

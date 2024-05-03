@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HomePageLayout = styled.div`
   width: 100%;
-  background-image: url('../../public/homePage/background.svg');
+  background-image: url('../assets/homePage/background.svg');
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,8 +24,12 @@ export const HomePageLayout = styled.div`
   }
 `;
 
-export const HomePageBox = styled.div`
+export const HompageImg = styled.img`
   width: 375px;
+`;
+
+export const HomePageBox = styled.div`
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -51,8 +55,8 @@ export const HomePageDayHeading = styled.h1`
   font-style: extra-bold;
   text-align: center;
 `;
-export const HomePageImage = styled.img`
+export const HomePageBottomImage = styled.img`
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 100%;
+  width: 375px;
 `;
