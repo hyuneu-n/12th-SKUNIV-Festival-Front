@@ -17,7 +17,7 @@ import pinkMuhly from '../assets/images/homePage/Pinkmuhly.png';
 import test3 from '../assets/images/homePage/test3.png';
 import cd from '../assets/images/homePage/cd1.png';
 import playlist from '../assets/images/homePage/playlist.png';
-import AllLogo from '../assets/images/homePage/AllLogo.svg';
+import AllLogo from '../assets/images/homePage/allLGO.svg';
 
 export default function HomePage() {
   return (
