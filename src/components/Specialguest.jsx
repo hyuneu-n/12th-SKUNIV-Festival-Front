@@ -33,13 +33,14 @@ const ImageContainer = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  height: auto; /* 높이는 자동으로 조정됩니다. */ 
+  height: auto; /* 높이는 자동으로 조정됩니다. */
+  border-radius: 20px; /* 컨테이너와 일치하도록 둥근 모서리 설정 */
 `;
 const Title = styled.div`
   position: relative;
   padding-top: 5%;
   text-align: center;
-  color: #55A161;
+  color: #2e4966;
   font-size: 22px;
   font-family: 'Pretendard Variable';
   font-weight: 900;
@@ -62,8 +63,8 @@ const SpecialComponent = () => {
       <SpecaiContainer>
         <ItemContainer>
           <ImageContainer>
-            <Image src={Haswa} alt="화사 이미지" />
-            <Time>21:00 ~ 21:30</Time>
+            <Image src={Haswa} alt="에스파 이미지" />
+            <Time>14:50 ~ 15:30</Time>
             <Title>화사</Title>
           </ImageContainer>
         </ItemContainer>

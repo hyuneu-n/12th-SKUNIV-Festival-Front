@@ -16,7 +16,7 @@
 
 /**
  * right
- * 1번: top 25px, left 240px
+ * 1번: top 70px, left 225px
  * 2번: top 35px, left 236px
  * 3번: top 45px, left 233px
  * 4번: top 55px, left 232px
@@ -267,6 +267,8 @@ export const boothData = [
     },
     account: '-',
     snsLink: 'https://www.instagram.com/sku_40th_seoro/',
+    top: 70,
+    left: 225,
   },
   {
     //신문사 _ 낮 장사만
@@ -283,6 +285,8 @@ export const boothData = [
     },
     account: '카카오뱅크 3333304688172',
     snsLink: 'https://www.instagram.com/sku_newspaper/',
+    top: 70,
+    left: 240,
   },
   {
     //실음
@@ -299,6 +303,8 @@ export const boothData = [
     },
     account: '계좌 개설 예정',
     snsLink: 'https://www.instagram.com/skucm_official/',
+    top: 83,
+    left: 250,
   },
   {
     //스텍
@@ -316,6 +322,8 @@ export const boothData = [
     account: '신한은행 110-560-542752',
     snsLink:
       'https://www.instagram.com/sku_sports_technology?igsh=cHB2bXk3Yjc1N3Fz&utm_source=qr',
+    top: 97,
+    left: 248,
   },
   {
     //영화
@@ -332,6 +340,8 @@ export const boothData = [
     },
     account: '카카오뱅크 3333101130307 ',
     snsLink: 'https://www.instagram.com/sku_film/',
+    top: 117,
+    left: 245,
   },
   {
     //디자인
@@ -348,6 +358,8 @@ export const boothData = [
     },
     account: '신한은행 110-561-552653',
     snsLink: 'https://www.instagram.com/sku.design_/',
+    top: 117,
+    left: 245,
   },
   {
     //미예대
@@ -365,6 +377,8 @@ export const boothData = [
     },
     account: '-',
     snsLink: 'https://www.instagram.com/sku_beautyart/',
+    top: 147,
+    left: 238,
   },
   {
     //아텍
@@ -381,6 +395,8 @@ export const boothData = [
     },
     account: '신한은행 110548599729',
     snsLink: 'https://www.instagram.com/sku.artech/',
+    top: 157,
+    left: 235,
   },
   {
     //아동
@@ -397,6 +413,8 @@ export const boothData = [
     },
     account: '-',
     snsLink: 'https://www.instagram.com/sku__educare/',
+    top: 170,
+    left: 230,
   },
   {
     //경영
@@ -413,6 +431,8 @@ export const boothData = [
     },
     account: '3333266546898 카카오뱅크 조영인',
     snsLink: 'https://www.instagram.com/sku_business/',
+    top: 190,
+    left: 228,
   },
   {
     //사과대 _ 낮 장사만
@@ -427,6 +447,8 @@ export const boothData = [
     },
     account: '신한 110565116750 여재철',
     snsLink: 'https://www.instagram.com/sku_26th_wooyeon/',
+    top: 198,
+    left: 223,
   },
   {
     //공공
@@ -443,6 +465,8 @@ export const boothData = [
     },
     account: '카카오뱅크 3333259993777',
     snsLink: 'https://www.instagram.com/sku_public/',
+    top: 210,
+    left: 208,
   },
   {
     //군사
@@ -459,6 +483,8 @@ export const boothData = [
     },
     account: '신한 110562502990 오대희',
     snsLink: 'https://www.instagram.com/16th_military_wave/',
+    top: 210,
+    left: 196,
   },
   {
     //소웨
@@ -475,6 +501,8 @@ export const boothData = [
     },
     account: '-',
     snsLink: 'https://www.instagram.com/sku_software/',
+    top: 218,
+    left: 183,
   },
   {
     //도공
@@ -491,6 +519,8 @@ export const boothData = [
     },
     account: '-',
     snsLink: 'https://www.instagram.com/sku_urban/',
+    top: 223,
+    left: 170,
   },
   {
     //물공
@@ -507,6 +537,8 @@ export const boothData = [
     },
     account: '-',
     snsLink: 'https://www.instagram.com/sku_logistics/',
+    top: 230,
+    left: 157,
   },
   {
     //나화생
@@ -521,5 +553,7 @@ export const boothData = [
       스계후: '-원',
       묵사발: '-원',
     },
+    top: 238,
+    left: 143,
   },
 ];
