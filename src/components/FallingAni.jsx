@@ -24,9 +24,10 @@ export default function FallingAni() {
           height: '100vh',
         }}
         radius={[40, 50]}
+        speed={[0.1, 0.2]}
         images={images}
         snowflakeCount={10}
-        wind={[3, 5]}
+        wind={[2, 4]}
         rotationSpeed={[1, 2]}
       />
     </>

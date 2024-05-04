@@ -18,6 +18,7 @@ import test3 from '../assets/images/homePage/test3.png';
 import cd from '../assets/images/homePage/cd1.png';
 import playlist from '../assets/images/homePage/playlist.png';
 import AllLogo from '../assets/images/homePage/allLGO.svg';
+import playbar from '../assets/images/homePage/playbar.svg';
 
 export default function HomePage() {
   return (
@@ -50,7 +51,7 @@ export default function HomePage() {
 
         <S.HomePageBox>
           <S.HomePageTitleHeading>BOOTH MAP</S.HomePageTitleHeading>
-          <img src={map} style={{ width: '350px', height: 'auto' }}/>
+          <img src={map} style={{ width: '350px', height: 'auto' }} />
           <Link to="/booth">부스 둘러보기</Link>
         </S.HomePageBox>
 
@@ -82,7 +83,16 @@ export default function HomePage() {
               },
             }}
           />
-          <Link to="">전체 일정 확인하기</Link>
+          <img
+            src={playbar}
+            style={{
+              width: '150px',
+              height: 'auto',
+              position: 'relative',
+              top: '50px',
+            }}
+          />
+          <Link to="/timetable">전체 일정 확인하기</Link>
         </S.HomePageBox>
 
         <S.HomePageBottomImage src={AllLogo} />

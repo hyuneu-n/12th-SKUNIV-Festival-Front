@@ -15,7 +15,7 @@ export const HomePageLayout = styled.div`
     font-size: 0.75em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
 
-    margin: 10% 35% 50% 35%;
+    margin: 20% 35% 10% 35%;
     background-color: #f6f6f6;
     color: #4d5359;
     border-radius: 10px;
