@@ -23,6 +23,7 @@ export const GlobalStyle = createGlobalStyle`
         height: 100vh;
         margin: auto;
         background-size : cover;
+        overflow-x: hidden;
         overflow-y: scroll;
         -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none; /* Firefox */
