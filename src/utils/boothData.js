@@ -410,8 +410,8 @@ export const boothData = [
   {//소웨
     id: 26,
     boothNumber: 26,
-    boothName: '',
-    major: '',
+    boothName: '소프트웨어학과',
+    major: 'Software',
     intro: 'test',
     menu: {
       어묵세꼬치: '-원',

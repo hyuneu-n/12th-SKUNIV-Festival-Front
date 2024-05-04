@@ -17,13 +17,28 @@ export const BoothItemGrayBox = styled.div`
 `;
 
 export const BoothItemInfoBox = styled.div`
-  flex-grow: 2;
+  flex-grow: 100;
   height: 9vh;
   background-color: white;
   border-radius: 0 5px 5px 0;
 `;
 
-export const BoothItemNumberP = styled.p``;
+export const BoothItemTitleP = styled.p`
+  font-size: 20px;
+  color: #333;
+  padding-top: 15px;
+  padding-left: 9px;
+  font-weight: bold; 
+  font-family: 'Pretendard', sans-serif;
+`;
+export const BoothItemNumberP = styled.p`
+  font-size: 12px;
+  color: #333;
+  padding-top: 10px;
+  padding-left: 13px;
+  padding-right: 13px;
+  font-family: 'Pretendard', sans-serif;
+`;
 
 export const CustomSheet = styled(Sheet)`
   .react-modal-sheet-backdrop {

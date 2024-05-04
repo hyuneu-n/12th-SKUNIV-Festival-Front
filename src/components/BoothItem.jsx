@@ -1,8 +1,11 @@
 import * as S from '../styles/components/BoothItem.styled';
+import { boothData } from '../utils/boothData';
+
 import Sheet from 'react-modal-sheet';
 import { useState } from 'react';
 
 export default function BoothItem({
+  boothId,
   height,
   left,
   width,
@@ -13,6 +16,7 @@ export default function BoothItem({
   setPinTop,
 }) {
   const [isOpen, setOpen] = useState(false);
+  const booth = boothData.find(b => b.id === boothId);
   return (
     <S.BoothItemLayout
       onClick={() => {
@@ -24,9 +28,8 @@ export default function BoothItem({
     >
       <S.BoothItemGrayBox />
       <S.BoothItemInfoBox>
-        <S.BoothItemNumberP>부스번호</S.BoothItemNumberP>
-        <S.BoothItemNumberP>부스명 학과명</S.BoothItemNumberP>
-        <S.BoothItemNumberP>부스 안내 및 한줄소개</S.BoothItemNumberP>
+        <S.BoothItemTitleP>{booth ? booth.boothName : 'Loading...'}</S.BoothItemTitleP>
+        <S.BoothItemNumberP>{booth ? booth.intro : 'Loading...'}</S.BoothItemNumberP>
       </S.BoothItemInfoBox>
       <S.CustomSheet
         isOpen={isOpen}
@@ -40,8 +43,22 @@ export default function BoothItem({
         $width={width}
       >
         <Sheet.Container>
-          <Sheet.Header />
-          <Sheet.Content>{/* Your sheet content goes here */}</Sheet.Content>
+        <Sheet.Header />
+          <Sheet.Content>
+            {/* Display the detailed information about the booth */}
+            {booth && (
+              <div>
+                <h2>{booth.boothName} - {booth.major}</h2>
+                <p>{booth.intro}</p>
+                <ul>
+                  {Object.entries(booth.menu).map(([item, price]) => (
+                    <li key={item}>{item}: {price}</li>
+                  ))}
+                </ul>
+                <p>Instagram: <a href={booth.snsLink}>{booth.snsLink}</a></p>
+              </div>
+            )}
+          </Sheet.Content>
         </Sheet.Container>
         <Sheet.Backdrop />
       </S.CustomSheet>

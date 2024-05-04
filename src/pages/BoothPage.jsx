@@ -1,5 +1,5 @@
 import * as S from '../styles/pages/BoothPage.styled';
-import map from '../assets/images/booth/boothMap.svg';
+import map from '../assets/images/booth/boothMap2.svg';
 import { boothData } from '../utils/boothData';
 import Footer from '../components/Footer';
 import BoothItem from '../components/BoothItem';
@@ -45,6 +45,7 @@ export default function BoothPage() {
           return (
             <BoothItem
               key={prod.id}
+              boothId={prod.id}
               height={height}
               left={left}
               width={width}
