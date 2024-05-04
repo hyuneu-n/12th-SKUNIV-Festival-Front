@@ -32,7 +32,7 @@ export default function MenuBar() {
       <MenubarLink to="/timetable">타임테이블</MenubarLink>
       <MenubarLink to="/notice">총학공지</MenubarLink>
       <MenubarLink to="/lostItems">분실물</MenubarLink>
-      <MenubarLink to="/safe">AED · 대피로</MenubarLink>
+      <MenubarLink to="/safety">AED · 대피로</MenubarLink>
       <MenubarLink to="/about">만든사람들</MenubarLink>
     </MenuBarLayout>
   );

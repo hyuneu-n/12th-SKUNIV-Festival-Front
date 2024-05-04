@@ -36,7 +36,7 @@ const router = createBrowserRouter([
         loader: getData,
       },
       {
-        path: 'safe',
+        path: 'safety',
         element: <EvacuationPage />, 
       },
     ],
