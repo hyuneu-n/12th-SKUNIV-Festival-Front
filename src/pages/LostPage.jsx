@@ -1,14 +1,13 @@
-import styled from 'styled-components';
 import Footer from '../components/Footer';
 import MenuBar from '../components/MenuBar';
 import * as S from '../styles/pages/LostPage.styled';
 import ItemSwitch from '../components/ItemSwitch';
-import { useState } from 'react';
 import ItemBox from '../components/ItemBox';
 import { LostData } from '../utils/LostData';
 import { Link } from 'react-router-dom';
 import InputButton from '../components/InputButton';
-export default function Lost() {
+import i from '../assets/images/menubar/menubarImage.svg';
+export default function ItemsLost() {
 
   return (
     <>
@@ -19,6 +18,7 @@ export default function Lost() {
             <InputButton></InputButton>
           </Link>
         </S.LostHead>
+        <S.LostImg src={i}></S.LostImg>
         <ItemSwitch />
         <S.LostBody>
           {LostData.map((item) => {

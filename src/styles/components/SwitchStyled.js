@@ -7,7 +7,7 @@ export const ButtonBox = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 15% 0 0 0;
+  margin: 0% 0 0 0;
 `;
 
 export const WidthLine = styled.hr`
@@ -16,18 +16,37 @@ export const WidthLine = styled.hr`
   margin-bottom: 5px;
 `;
 
-export const SwitchNav = styled(NavLink)`
+export const SwitchNavLeft = styled(NavLink)`
   width: 32%;
   height: 45px;
   background-color: #f6f6f6;
   color: #000000;
-  border-radius: 10px;
+  border-radius: 10px 0 0 10px;
   border: none;
   font-family: 'Pretendard Variable', arial;
   font-weight: 700;
   font-size: 0.75em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
-  margin: 5% 5% 5% 5%;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.35);
+  margin: 5% 0% 5% 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.active {
+    background-color: #c2e3bd;
+  }
+`;
+export const SwitchNavRight = styled(NavLink)`
+  width: 32%;
+  height: 45px;
+  background-color: #f6f6f6;
+  color: #000000;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  font-family: 'Pretendard Variable', arial;
+  font-weight: 700;
+  font-size: 0.75em;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.35);
+  margin: 5% 0% 5% 0%;
   display: flex;
   align-items: center;
   justify-content: center;

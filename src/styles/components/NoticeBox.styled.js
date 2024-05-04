@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 // 공지
 export const NoticeBox = styled.a`
-    width: 100%;
+    width: 93%;
     height: 67px;
-    background-color: #F6F6F6;
+    background-color: #F6F6F670;
     color: #000000;
     border-radius: 10px;
     border: none;
@@ -15,7 +15,7 @@ export const NoticeBox = styled.a`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0px 0% 5px 0%;
+    margin: 0px 0% 0% 0%;
     padding: 0px 0px 0px 0px;
 `;
 // 공지 + 제목

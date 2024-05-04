@@ -15,6 +15,7 @@ export const AboutLogoImg = styled.img`
 export const AboutItemBox = styled.div`
   display: flex;
   width: 100%;
+  gap: 10px; /* 간격 조절 */
   justify-content: space-around;
 `;
 export const AboutTitleHeading = styled.h1`

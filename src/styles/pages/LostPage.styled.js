@@ -40,3 +40,8 @@ export const LostWrite = styled.a`
   bottom: 0;
   right: 0;
 `;
+export const LostImg = styled.img`
+  width: 100%;
+  height: 70px;
+  margin: 10% 0 0 0;
+`;
