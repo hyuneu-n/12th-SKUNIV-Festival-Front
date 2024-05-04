@@ -29,10 +29,9 @@ export default function MadeBy() {
       <MenuBar></MenuBar>
       <Header title="MADE BY" />
       <S.AboutLayout>
-        <S.AboutTitleHeading style={{ marginTop: '30px' }}></S.AboutTitleHeading>
-        <S.AboutLogoImg src={LogoSquare} style={{ width: '100px', height: 'auto', paddingTop: '23px', paddingBottom: '10px' }}></S.AboutLogoImg>
-        <S.AboutInfoHeading>멋쟁이사자처럼</S.AboutInfoHeading>
-        <Script>페이지를 제작한 멋쟁이들~</Script>
+        <S.AboutTitleHeading style={{ marginTop: '0px' }}></S.AboutTitleHeading>
+        <S.AboutLogoImg src={LogoSquare} style={{ width: '100px', height: 'auto', paddingTop: '20px', paddingBottom: '13px' }}></S.AboutLogoImg>
+        <S.AboutInfoHeading>서경대 멋쟁이사자처럼 12TH</S.AboutInfoHeading>
         <S.AboutPartHeading style={{ marginBottom: '20px' }}>PM/DESIGN</S.AboutPartHeading>
         <S.AboutItemBox>
           <Profile
@@ -41,8 +40,7 @@ export default function MadeBy() {
             image={dong}
             role={
               <>
-                ▸기획/디자인 파트장<br />
-                ▸기능 아이디어 구상
+                기능 아이디어 구상<br />
               </>
             } />
 
