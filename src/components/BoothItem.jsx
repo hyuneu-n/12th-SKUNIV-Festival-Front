@@ -29,7 +29,7 @@ export default function BoothItem({
       <S.BoothItemGrayBox />
       <S.BoothItemInfoBox>
         <S.BoothItemTitleP>{booth ? booth.boothName : 'Loading...'}</S.BoothItemTitleP>
-        <S.BoothItemNumberP>{booth ? booth.intro : 'Loading...'}</S.BoothItemNumberP>
+        <S.BoothItemNumberP>{booth ? booth.major : 'Loading...'}</S.BoothItemNumberP>
       </S.BoothItemInfoBox>
       <S.CustomSheet
         isOpen={isOpen}
