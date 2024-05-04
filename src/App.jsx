@@ -14,6 +14,7 @@ import LostPage from './pages/LostPage.jsx';
 import NoticeInput from './pages/NoticeInputPage.jsx';
 import LostInput from './pages/LostInputPage.jsx';
 import LostFind from './pages/LostFindPage.jsx';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -67,7 +68,6 @@ const router = createBrowserRouter([
     path: '/findItems',
     element: <LostFind />,
   },
-  
 ]);
 
 function App() {

@@ -1,17 +1,17 @@
 /**
  * left
- * 1번: top 25px, left 122px
- * 2번: top 35px, left 122px
- * 3번: top 45px, left 122px
- * 4번: top 55px, left 122px
- * 5번: top 70px, left 122px
- * 6번: top 80px, left 122px
- * 7번: top 95px, left 122px
- * 8번: top 105px, left 122px
- * 9번: top 115px, left 122px
- * 10번: top 130px, left 122px
- * 11번: top 140px, left 122px
- * 12번: top 150px, left 122px
+ * 1번: top 90px, left 110px
+ * 2번: top 100px, left 110px
+ * 3번: top 115px, left 110px
+ * 4번: top 130px, left 110px
+ * 5번: top 147px, left 110px
+ * 6번: top 167px, left 110px
+ * 7번: top 185px, left 110px
+ * 8번: top 195px, left 110px
+ * 9번: top 215px, left 110px
+ * 10번: top 227px, left 110px
+ * 11번: top 242px, left 110px
+ * 총학: top 75px, left 130px
  */
 
 /**
@@ -38,7 +38,8 @@ export const boothData = [
   //모두 저녁장사 메뉴만 기입
   //낮 장사만 하는 경우 낮 장사 메뉴 + 기입해주면 좋을 듯
 
-  {//이공대
+  {
+    //이공대
     id: 1,
     boothNumber: 1,
     boothName: '불패무적이공대',
@@ -49,9 +50,12 @@ export const boothData = [
       미니게임: '-원',
     },
     account: '-',
-    snsLink: 'https://www.instagram.com/sku_33rd_undefeated/'
+    snsLink: 'https://www.instagram.com/sku_33rd_undefeated/',
+    top: 242,
+    left: 110,
   },
-  {//금공
+  {
+    //금공
     id: 2,
     boothNumber: 2,
     boothName: '금융정보공학과',
@@ -64,9 +68,12 @@ export const boothData = [
       오뎅탕: '-원',
     },
     account: '-',
-    snsLink: 'https://www.instagram.com/sku_fie/'
+    snsLink: 'https://www.instagram.com/sku_fie/',
+    top: 227,
+    left: 110,
   },
-  {//전컴
+  {
+    //전컴
     id: 3,
     boothNumber: 3,
     boothName: '전자컴퓨터공학과',
@@ -79,9 +86,12 @@ export const boothData = [
       부대찌개: '-원',
     },
     account: '-',
-    snsLink: 'https://www.instagram.com/sku_e.c.e/'
+    snsLink: 'https://www.instagram.com/sku_e.c.e/',
+    top: 215,
+    left: 110,
   },
-  {//토목
+  {
+    //토목
     id: 4,
     boothNumber: 4,
     boothName: '토목공학과',
@@ -94,9 +104,12 @@ export const boothData = [
       소세지: '-원',
     },
     account: '-',
-    snsLink: 'https://www.instagram.com/sku_civil.archi/'
+    snsLink: 'https://www.instagram.com/sku_civil.archi/',
+    top: 195,
+    left: 110,
   },
-  {//불어
+  {
+    //불어
     id: 5,
     boothNumber: 5,
     boothName: '불어전공',
@@ -109,14 +122,18 @@ export const boothData = [
       허니버터갈릭감자: '8000원',
     },
     account: '토스뱅크 1000-3016-6425 구진모',
-    snsLink: 'https://www.instagram.com/sku_frenchfries/'
+    snsLink: 'https://www.instagram.com/sku_frenchfries/',
+    top: 185,
+    left: 110,
   },
-  {//광홍콘 _ 낮 장사만
+  {
+    //광홍콘 _ 낮 장사만
     id: 6,
     boothNumber: 6,
     boothName: '광고홍보콘텐츠학과',
     major: 'Advertising & Public Relations Contents',
-    intro: '너가 꼬치 먹자고 안 했잖아? 그럼 대동제 안 왔어.  - 광홍 오리지널 환승꼬치 ',
+    intro:
+      '너가 꼬치 먹자고 안 했잖아? 그럼 대동제 안 왔어.  - 광홍 오리지널 환승꼬치 ',
     menu: {
       소세지: '3000원',
       닭꼬치: '3500원',
@@ -124,9 +141,12 @@ export const boothData = [
       불닭마요닭꼬치: '4000원',
     },
     account: '카카오뱅크 3333217156016 김은서',
-    snsLink: 'https://www.instagram.com/sku_ad_bada/'
+    snsLink: 'https://www.instagram.com/sku_ad_bada/',
+    top: 167,
+    left: 110,
   },
-  {//중어 _ 인스타 없음
+  {
+    //중어 _ 인스타 없음
     id: 7,
     boothNumber: 7,
     boothName: '중어전공',
@@ -139,14 +159,18 @@ export const boothData = [
       빙홍차: '2000원',
     },
     account: '카카오뱅크 3333269256988 박소영',
-    snsLink: '없음'
+    snsLink: '없음',
+    top: 147,
+    left: 110,
   },
-  {//영어 _ 인스타 없음, 낮 장사만
+  {
+    //영어 _ 인스타 없음, 낮 장사만
     id: 8,
     boothNumber: 8,
     boothName: '영어전공',
     major: 'English Language',
-    intro: '※ 축제 기간 한정 머글 입장 가능 (음료에 500원 추가 시 폴라로이드 사진 1장)',
+    intro:
+      '※ 축제 기간 한정 머글 입장 가능 (음료에 500원 추가 시 폴라로이드 사진 1장)',
     menu: {
       버터비어: '3500원',
       체리에이드: '3000원',
@@ -154,9 +178,12 @@ export const boothData = [
       블루시럽에이드: '3000원',
     },
     account: '카카오뱅크 3333262483085 임윤지',
-    snsLink: '없음'
+    snsLink: '없음',
+    top: 130,
+    left: 110,
   },
-  {//노어
+  {
+    //노어
     id: 9,
     boothNumber: 9,
     boothName: '노어전공',
@@ -169,9 +196,12 @@ export const boothData = [
       피치크러쉬: '3000원',
     },
     account: '카카오뱅크 3333-10-3918501 서지석',
-    snsLink: 'https://www.instagram.com/skurussian/'
+    snsLink: 'https://www.instagram.com/skurussian/',
+    top: 115,
+    left: 110,
   },
-  {//일어 _ 인스타 없음
+  {
+    //일어 _ 인스타 없음
     id: 10,
     boothNumber: 10,
     boothName: '일어전공',
@@ -181,12 +211,15 @@ export const boothData = [
       '타코야끼(6개)': '3000원',
       '가라아게(6개)': '3000원',
       '교자(6개)': '3000원',
-      '야끼소바(中)': '4000원'
+      '야끼소바(中)': '4000원',
     },
     account: '카카오뱅크 3333-30-1434183 백다연',
-    snsLink: '없음'
+    snsLink: '없음',
+    top: 100,
+    left: 110,
   },
-  {//인문대_낮 장사만 //수정
+  {
+    //인문대_낮 장사만 //수정
     id: 11,
     boothNumber: 11,
     boothName: '새늘 인문과학대학',
@@ -197,9 +230,12 @@ export const boothData = [
       '싱글초코 , 싱글 바닐라 , 더블초코 바닐라 ': '3000원',
     },
     account: '농협 302-4764-5483-11 이나은',
-    snsLink: 'https://www.instagram.com/sku_34th_saeneul/'
+    snsLink: 'https://www.instagram.com/sku_34th_saeneul/',
+    top: 90,
+    left: 110,
   },
-  {//총학
+  {
+    //총학
     id: 12,
     boothNumber: 12,
     boothName: '한숲 총학생회',
@@ -212,9 +248,12 @@ export const boothData = [
       칭따오_맥주_프로모션: '-원',
     },
     account: '-',
-    snsLink: 'https://www.instagram.com/sku_52nd_hansup/'
+    snsLink: 'https://www.instagram.com/sku_52nd_hansup/',
+    top: 75,
+    left: 130,
   },
-  {//총동 _ 낮 장사만
+  {
+    //총동 _ 낮 장사만
     id: 13,
     boothNumber: 13,
     boothName: '서로 총동아리연합회',
@@ -227,9 +266,10 @@ export const boothData = [
       폴라로이드: '-원',
     },
     account: '-',
-    snsLink: 'https://www.instagram.com/sku_40th_seoro/'
+    snsLink: 'https://www.instagram.com/sku_40th_seoro/',
   },
-  {//신문사 _ 낮 장사만
+  {
+    //신문사 _ 낮 장사만
     id: 14,
     boothNumber: 14,
     boothName: '신문사',
@@ -242,9 +282,10 @@ export const boothData = [
       컵솜사탕: '2000원',
     },
     account: '카카오뱅크 3333304688172',
-    snsLink: 'https://www.instagram.com/sku_newspaper/'
+    snsLink: 'https://www.instagram.com/sku_newspaper/',
   },
-  {//실음
+  {
+    //실음
     id: 15,
     boothNumber: 15,
     boothName: '실용음악학부',
@@ -257,9 +298,10 @@ export const boothData = [
       화채: '6000원',
     },
     account: '계좌 개설 예정',
-    snsLink: 'https://www.instagram.com/skucm_official/'
+    snsLink: 'https://www.instagram.com/skucm_official/',
   },
-  {//스텍
+  {
+    //스텍
     id: 16,
     boothNumber: 16,
     boothName: '스포츠테크놀리지학과',
@@ -272,9 +314,11 @@ export const boothData = [
       골뱅이소면: '12000원',
     },
     account: '신한은행 110-560-542752',
-    snsLink: 'https://www.instagram.com/sku_sports_technology?igsh=cHB2bXk3Yjc1N3Fz&utm_source=qr'
+    snsLink:
+      'https://www.instagram.com/sku_sports_technology?igsh=cHB2bXk3Yjc1N3Fz&utm_source=qr',
   },
-  {//영화
+  {
+    //영화
     id: 17,
     boothNumber: 17,
     boothName: '영화영상학과',
@@ -287,9 +331,10 @@ export const boothData = [
       후랑크소시지: '4000원',
     },
     account: '카카오뱅크 3333101130307 ',
-    snsLink: 'https://www.instagram.com/sku_film/'
+    snsLink: 'https://www.instagram.com/sku_film/',
   },
-  {//디자인
+  {
+    //디자인
     id: 18,
     boothNumber: 18,
     boothName: '디자인학부',
@@ -302,14 +347,16 @@ export const boothData = [
       수육: '12000원',
     },
     account: '신한은행 110-561-552653',
-    snsLink: 'https://www.instagram.com/sku.design_/'
+    snsLink: 'https://www.instagram.com/sku.design_/',
   },
-  {//미예대
+  {
+    //미예대
     id: 19,
     boothNumber: 19,
     boothName: '미용예술대학',
     major: 'COLLEGE OF BEUTY ART',
-    intro: '🌻미용예술대학이 차린 미예 와이키키🌴로 놀러와 다가올 여름을 느껴보세요🌻',
+    intro:
+      '🌻미용예술대학이 차린 미예 와이키키🌴로 놀러와 다가올 여름을 느껴보세요🌻',
     menu: {
       모듬소세지: '20000원',
       불고기콘치즈: '15000원',
@@ -317,9 +364,10 @@ export const boothData = [
       황도후르츠화채: '12000원',
     },
     account: '-',
-    snsLink: 'https://www.instagram.com/sku_beautyart/'
+    snsLink: 'https://www.instagram.com/sku_beautyart/',
   },
-  {//아텍
+  {
+    //아텍
     id: 20,
     boothNumber: 20,
     boothName: '아트앤테크놀로지학과',
@@ -332,24 +380,26 @@ export const boothData = [
       커스텀슬러쉬: '3000원',
     },
     account: '신한은행 110548599729',
-    snsLink: 'https://www.instagram.com/sku.artech/'
+    snsLink: 'https://www.instagram.com/sku.artech/',
   },
-  {//아동
+  {
+    //아동
     id: 21,
     boothNumber: 21,
     boothName: '아동청소년학과',
     major: 'Child Studies',
     intro: '이 곳은 취객 입장 가능한 어‘른’이집 입니다. ',
     menu: {
-      전통떡꼬치 : '2500원',
+      전통떡꼬치: '2500원',
       '피카츄 돈가스': '3000원',
       닭갈비: '13000원',
       오뎅탕: '8000원',
     },
     account: '-',
-    snsLink: 'https://www.instagram.com/sku__educare/'
+    snsLink: 'https://www.instagram.com/sku__educare/',
   },
-  {//경영
+  {
+    //경영
     id: 22,
     boothNumber: 22,
     boothName: '경영학부',
@@ -362,9 +412,10 @@ export const boothData = [
       우동: '6000원',
     },
     account: '3333266546898 카카오뱅크 조영인',
-    snsLink: 'https://www.instagram.com/sku_business/'
+    snsLink: 'https://www.instagram.com/sku_business/',
   },
-  {//사과대 _ 낮 장사만
+  {
+    //사과대 _ 낮 장사만
     id: 23,
     boothNumber: 23,
     boothName: '우연 사회과학대학',
@@ -375,9 +426,10 @@ export const boothData = [
       회오리감자: '4000원',
     },
     account: '신한 110565116750 여재철',
-    snsLink: 'https://www.instagram.com/sku_26th_wooyeon/'
+    snsLink: 'https://www.instagram.com/sku_26th_wooyeon/',
   },
-  {//공공
+  {
+    //공공
     id: 24,
     boothNumber: 24,
     boothName: '공공인재학부',
@@ -390,9 +442,10 @@ export const boothData = [
       건빵: '-원',
     },
     account: '카카오뱅크 3333259993777',
-    snsLink: 'https://www.instagram.com/sku_public/'
+    snsLink: 'https://www.instagram.com/sku_public/',
   },
-  {//군사
+  {
+    //군사
     id: 25,
     boothNumber: 25,
     boothName: '군사학과',
@@ -405,9 +458,10 @@ export const boothData = [
       볶음밥: '8000원',
     },
     account: '신한 110562502990 오대희',
-    snsLink: 'https://www.instagram.com/16th_military_wave/'
+    snsLink: 'https://www.instagram.com/16th_military_wave/',
   },
-  {//소웨
+  {
+    //소웨
     id: 26,
     boothNumber: 26,
     boothName: '소프트웨어학과',
@@ -420,9 +474,10 @@ export const boothData = [
       황도: '-원',
     },
     account: '-',
-    snsLink: 'https://www.instagram.com/sku_software/'
+    snsLink: 'https://www.instagram.com/sku_software/',
   },
-  {//도공
+  {
+    //도공
     id: 27,
     boothNumber: 27,
     boothName: '도시공학과',
@@ -435,9 +490,10 @@ export const boothData = [
       커피땅콩: '-원',
     },
     account: '-',
-    snsLink: 'https://www.instagram.com/sku_urban/'
+    snsLink: 'https://www.instagram.com/sku_urban/',
   },
-  {//물공
+  {
+    //물공
     id: 28,
     boothNumber: 28,
     boothName: '물류시스템공학과',
@@ -450,9 +506,10 @@ export const boothData = [
       감자전: '-원',
     },
     account: '-',
-    snsLink: 'https://www.instagram.com/sku_logistics/'
+    snsLink: 'https://www.instagram.com/sku_logistics/',
   },
-  {//나화생
+  {
+    //나화생
     id: 29,
     boothNumber: 29,
     boothName: '나노화학생명공학과',

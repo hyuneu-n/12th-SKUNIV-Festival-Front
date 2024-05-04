@@ -19,10 +19,11 @@ export const GlobalStyle = createGlobalStyle`
     background-image: url('background.svg');
     @media only screen and (min-width: 360px) {
       .app {
-        width: 100vw;
+        width: 375px;
         height: 100vh;
         margin: auto;
         background-size : cover;
+        overflow-x: hidden;
         overflow-y: scroll;
         -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none; /* Firefox */

@@ -57,10 +57,6 @@ export default function BoothPage() {
             />
           );
         })}
-        {/* <BoothItem />
-        <BoothItem height={height} left={left} width={width} />
-        <BoothItem height={height} left={left} width={width} />
-        <BoothItem height={height} left={left} width={width} /> */}
       </S.BoothItemBox>
 
       <Footer />
