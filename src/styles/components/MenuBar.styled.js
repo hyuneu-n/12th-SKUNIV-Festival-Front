@@ -29,6 +29,7 @@ export const styles = {
     fontSize: '1.15em',
     display: 'flex',
     justifyContent: 'center',
+    fontFamily: 'Pretendard, sans-serif',
   },
   bmMorphShape: {
     fill: '#373a47',

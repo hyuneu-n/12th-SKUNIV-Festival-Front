@@ -18,7 +18,7 @@ export const BoothImageBox = styled.div`
 export const BoothMapImg = styled.img`
   display: block;
   margin: 0 auto;
-  width: 76%;
+  width: 83%;
   height: 500px;
 `;
 
