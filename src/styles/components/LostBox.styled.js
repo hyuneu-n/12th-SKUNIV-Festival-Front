@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 // 공지
 export const ItemBox = styled.div`
-    width: 80%;
-    height: 120px;
+    width: 90%;
+    height: 210px;
     background-color: #F6F6F6;
     color: #000000;
     border-radius: 10px;
