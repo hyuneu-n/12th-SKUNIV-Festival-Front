@@ -5,8 +5,8 @@ export default function Switch() {
   return (
     <>
       <S.ButtonBox>
-        <S.SwitchNav to="/lostItems">분실물</S.SwitchNav>
-        <S.SwitchNav to="/findItems">찾은 분실물</S.SwitchNav>
+        <S.SwitchNavLeft to="/lostItems">분실물</S.SwitchNavLeft>
+        <S.SwitchNavRight to="/findItems">찾은 분실물</S.SwitchNavRight>
       </S.ButtonBox>
       <S.WidthLine />
     </>

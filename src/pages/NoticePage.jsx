@@ -15,12 +15,12 @@ export default function Notice() {
 
         <S.NoticeHead>
           
-          <InputButton></InputButton>
+          <Link to={"/noticeInput"}><InputButton></InputButton></Link>
           
         </S.NoticeHead>
+        <S.WidthLine></S.WidthLine>
+        <S.NoticeH1>NOTICE</S.NoticeH1>
         <S.NoticeBody>
-          <S.WidthLine></S.WidthLine>
-          <S.NoticeH1>NOTICE</S.NoticeH1>
           {Notices.map((item) => {
             return (
               <NoticeBox

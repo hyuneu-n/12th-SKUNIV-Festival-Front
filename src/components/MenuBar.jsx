@@ -35,6 +35,7 @@ export default function MenuBar() {
       <MenubarLink to="/noticeInput">분실물 작성</MenubarLink>
       <MenubarLink to="/evacuation">대피로</MenubarLink>
       <MenubarLink to="/about">만든이들</MenubarLink>
+      <MenubarLink to="/about">만든사람들</MenubarLink>
     </MenuBarLayout>
   );
 }

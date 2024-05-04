@@ -1,39 +1,31 @@
 import Footer from '../components/Footer';
 import * as S from '../styles/pages/NoticeInputPage.styled';
 import InputButton from '../components/InputButton';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import ss from '../assets/images/icon_back.svg';
 const getData = () => {
 
 };
 const getDate = () => {
 
 };
-const Container = () => {
-  const [isDropdownView, setDropdownView] = useState(false)
 
-  const handleClickContainer = () => {
-    setDropdownView(!isDropdownView)
-  }
+const NoticeBack = styled.img`
+  margin: 5% 0% 0% 5%;
+  width: 20px;
+  height: 29px;
+  position: absolute;
+  top: 3%;
+  left: 0;
+`;
 
-  const handleBlurContainer = () => {
-    setTimeout(() => {
-      setDropdownView(false)
-    }, 200);
-  }
-
-  return (
-    <div className="container" onBlur={handleBlurContainer}>
-      <label onClick={handleClickContainer}>
-        <button>Dropdown Menu{isDropdownView ? '▲' : '▼'}</button>
-      </label>
-      {isDropdownView && <Dropdown />}
-    </div>
-  )
-}
 export default function Notice() {
   return (
     <div className="app">
       <S.NoticeLayout>
         <S.NoticeHead>
+        <Link to={"/findItems"}><NoticeBack src={ss}></NoticeBack></Link>
           <InputButton></InputButton>
         </S.NoticeHead>
         <S.NoticeBody>

@@ -19,21 +19,22 @@ export const NoticeHead = styled.div`
   margin: 7% 0% 0% 0%;
 `;
 export const NoticeBody = styled.div`
-width: 90%;
+width: 100%;
 margin: 10% 0% 10% 0%;
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-gap: 20px; 
+grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+gap: 10px; 
 justify-items: center;
-overflow-y: auto; 
+overflow-y: none; 
 max-height: 80vh; 
 `;
 
 export const NoticeH1 = styled.h1`
   width: 100%;
   text-align: center;
-  font-size: 1.1em;
+  font-size: 1.4em;
   font-family: 'Pretendard Variable', arial;
+  margin: 5% 0% 5% 0%;
 `;
 export const NoticeWrite = styled.a`
   width: 20px;
@@ -48,5 +49,5 @@ export const NoticeWrite = styled.a`
 export const WidthLine = styled.hr`
   width: 100%;
   border: 1px solid;
-  margin-bottom: 5px;
+  margin: 10% 0% 10% 0%;
 `;
