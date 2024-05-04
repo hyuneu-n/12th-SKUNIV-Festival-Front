@@ -45,6 +45,7 @@ export const styles = {
     color: 'rgb(0, 0, 0)',
     marginTop: '10px',
     marginBottom: '10px',
+    fontFamily: 'Pretendard, sans-serif',
   },
   bmOverlay: {
     width: '100vw',
