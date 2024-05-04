@@ -14,7 +14,7 @@ export const ProfileLayout = styled.div`
 
 export const ProfileItemBox = styled.div`
   display: flex;
-  width: 127px;
+  width: 100px;
   height: 185px;
   flex-direction: column;
   background-image: url('/aboutBox.png');
@@ -29,8 +29,8 @@ export const ProfileItemBox = styled.div`
 `;
 
 export const ProfileLogoImg = styled.img`
-  width: 63px;
-  height: 68px;
+  width: 65px;
+  height: auto;
 `;
 
 export const ProfileNameParagraph = styled.p`

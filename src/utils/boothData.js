@@ -202,8 +202,8 @@ export const boothData = [
   {//총학
     id: 12,
     boothNumber: 12,
-    boothName: 'HANSUP 총학생회',
-    major: 'skuhansup',
+    boothName: '한숲 총학생회',
+    major: 'Hansup',
     intro: 'test',
     menu: {
       도레미파솔로시죠: '-원',
@@ -217,8 +217,8 @@ export const boothData = [
   {//총동 _ 낮 장사만
     id: 13,
     boothNumber: 13,
-    boothName: '총동아리연합회',
-    major: '서로 총동아리연합회',
+    boothName: '서로 총동아리연합회',
+    major: 'SEORO',
     intro: 'test',
     menu: {
       원조커피: '-원',

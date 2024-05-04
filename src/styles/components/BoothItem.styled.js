@@ -24,17 +24,17 @@ export const BoothItemInfoBox = styled.div`
 `;
 
 export const BoothItemTitleP = styled.p`
-  font-size: 20px;
+  font-size: 18px;
   color: #333;
-  padding-top: 17px;
+  padding-top: 13px;
   padding-left: 9px;
   font-weight: bold; 
   font-family: 'Pretendard', sans-serif;
 `;
 export const BoothItemNumberP = styled.p`
-  font-size: 12px;
+  font-size: 9px;
   color: #333;
-  padding-top: 10px;
+  padding-top: 3px;
   padding-left: 10px;
   padding-right: 13px;
   font-family: 'Pretendard', sans-serif;
