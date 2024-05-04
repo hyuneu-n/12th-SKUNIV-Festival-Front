@@ -7,8 +7,16 @@ import { LostData } from '../utils/LostData';
 import { Link } from 'react-router-dom';
 import InputButton from '../components/InputButton';
 import i from '../assets/images/menubar/menubarImage.svg';
+import { useState, useEffect } from 'react';
 export default function ItemsLost() {
+  const [itemData, setData] = useState([]);
 
+  useEffect(() => {
+    console.log("entered");
+    fetch('http://dev.skufestival2024.site/api/lostitem/posts?lastId=0&size=8')
+      .then(response => response.json())
+      .then(json => console.log(json))
+  }, []);
   return (
     <>
       <MenuBar></MenuBar>

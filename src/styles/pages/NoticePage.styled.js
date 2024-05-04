@@ -20,12 +20,15 @@ export const NoticeHead = styled.div`
 `;
 export const NoticeBody = styled.div`
 width: 100%;
+height: 500px;
 margin: 10% 0% 10% 0%;
+padding: 3% 0% 3% 0%;
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
 gap: 10px; 
 justify-items: center;
-overflow-y: none; 
+overflow-y: scroll; 
+overflow-x: hidden; 
 max-height: 80vh; 
 `;
 

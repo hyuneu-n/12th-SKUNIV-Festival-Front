@@ -4,6 +4,7 @@ import Hansup from '../assets//images/HANSUP.png';
 import dong from '../assets//images/dong.png';
 import jung from '../assets//images/jung.png';
 import hyun from '../assets//images/hyun.png';
+import seo from '../assets//images/seo.png';
 import so from '../assets//images/so.png';
 import seung from '../assets//images/seung.png';
 import hyo from '../assets//images/hyo.png';
@@ -32,7 +33,7 @@ export default function MadeBy() {
         <S.AboutLogoImg src={LogoSquare} style={{ width: '100px', height: 'auto', paddingTop: '23px', paddingBottom: '10px' }}></S.AboutLogoImg>
         <S.AboutInfoHeading>멋쟁이사자처럼</S.AboutInfoHeading>
         <Script>페이지를 제작한 멋쟁이들~</Script>
-        <S.AboutPartHeading style={{ marginBottom: '10px' }}>PM/DESIGN</S.AboutPartHeading>
+        <S.AboutPartHeading style={{ marginBottom: '20px' }}>PM/DESIGN</S.AboutPartHeading>
         <S.AboutItemBox>
           <Profile
             name="민동명"
@@ -53,11 +54,11 @@ export default function MadeBy() {
           <Profile
             name="유서진"
             major="디자인학부 22"
-            image={dong}
+            image={seo}
             role="기능 아이디어 구상" />
         </S.AboutItemBox>
 
-        <S.AboutPartHeading style={{ marginTop: '50px', marginBottom: '10px' }}>DEVELOPERS</S.AboutPartHeading>
+        <S.AboutPartHeading style={{ marginTop: '50px', marginBottom: '20px' }}>DEVELOPERS</S.AboutPartHeading>
         <S.AboutItemBox>
           <Profile
             name="서현은"
