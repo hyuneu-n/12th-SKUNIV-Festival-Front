@@ -40,10 +40,10 @@ export const HomePageTitleHeading = styled.h1`
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 1.1em;
-  font-family: SUIT, sans-serif;
+  font-family: Paytone One;
   font-style: extra-bold;
   text-align: center;
-  color: #404040;
+  color: #576141;
 `;
 
 export const HomePageDayHeading = styled.h1`
