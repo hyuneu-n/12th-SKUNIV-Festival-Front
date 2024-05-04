@@ -28,7 +28,7 @@ export const BoothItemTitleP = styled.p`
   color: #333;
   padding-top: 17px;
   padding-left: 9px;
-  font-weight: bold; 
+  font-weight: bold;
   font-family: 'Pretendard', sans-serif;
 `;
 export const BoothItemNumberP = styled.p`
@@ -47,7 +47,7 @@ export const CustomSheet = styled(Sheet)`
   .react-modal-sheet-container {
     width: ${({ $width }) => `${$width}px`} !important;
     left: ${({ $left }) => `${$left}px`} !important;
-    height: ${({ $height }) => `calc(100% - ${$height}px)`} !important;
+    height: ${({ $height }) => `calc(100vh - 40vh)`} !important;
   }
   .react-modal-sheet-header {
     /* custom styles */

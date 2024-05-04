@@ -9,7 +9,6 @@ import * as S from '../styles/pages/HomPage.styled';
 import Footer from '../components/Footer';
 import MenuBar from '../components/MenuBar';
 import MiniTimeTable from '../components/MiniTimeTable';
-import FallingAni from '../components/FallingAni';
 
 //svg
 import map from '../assets/images/homePage/boothmap.png';

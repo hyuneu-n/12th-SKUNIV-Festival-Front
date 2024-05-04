@@ -29,5 +29,6 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "vite": "^5.2.11"
-  }
+  },
+  "proxy": "http://dev.skufestival2024.site"
 }

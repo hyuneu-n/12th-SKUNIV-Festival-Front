@@ -16,7 +16,7 @@ export default function BoothItem({
   setPinTop,
 }) {
   const [isOpen, setOpen] = useState(false);
-  const booth = boothData.find(b => b.id === boothId);
+  const booth = boothData.find((b) => b.id === boothId);
   return (
     <S.BoothItemLayout
       onClick={() => {
@@ -28,8 +28,12 @@ export default function BoothItem({
     >
       <S.BoothItemGrayBox />
       <S.BoothItemInfoBox>
-        <S.BoothItemTitleP>{booth ? booth.boothName : 'Loading...'}</S.BoothItemTitleP>
-        <S.BoothItemNumberP>{booth ? booth.major : 'Loading...'}</S.BoothItemNumberP>
+        <S.BoothItemTitleP>
+          {booth ? booth.boothName : 'Loading...'}
+        </S.BoothItemTitleP>
+        <S.BoothItemNumberP>
+          {booth ? booth.major : 'Loading...'}
+        </S.BoothItemNumberP>
       </S.BoothItemInfoBox>
       <S.CustomSheet
         isOpen={isOpen}
@@ -37,25 +41,31 @@ export default function BoothItem({
           setOpen(false);
           setShowPin(false);
         }}
-        rootId="root"
+        rootId="app"
         $height={height}
         $left={left}
         $width={width}
       >
         <Sheet.Container>
-        <Sheet.Header />
+          <Sheet.Header />
           <Sheet.Content>
             {/* Display the detailed information about the booth */}
             {booth && (
               <div>
-                <h2>{booth.boothName} - {booth.major}</h2>
+                <h2>
+                  {booth.boothName} - {booth.major}
+                </h2>
                 <p>{booth.intro}</p>
                 <ul>
                   {Object.entries(booth.menu).map(([item, price]) => (
-                    <li key={item}>{item}: {price}</li>
+                    <li key={item}>
+                      {item}: {price}
+                    </li>
                   ))}
                 </ul>
-                <p>Instagram: <a href={booth.snsLink}>{booth.snsLink}</a></p>
+                <p>
+                  Instagram: <a href={booth.snsLink}>{booth.snsLink}</a>
+                </p>
               </div>
             )}
           </Sheet.Content>

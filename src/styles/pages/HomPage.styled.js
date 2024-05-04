@@ -29,7 +29,7 @@ export const HompageImg = styled.img`
 `;
 
 export const HomePageBox = styled.div`
-  width: 100%;
+  width: 375px;
   position: relative;
   display: flex;
   flex-direction: column;

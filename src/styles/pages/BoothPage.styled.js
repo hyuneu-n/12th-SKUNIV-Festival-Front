@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const BoothLayout = styled.div`
-  width: 100%;
+  width: 375px;
   display: flex;
   flex-direction: column;
   justify-content: center;
