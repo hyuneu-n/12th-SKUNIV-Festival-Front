@@ -1,4 +1,4 @@
-import { LayoutGroup, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { getDay } from '../utils/getday';
 
@@ -18,6 +18,9 @@ import cd from '../assets/images/homePage/cd1.png';
 import playlist from '../assets/images/homePage/playlist.png';
 import AllLogo from '../assets/images/homePage/allLGO.svg';
 import playbar from '../assets/images/homePage/playbar.svg';
+import bgimg from '../assets/images/homePage/backgroundimage.png';
+import cdleft from '../assets/images/homePage/cdleft.svg';
+import cdright from '../assets/images/homePage/cdright.svg';
 
 export default function HomePage() {
   return (
@@ -71,7 +74,8 @@ export default function HomePage() {
               width: '200px',
               height: '200px',
               position: 'relative',
-              left: '50px',
+              left: '75px',
+              zIndex: '2',
             }}
             animate={{
               rotate: [0, 360],
@@ -89,6 +93,27 @@ export default function HomePage() {
               height: 'auto',
               position: 'relative',
               top: '50px',
+            }}
+          />
+          <img
+            src={cdleft}
+            style={{
+              width: '150px',
+              height: 'auto',
+              position: 'absolute',
+              zIndex: '1',
+              bottom: '50px',
+              left: '-40px',
+            }}
+          />
+          <img
+            src={cdright}
+            style={{
+              width: '150px',
+              height: 'auto',
+              position: 'absolute',
+              zIndex: '1',
+              right: '30px',
             }}
           />
           <Link to="/timetable">전체 일정 확인하기</Link>
