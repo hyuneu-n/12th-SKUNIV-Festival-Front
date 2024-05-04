@@ -32,7 +32,7 @@ export default function MadeBy() {
         <S.AboutTitleHeading style={{ marginTop: '0px' }}></S.AboutTitleHeading>
         <S.AboutLogoImg src={LogoSquare} style={{ width: '100px', height: 'auto', paddingTop: '20px', paddingBottom: '13px' }}></S.AboutLogoImg>
         <S.AboutInfoHeading>서경대 멋쟁이사자처럼 12TH</S.AboutInfoHeading>
-        <S.AboutPartHeading style={{ marginBottom: '20px' }}>PM/DESIGN</S.AboutPartHeading>
+        <S.AboutPartHeading style={{ marginBottom: '20px' }}>PM · DESIGN</S.AboutPartHeading>
         <S.AboutItemBox>
           <Profile
             name="민동명"
