@@ -1,5 +1,5 @@
 import * as S from '../styles/pages/BoothPage.styled';
-import map from '../assets/images/booth/boothMap2.svg';
+import map from '../assets/images/booth/boothMap3.png';
 import { boothData } from '../utils/boothData';
 import Footer from '../components/Footer';
 import BoothItem from '../components/BoothItem';
