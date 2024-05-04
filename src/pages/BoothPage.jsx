@@ -58,8 +58,6 @@ export default function BoothPage() {
           );
         })}
       </S.BoothItemBox>
-
-      <Footer />
     </S.BoothLayout>
   );
 }

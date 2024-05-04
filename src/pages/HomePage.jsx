@@ -121,7 +121,6 @@ export default function HomePage() {
 
         <S.HomePageBottomImage src={AllLogo} />
       </S.HomePageLayout>
-      <Footer />
     </>
   );
 }

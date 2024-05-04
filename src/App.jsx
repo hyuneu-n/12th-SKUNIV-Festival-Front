@@ -5,33 +5,42 @@ import HomePage from './pages/HomePage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import BoothPage from './pages/BoothPage.jsx';
 import FallingAni from './components/FallingAni.jsx';
-import Notice from './pages/NoticePage.jsx';
+import Notice, { loader as getData } from './pages/NoticePage.jsx';
 import TimeTable from './pages/TimeTable.jsx';
 import TimeTable2 from './pages/TimeTable2.jsx';
 import TimeTable3 from './pages/TimeTable3.jsx';
 import TimeTable4 from './pages/TimeTable4.jsx';
 import LostPage from './pages/LostPage.jsx';
-import NoticeInput from './pages/NoticeInputPage.jsx';
+import NoticeInput, { action as postData } from './pages/NoticeInputPage.jsx';
 import LostInput from './pages/LostInputPage.jsx';
 import LostFind from './pages/LostFindPage.jsx';
+import RootLayout from './components/RootLayout.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <HomePage />,
-  },
-  {
-    path: '/booth',
-    element: <BoothPage />,
+    element: <RootLayout />,
+    children: [
+      {
+        index: true,
+        element: <HomePage />,
+      },
+      {
+        path: 'booth',
+        element: <BoothPage />,
+      },
+      {
+        path: 'notice',
+        element: <Notice />,
+        loader: getData,
+      },
+    ],
   },
   {
     path: '/timetable',
     element: <TimeTable />,
   },
-  {
-    path: '/notice',
-    element: <Notice />,
-  },
+
   {
     path: '/about',
     element: <AboutPage />,
@@ -59,6 +68,7 @@ const router = createBrowserRouter([
   {
     path: '/noticeInput',
     element: <NoticeInput />,
+    action: postData,
   },
   {
     path: '/lostInput',
