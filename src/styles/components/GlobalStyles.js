@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
     background-image: url('background.svg');
     @media only screen and (min-width: 360px) {
       .app {
-        width: 375px;
+        width: 100vw;
         height: 100vh;
         margin: auto;
         background-size : cover;

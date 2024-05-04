@@ -26,67 +26,67 @@ export default function MadeBy() {
   return (
     <>
       <MenuBar></MenuBar>
-      <Header title="ABOUT" />
+      <Header title="MADE BY" />
       <S.AboutLayout>
         <S.AboutTitleHeading style={{ marginTop: '30px' }}></S.AboutTitleHeading>
-        <S.AboutInfoHeading>멋쟁이사자처럼 서경대학교</S.AboutInfoHeading>
         <S.AboutLogoImg src={LogoSquare} style={{ width: '100px', height: 'auto', paddingTop: '23px', paddingBottom: '10px' }}></S.AboutLogoImg>
-        
+        <S.AboutInfoHeading>멋쟁이사자처럼</S.AboutInfoHeading>
         <Script>페이지를 제작한 멋쟁이들~</Script>
         <S.AboutPartHeading style={{ marginBottom: '10px' }}>PM/DESIGN</S.AboutPartHeading>
         <S.AboutItemBox>
-          <Profile 
-              name="민동명" 
-              major="컴퓨터공학과 22" 
-              image={dong} 
-              role={
-                <>
-                  ▸기획/디자인 파트장<br />
-                  ▸기능 아이디어 구상
-                </>
-              } />
+          <Profile
+            name="민동명"
+            major="컴퓨터공학과 22"
+            image={dong}
+            role={
+              <>
+                ▸기획/디자인 파트장<br />
+                ▸기능 아이디어 구상
+              </>
+            } />
 
-          <Profile 
-              name="김정현" 
-              major="아트테크놀로지학과 23" 
-              image={jung} 
-              role="기능 아이디어 구상" />
-          <Profile 
-              name="유서진" 
-              major="디자인학부 22" 
-              image={dong} 
-              role="기능 아이디어 구상" />
+          <Profile
+            name="김정현"
+            major="아트테크놀로지학과 23"
+            image={jung}
+            role="기능 아이디어 구상" />
+          <Profile
+            name="유서진"
+            major="디자인학부 22"
+            image={dong}
+            role="기능 아이디어 구상" />
         </S.AboutItemBox>
 
         <S.AboutPartHeading style={{ marginTop: '50px', marginBottom: '10px' }}>DEVELOPERS</S.AboutPartHeading>
         <S.AboutItemBox>
-          <Profile 
-              name="서현은" 
-              major="컴퓨터공학과 22" 
-              image={hyun} 
-              role="기능 아이디어 구상" />
-          <Profile 
-              name="김소연" 
-              major="소프트웨어학과 20" 
-              image={so} 
-              role="기능 아이디어 구상" />
+          <Profile
+            name="서현은"
+            major="컴퓨터공학과 22"
+            image={hyun}
+            role="기능 아이디어 구상" />
+          <Profile
+            name="김소연"
+            major="소프트웨어학과 20"
+            image={so}
+            role="기능 아이디어 구상" />
+          <Profile
+            name="고승범"
+            major="소프트웨어학과 18"
+            image={seung}
+            role="기능 아이디어 구상" />
         </S.AboutItemBox>
-        <S.AboutItemBox style={{marginTop: '20px'}}>
-        <Profile 
-              name="고승범" 
-              major="소프트웨어학과 18" 
-              image={seung} 
-              role="기능 아이디어 구상" />
-          <Profile 
-          name="김효중" 
-          major="컴퓨터공학과 19" 
-          image={hyo} 
-          role="기능 아이디어 구상" />
-          <Profile 
-              name="유창호" 
-              major="컴퓨터공학과 20" 
-              image={Chang} 
-              role="기능 아이디어 구상" />
+        <S.AboutItemBox style={{ marginTop: '20px' }}>
+
+          <Profile
+            name="김효중"
+            major="컴퓨터공학과 19"
+            image={hyo}
+            role="기능 아이디어 구상" />
+          <Profile
+            name="유창호"
+            major="컴퓨터공학과 20"
+            image={Chang}
+            role="기능 아이디어 구상" />
         </S.AboutItemBox>
 
         <S.AboutLogoImg src={Hansup} style={{ width: '130px', height: 'auto', paddingTop: '60px', paddingBottom: '0px' }}></S.AboutLogoImg>
