@@ -1,13 +1,19 @@
 import React from 'react';
-import MovingMap from '../components/MovingMap';
+import Header from '../components/Header';
+import MenuBar from '../components/MenuBar';
+import evacuationRouteGif from '../assets/images/aedGIFPNG.gif';
 
 const EvacuationPage = () => {
   return (
-    <div>
-      <h1>대피 경로</h1>
-      <MovingMap />
-    </div>
+    <>
+      <MenuBar />
+      <Header title="AED & EVACUATION" />
+      <div>
+        <img src={evacuationRouteGif} style={{ display: 'block', margin: 'auto', width: '280px', height: 'auto' }}/>
+        <p>AED 위치 안내/대피로 안내</p>
+      </div>
+    </>
   );
-}
+};
 
 export default EvacuationPage;

@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomePage from './pages/HomePage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import BoothPage from './pages/BoothPage.jsx';
+import EvacuationPage from './pages/EvacuationPage.jsx';
 import FallingAni from './components/FallingAni.jsx';
 import Notice, { loader as getData } from './pages/NoticePage.jsx';
 import TimeTable from './pages/TimeTable.jsx';
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
         path: 'notice',
         element: <Notice />,
         loader: getData,
+      },
+      {
+        path: 'safe',
+        element: <EvacuationPage />, 
       },
     ],
   },
