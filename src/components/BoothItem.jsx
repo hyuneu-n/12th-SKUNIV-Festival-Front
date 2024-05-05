@@ -1,5 +1,6 @@
 import * as S from '../styles/components/BoothItem.styled';
 import { boothData } from '../utils/boothData';
+import sample from '../assets/images/hyun.png'
 
 import Sheet from 'react-modal-sheet';
 import { useState } from 'react';
@@ -26,7 +27,7 @@ export default function BoothItem({
         setPinLeft(pinLeft);
       }}
     >
-      <S.BoothItemGrayBox />
+      <S.BoothItemGrayBox imageUrl={booth ? booth.image : sample} />
       <S.BoothItemInfoBox>
         <S.BoothItemTitleP>
           {booth ? booth.boothName : 'Loading...'}
