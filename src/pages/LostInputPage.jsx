@@ -66,7 +66,7 @@ export default function Notice() {
               id="lName"
               name="lName"
               onChange={(e) => setName(e.target.value)} />
-            <S.BtnImage src={img_p} onClick={onSelectImage}></S.BtnImage>
+            <S.BtnImage src={img_p}></S.BtnImage>
           </S.HorizonBody>
 
           <S.NoticeTitle
