@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link as RouterLink } from 'react-router-dom';
 
 export const NoticeLayout = styled.div`
   width: 100%;
@@ -21,7 +22,7 @@ export const NoticeHead = styled.div`
 export const NoticeBody = styled.div`
 width: 100%;
 height: 500px;
-margin: 10% 0% 10% 0%;
+margin: 0% 0% 10% 0%;
 padding: 3% 0% 3% 0%;
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -53,4 +54,12 @@ export const WidthLine = styled.hr`
   width: 100%;
   border: 1px solid;
   margin: 10% 0% 10% 0%;
+`;
+
+export const StyledLink = styled(RouterLink)`
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 90%;
+  padding-left: 30px;
 `;

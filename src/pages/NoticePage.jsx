@@ -6,6 +6,8 @@ import NoticeBox from '../components/NoticeBox';
 import { Notices } from '../utils/NoticeData';
 import { Link, useLoaderData } from 'react-router-dom';
 import InputButton from '../components/InputButton';
+import { StyledLink } from '../styles/pages/NoticePage.styled';
+
 
 export default function Notice() {
   const data = useLoaderData();
@@ -25,16 +27,16 @@ export default function Notice() {
         <S.WidthLine></S.WidthLine>
         <S.NoticeH1>NOTICE</S.NoticeH1>
         <S.NoticeBody>
-          {data.map((item,index) => {
-            return (
-              <NoticeBox
-                key={index}
-                title={item.title}
-                content={item.content}
-                date={item.date}
-              />
-            );
-          })}
+          {data.map((item, index) => (
+            <StyledLink to={`/notice/${item.id}`}>
+            <NoticeBox
+              id={item.id}
+              title={item.title}
+              content={item.content}
+              date={item.date}
+            />
+          </StyledLink>
+          ))}
         </S.NoticeBody>
       </S.NoticeLayout>
     </>

@@ -1,15 +1,19 @@
 import * as S from '../styles/components/NoticeBox.styled';
-export default function NoticeBox({ title, author, date, link }) {
+import { Link } from 'react-router-dom';
+
+export default function NoticeBox({ id, title, author, date, link }) {
   return (
-    <S.NoticeBox>
-      <S.TitleBox>
-        <S.Notice>[공지]</S.Notice>
-        <S.NoticeTitle>{title}</S.NoticeTitle>
-      </S.TitleBox>
-      <S.AboutBox>
-        <S.NoticeAuthor>{author}</S.NoticeAuthor>
-        <S.NoticeDate>{/* {date[0]} / {data[1]} / {date[2]} */}</S.NoticeDate>
-      </S.AboutBox>
-    </S.NoticeBox>
+    <Link to={`/notice/${id}`} style={{ textDecoration: 'none' }}>
+      <S.NoticeBox>
+        <S.TitleBox>
+          <S.Notice>[공지]</S.Notice>
+          <S.NoticeTitle>{title}</S.NoticeTitle>
+        </S.TitleBox>
+        <S.AboutBox>
+          <S.NoticeAuthor>{author}</S.NoticeAuthor>
+          <S.NoticeDate>{new Date(date).toISOString().split('T')[0]}</S.NoticeDate>
+        </S.AboutBox>
+      </S.NoticeBox>
+    </Link>
   );
 }
