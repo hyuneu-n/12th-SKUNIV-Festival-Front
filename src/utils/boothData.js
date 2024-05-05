@@ -34,6 +34,37 @@
  * 16번: top 145px, left 150px
  */
 
+import ece from '../assets//images/logo/ece.png';
+import eng from '../assets//images/logo/eng.png';
+import fie from '../assets//images/logo/fie.png';
+import archi from '../assets//images/logo/archi.png';
+import french from '../assets//images/logo/french.png';
+import ad from '../assets//images/logo/ad.png';
+import chi from '../assets//images/logo/hyun.png';
+import english from '../assets//images/logo/hyun.png';
+import russian from '../assets//images/logo/hyun.png';
+import japanese from '../assets//images/logo/hyun.png';
+import human from '../assets//images/logo/human.png';
+import hansup from '../assets//images/logo/hansup.png';
+import seoro from '../assets//images/logo/seoro.png';
+import news from '../assets//images/logo/news.png';
+import music from '../assets//images/logo/music.png';
+import sports from '../assets//images/logo/sports.png';
+import film from '../assets//images/logo/film.png';
+import design from '../assets//images/logo/design.png';
+import beauty from '../assets//images/logo/beauty.png';
+import artech from '../assets//images/logo/artech.png';
+import educare from '../assets//images/logo/educare.png';
+import buss from '../assets//images/logo/buss.png';
+import society from '../assets//images/logo/society.png';
+import publicc from '../assets//images/logo/publicc.png';
+import military from '../assets//images/logo/military.png';
+import software from '../assets//images/logo/software.png';
+import urban from '../assets//images/logo/urban.png';
+import logistics from '../assets//images/logo/logisticss.png';
+import ncbe from '../assets//images/logo/ncbee.png';
+import art from '../assets//images/logo/artt.png';
+
 export const boothData = [
   //모두 저녁장사 메뉴만 기입
   //낮 장사만 하는 경우 낮 장사 메뉴 + 기입해주면 좋을 듯
@@ -53,6 +84,7 @@ export const boothData = [
     },
     account: '카카오뱅크 3333-07-2024087 이현성',
     snsLink: 'https://www.instagram.com/sku_33rd_undefeated/',
+    image: eng,
     top: 242,
     left: 110,
   },
@@ -72,6 +104,7 @@ export const boothData = [
     },
     account: '카카오뱅크 3333150451124 김민지',
     snsLink: 'https://www.instagram.com/sku_fie/',
+    image: fie,
     top: 227,
     left: 110,
   },
@@ -92,6 +125,7 @@ export const boothData = [
     },
     account: '카카오뱅크 3333-04-0745270 이효준',
     snsLink: 'https://www.instagram.com/sku_e.c.e/',
+    image: ece,
     top: 215,
     left: 110,
   },
@@ -112,6 +146,7 @@ export const boothData = [
     },
     account: '카카오뱅크 3333304394702 이윤재',
     snsLink: 'https://www.instagram.com/sku_civil.archi/',
+    image: archi,
     top: 195,
     left: 110,
   },
@@ -131,6 +166,7 @@ export const boothData = [
     },
     account: '토스뱅크 1000-3016-6425 구진모',
     snsLink: 'https://www.instagram.com/sku_frenchfries/',
+    image: french,
     top: 185,
     left: 110,
   },
@@ -151,6 +187,7 @@ export const boothData = [
     },
     account: '카카오뱅크 3333217156016 김은서',
     snsLink: 'https://www.instagram.com/sku_ad_bada/',
+    image: ad,
     top: 167,
     left: 110,
   },
@@ -170,6 +207,7 @@ export const boothData = [
     },
     account: '카카오뱅크 3333269256988 박소영',
     snsLink: '없음',
+    image: chi,
     top: 147,
     left: 110,
   },
@@ -190,6 +228,7 @@ export const boothData = [
     },
     account: '카카오뱅크 3333262483085 임윤지',
     snsLink: '없음',
+    image: english,
     top: 130,
     left: 110,
   },
@@ -209,6 +248,7 @@ export const boothData = [
     },
     account: '카카오뱅크 3333-10-3918501 서지석',
     snsLink: 'https://www.instagram.com/skurussian/',
+    image: russian,
     top: 115,
     left: 110,
   },
@@ -228,6 +268,7 @@ export const boothData = [
     },
     account: '카카오뱅크 3333-30-1434183 백다연',
     snsLink: '없음',
+    image: japanese,
     top: 100,
     left: 110,
   },
@@ -245,6 +286,7 @@ export const boothData = [
     },
     account: '농협 302-4764-5483-11 이나은',
     snsLink: 'https://www.instagram.com/sku_34th_saeneul/',
+    image: human,
     top: 90,
     left: 110,
   },
@@ -264,6 +306,7 @@ export const boothData = [
     },
     account: '신한은행 110548785040 김종휴',
     snsLink: 'https://www.instagram.com/sku_52nd_hansup/',
+    image: hansup,
     top: 75,
     left: 130,
   },
@@ -283,6 +326,7 @@ export const boothData = [
     },
     account: '카카오뱅크 3333212409805 백수연',
     snsLink: 'https://www.instagram.com/sku_40th_seoro/',
+    image: seoro,
     top: 70,
     left: 225,
   },
@@ -302,6 +346,7 @@ export const boothData = [
     },
     account: '카카오뱅크 3333304688172',
     snsLink: 'https://www.instagram.com/sku_newspaper/',
+    image: news,
     top: 70,
     left: 240,
   },
@@ -321,6 +366,7 @@ export const boothData = [
     },
     account: '계좌 개설 예정',
     snsLink: 'https://www.instagram.com/skucm_official/',
+    image:music,
     top: 83,
     left: 250,
   },
@@ -341,6 +387,7 @@ export const boothData = [
     account: '신한은행 110-560-542752',
     snsLink:
       'https://www.instagram.com/sku_sports_technology?igsh=cHB2bXk3Yjc1N3Fz&utm_source=qr',
+    image:sports,
     top: 97,
     left: 248,
   },
@@ -360,6 +407,7 @@ export const boothData = [
     },
     account: '카카오뱅크 3333101130307 ',
     snsLink: 'https://www.instagram.com/sku_film/',
+    image:film,
     top: 117,
     left: 245,
   },
@@ -379,6 +427,7 @@ export const boothData = [
     },
     account: '신한은행 110-561-552653',
     snsLink: 'https://www.instagram.com/sku.design_/',
+    image:design,
     top: 117,
     left: 245,
   },
@@ -399,6 +448,7 @@ export const boothData = [
     },
     account: '-',
     snsLink: 'https://www.instagram.com/sku_beautyart/',
+    image:beauty,
     top: 147,
     left: 238,
   },
@@ -418,6 +468,7 @@ export const boothData = [
     },
     account: '신한은행 110548599729',
     snsLink: 'https://www.instagram.com/sku.artech/',
+    image:artech,
     top: 157,
     left: 235,
   },
@@ -437,6 +488,7 @@ export const boothData = [
     },
     account: '-',
     snsLink: 'https://www.instagram.com/sku__educare/',
+    image:educare,
     top: 170,
     left: 230,
   },
@@ -456,6 +508,7 @@ export const boothData = [
     },
     account: '3333266546898 카카오뱅크 조영인',
     snsLink: 'https://www.instagram.com/sku_business/',
+    image: buss,
     top: 190,
     left: 228,
   },
@@ -473,6 +526,7 @@ export const boothData = [
     },
     account: '신한 110565116750 여재철',
     snsLink: 'https://www.instagram.com/sku_26th_wooyeon/',
+    image:society,
     top: 198,
     left: 223,
   },
@@ -492,6 +546,7 @@ export const boothData = [
     },
     account: '카카오뱅크 3333259993777',
     snsLink: 'https://www.instagram.com/sku_public/',
+    image:publicc,
     top: 210,
     left: 208,
   },
@@ -511,6 +566,7 @@ export const boothData = [
     },
     account: '신한 110562502990 오대희',
     snsLink: 'https://www.instagram.com/16th_military_wave/',
+    image:military,
     top: 210,
     left: 196,
   },
@@ -530,6 +586,7 @@ export const boothData = [
     },
     account: '카카오뱅크 3333235803945 정수경',
     snsLink: 'https://www.instagram.com/sku_software/',
+    image:software,
     top: 218,
     left: 183,
   },
@@ -549,6 +606,7 @@ export const boothData = [
     },
     account: '우리은행 1002563935986',
     snsLink: 'https://www.instagram.com/sku_urban/',
+    image:urban,
     top: 223,
     left: 170,
   },
@@ -569,6 +627,7 @@ export const boothData = [
     },
     account: '국민은행 937702-00-892914 김대호',
     snsLink: 'https://www.instagram.com/sku_logistics/',
+    image:logistics,
     top: 230,
     left: 157,
   },
@@ -589,6 +648,7 @@ export const boothData = [
     },
     account: '카카오뱅크 3333247747187 진소명',
     snsLink: 'https://www.instagram.com/sku_n.c.b.e/',
+    image:ncbe,
     top: 238,
     left: 143,
   },
@@ -603,7 +663,8 @@ export const boothData = [
     menuDay: {},
     menuNight: {},
     account: '-',
-    snsLink: '=',
+    snsLink: 'https://www.instagram.com/sku_woolim_art/',
+    image:art,
     top: 147,
     left: 238,
   },

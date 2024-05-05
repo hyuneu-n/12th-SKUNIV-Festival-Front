@@ -12,6 +12,10 @@ export const BoothItemGrayBox = styled.div`
   flex-shrink: 0;
   width: 80px;
   height: 9vh;
+  background-image: url(${props => props.imageUrl});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: gray;
   border-radius: 5px 0 0 5px;
 `;
