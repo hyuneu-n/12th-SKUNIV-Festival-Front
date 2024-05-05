@@ -56,6 +56,7 @@ export const CustomSheet = styled(Sheet)`
     /* custom styles */
   }
   .react-modal-sheet-content {
+    overflow-y: scroll;
     h2 {
       text-align: center;
       color: #576141;
@@ -93,7 +94,11 @@ export const BoothItemParagraph = styled.p`
 
 export const BoothMenuIntroBox = styled.div`
   width: 90%;
+  height: 150px;
   display: flex;
+  background-color: #eeeeee;
+  margin: auto;
+  border-radius: 5px;
 `;
 
 export const BoothDayBox = styled.div`

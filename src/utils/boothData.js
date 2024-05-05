@@ -44,8 +44,10 @@ export const boothData = [
     boothNumber: 1,
     boothName: '불패무적이공대',
     major: 'NATURAL SCIENCE & ENGINEERING',
-    intro: '✨서경제일 줄넘기✨\n평점: 10/10\n소인이 찾던 바로 그 대결이오.\n막차까지 즐기고 싶소이다.\n슬러시도 준다니 안 할 이유가 없소.',
-    menu: {
+    intro:
+      '✨서경제일 줄넘기✨\n평점: 10/10\n소인이 찾던 바로 그 대결이오.\n막차까지 즐기고 싶소이다.\n슬러시도 준다니 안 할 이유가 없소.',
+    menuDay: {},
+    menuNight: {
       슬러쉬: '1000원',
       '서경제일 줄넘기 대회': '1000원',
     },
@@ -61,7 +63,8 @@ export const boothData = [
     boothName: '금융정보공학과',
     major: 'Financial Information Engineering',
     intro: '후후 불면은 구멍이 생기는 커다란 솜사탕~~\n먹고가세요~',
-    menu: {
+    menuDay: {},
+    menuNight: {
       솜사탕: '3000원',
       해물야끼우동: '13000원',
       '와앙 소시지야채볶음': '11000원',
@@ -78,8 +81,10 @@ export const boothData = [
     boothNumber: 3,
     boothName: '전자컴퓨터공학과',
     major: 'Electronic Computer Engineering',
-    intro: '안녕하십니까. 제2대 전자컴퓨터공학과입니다!\n2024 대동제에 저희 과는 낮에는 닭꼬치, 타코나초를 판매하고 풍선다트와 동전 던지기, 고래잡기를 진행할 예정입니다.\n밤에는 제육볶음과 부대찌개 등을 판매할 예정이니 많은 관심 부탁드립니다.',
-    menu: {
+    intro:
+      '안녕하십니까. 제2대 전자컴퓨터공학과입니다!\n2024 대동제에 저희 과는 낮에는 닭꼬치, 타코나초를 판매하고 풍선다트와 동전 던지기, 고래잡기를 진행할 예정입니다.\n밤에는 제육볶음과 부대찌개 등을 판매할 예정이니 많은 관심 부탁드립니다.',
+    menuDay: {},
+    menuNight: {
       닭꼬치: '3000원',
       타코나초: '4000원',
       제육볶음: '14000원',
@@ -96,8 +101,10 @@ export const boothData = [
     boothNumber: 4,
     boothName: '토목공학과',
     major: 'Civil & Architectural Engineering',
-    intro: '안녕하세요 제 26대 토목건축공학과 학생회입니다~\n저희 토목건축공학과는 낮에는 에이드와 소세지를 판매하고 저녁에는 제육볶음,묵사발, 콘치즈불닭등을 판매할 예정이니 많이 찾아와주세요~',
-    menu: {
+    intro:
+      '안녕하세요 제 26대 토목건축공학과 학생회입니다~\n저희 토목건축공학과는 낮에는 에이드와 소세지를 판매하고 저녁에는 제육볶음,묵사발, 콘치즈불닭등을 판매할 예정이니 많이 찾아와주세요~',
+    menuDay: {},
+    menuNight: {
       '에이드(청포도·자몽·매실)': '2500원',
       소세지: '2000원',
       '제육볶음+주먹밥': '12000원',
@@ -115,7 +122,8 @@ export const boothData = [
     boothName: '불어전공',
     major: 'French Language',
     intro: '스콘스퀘어에서 챔스의 기운이…!\n불어의 FC FRENCH!',
-    menu: {
+    menuDay: {},
+    menuNight: {
       콜팝: '4500원',
       소떡소떡: '4000원',
       대패숙주볶음: '12000원',
@@ -134,7 +142,8 @@ export const boothData = [
     major: 'Advertising & Public Relations Contents',
     intro:
       '너가 꼬치 먹자고 안 했잖아?\n그럼 대동제 안 왔어.\n- 광홍 오리지널 환승꼬치 ',
-    menu: {
+    menuDay: {},
+    menuNight: {
       소세지: '3000원',
       닭꼬치: '3500원',
       치즈닭꼬치: '4000원',
@@ -152,7 +161,8 @@ export const boothData = [
     boothName: '중어전공',
     major: 'Chinese Language',
     intro: '중어의 아찔한 대륙 마라맛 승부!',
-    menu: {
+    menuDay: {},
+    menuNight: {
       '마라탕(2인기준)': '12500원',
       '꿔바로우(大)': '9900원',
       '꿔바로우(小)': '7900원',
@@ -171,7 +181,8 @@ export const boothData = [
     major: 'English Language',
     intro:
       '※ 축제 기간 한정 머글 입장 가능\n(음료에 500원 추가 시 폴라로이드 사진 1장)',
-    menu: {
+    menuDay: {},
+    menuNight: {
       버터비어: '3500원',
       체리에이드: '3000원',
       망고에이드: '3000원',
@@ -189,7 +200,8 @@ export const boothData = [
     boothName: '노어전공',
     major: 'Russian Language',
     intro: '그대의 눈동자에 치얼스\n(낮 칵테일은 모두 3500원 입니다.)',
-    menu: {
+    menuDay: {},
+    menuNight: {
       논알콜칵테일: '3000원',
       피나콜라다: '3000원',
       미도리샤워: '3000원',
@@ -207,7 +219,8 @@ export const boothData = [
     boothName: '일어전공',
     major: 'Japanese Language',
     intro: '일본 현지의 느낌을 전해드립니다.',
-    menu: {
+    menuDay: {},
+    menuNight: {
       '타코야끼(6개)': '3000원',
       '가라아게(6개)': '3000원',
       '교자(6개)': '3000원',
@@ -225,7 +238,8 @@ export const boothData = [
     boothName: '새늘 인문과학대학',
     major: 'COLLEGE OF HUMANITIES',
     intro: '다시 돌아온 인문대 시그니처\n구슬아이스크림과 필살기 신메뉴!',
-    menu: {
+    menuDay: {},
+    menuNight: {
       '랜덤믹스 구슬 아이스크림': '5000원',
       '싱글초코 , 싱글 바닐라 , 더블초코 바닐라 ': '3000원',
     },
@@ -241,7 +255,8 @@ export const boothData = [
     boothName: '한숲 총학생회',
     major: 'Hansup',
     intro: '그대들의 풀잎, 하나의 숲으로',
-    menu: {
+    menuDay: {},
+    menuNight: {
       '도레미파솔로시죠?': '1000원',
       반다나: '3000원',
       야광팔찌: '증정',
@@ -259,7 +274,8 @@ export const boothData = [
     boothName: '서로 총동아리연합회',
     major: 'SEORO',
     intro: '우리 쪽도 와주세요. 자치기구도 챙겨주세요.',
-    menu: {
+    menuDay: {},
+    menuNight: {
       타투스티커: '1000원',
       아이스티: '2000원',
       와플: '3000원',
@@ -277,7 +293,8 @@ export const boothData = [
     boothName: '신문사',
     major: 'sku_newspaper',
     intro: '다 신문사랑 해',
-    menu: {
+    menuDay: {},
+    menuNight: {
       페이스페인팅: '2000원',
       디토카메라: '1000원',
       비눗방울: '1000원',
@@ -295,7 +312,8 @@ export const boothData = [
     boothName: '실용음악학부',
     major: 'Division of Contemporary Music',
     intro: '유일한 Jazz Pub 컨셉의 요리주점!!\n음악이 맛있고 음식이 착해요',
-    menu: {
+    menuDay: {},
+    menuNight: {
       우삼겹숙주볶음: '10000원',
       삼겹살: '10000원',
       우동: '8000원',
@@ -313,7 +331,8 @@ export const boothData = [
     boothName: '스포츠테크놀리지학과',
     major: 'Sports and Technology',
     intro: '최선의 맛을 위해 쇠질했습니다.',
-    menu: {
+    menuDay: {},
+    menuNight: {
       숙주볶음: '12000원',
       야끼우동: '13000원',
       부대찌개: '15000원',
@@ -332,7 +351,8 @@ export const boothData = [
     boothName: '영화영상학과',
     major: 'Film and Digital Media',
     intro: '매주 영화 찍다가… 이제 요리도 한다…\n못하는 거 없는 영화과입니다!',
-    menu: {
+    menuDay: {},
+    menuNight: {
       오꼬노미야끼: '8000원',
       군만두: '6000원',
       허니버터먹태: '8000원',
@@ -350,7 +370,8 @@ export const boothData = [
     boothName: '디자인학부',
     major: 'Design Division',
     intro: '이리 오너라 먹고놀자~~!',
-    menu: {
+    menuDay: {},
+    menuNight: {
       두부김치: '8000원',
       김치전: '6000원',
       육개장: '6000원',
@@ -369,7 +390,8 @@ export const boothData = [
     major: 'COLLEGE OF BEUTY ART',
     intro:
       '🌻미용예술대학이 차린 미예 와이키키🌴로\n놀러와 다가올 여름을 느껴보세요🌻',
-    menu: {
+    menuDay: {},
+    menuNight: {
       모듬소세지: '20000원',
       불고기콘치즈: '15000원',
       미예온더비치: '5000원',
@@ -387,7 +409,8 @@ export const boothData = [
     boothName: '아트앤테크놀로지학과',
     major: 'Art and Technology',
     intro: '그만들 물어보세요',
-    menu: {
+    menuDay: {},
+    menuNight: {
       분수화채: '5000원',
       해물깡: '3000원',
       짜계치: '4000원',
@@ -405,7 +428,8 @@ export const boothData = [
     boothName: '아동청소년학과',
     major: 'Child Studies',
     intro: '이 곳은 취객 입장 가능한 어‘른’이집 입니다. ',
-    menu: {
+    menuDay: {},
+    menuNight: {
       전통떡꼬치: '2500원',
       '피카츄 돈가스': '3000원',
       닭갈비: '13000원',
@@ -423,7 +447,8 @@ export const boothData = [
     boothName: '경영학부',
     major: 'Division of Business Administration',
     intro: '에잇~~기분이다!!\n경영 농장 재료는 산지직송!!',
-    menu: {
+    menuDay: {},
+    menuNight: {
       컵빙수: '4원',
       마약옥수수: '3000원',
       모듬전: '9000원',
@@ -441,7 +466,8 @@ export const boothData = [
     boothName: '우연 사회과학대학',
     major: 'sku_26th_wooyeon',
     intro: '우연히 홈런 -! ⚾️\n사과대 우연즈 🔗',
-    menu: {
+    menuDay: {},
+    menuNight: {
       '츄러스(휘핑크림 추가 1,000원 / 초코시럽 추가 500원)': '3500원',
       회오리감자: '4000원',
     },
@@ -457,7 +483,8 @@ export const boothData = [
     boothName: '공공인재학부',
     major: 'School of Public Service',
     intro: '*슬기로운 공공생활*\n축제에 취하면 무죄, 안 취하면 유죄',
-    menu: {
+    menuDay: {},
+    menuNight: {
       '짜파게티(2인분)': '7000원',
       두부김치: '15000원',
       양념콜팝: '5500원',
@@ -475,7 +502,8 @@ export const boothData = [
     boothName: '군사학과',
     major: 'Military Studies',
     intro: '사       격이 맛있고\n랑(안) 주가 재밌는\n꾼               사부스',
-    menu: {
+    menuDay: {},
+    menuNight: {
       대패삼겹비빔면: '15000원',
       스팸계란: '6000원',
       부대찌개: '17000원',
@@ -493,7 +521,8 @@ export const boothData = [
     boothName: '소프트웨어학과',
     major: 'Software',
     intro: '우리가 안 먹은게 뭐가 있지?\n소웨 오돌뼈?\n웅 마쟈 정답<^^>',
-    menu: {
+    menuDay: {},
+    menuNight: {
       '오돌뼈+주먹밥': '15000원',
       어묵우동: '10000원',
       제육볶음: '12000원',
@@ -511,7 +540,8 @@ export const boothData = [
     boothName: '도시공학과',
     major: 'Urban Planning & Engineering',
     intro: '혼자 와서 둘이 되는 도시남녀의 사랑포차❣️',
-    menu: {
+    menuDay: {},
+    menuNight: {
       삼겹두부김치: '12000원',
       떡만두라면: '7000원',
       모둠감자튀김: '12000원',
@@ -528,8 +558,10 @@ export const boothData = [
     boothNumber: 28,
     boothName: '물류시스템공학과',
     major: 'Logistics System Engineering',
-    intro: '레전드 뿌링클 콜팝과 삼겹살꼬치를\n이 가격에 즐길 수 있다고??..\n바로 슈팅해~~\nP.S.저희 학생회 일동은 끼쟁이들이 많습니다^^',
-    menu:{
+    intro:
+      '레전드 뿌링클 콜팝과 삼겹살꼬치를\n이 가격에 즐길 수 있다고??..\n바로 슈팅해~~\nP.S.저희 학생회 일동은 끼쟁이들이 많습니다^^',
+    menuDay: {},
+    menuNight: {
       '삼겹살꼬치 1개': '4500원',
       순두부열라면: '6000원',
       '뿌링클 콜팝': '4500원',
@@ -546,8 +578,10 @@ export const boothData = [
     boothNumber: 29,
     boothName: '나노화학생명공학과',
     major: 'Nano-Chemical & Environmental Engineering',
-    intro: '마침 배고파질 참이었는데\n나화생 덕분에 너무 재밌짜나 ?✨️💓\n완전 럭키비키쟈낭🍀🍀',
-    menu: {
+    intro:
+      '마침 배고파질 참이었는데\n나화생 덕분에 너무 재밌짜나 ?✨️💓\n완전 럭키비키쟈낭🍀🍀',
+    menuDay: {},
+    menuNight: {
       '뉴욕핫도그(오리지널)': '3900원',
       버블티: '3300원',
       두부김치: '9900원',
@@ -564,8 +598,10 @@ export const boothData = [
     boothNumber: 30,
     boothName: '울림예술대',
     major: 'COLLEGE OF ARTS',
-    intro: '🚨울림 팔찌 안 차면 수갑 채워드립니다🚨\n당신은 변호사를 선임할 수 있고 …[더보기]',
-    menu: {    },
+    intro:
+      '🚨울림 팔찌 안 차면 수갑 채워드립니다🚨\n당신은 변호사를 선임할 수 있고 …[더보기]',
+    menuDay: {},
+    menuNight: {},
     account: '-',
     snsLink: '=',
     top: 147,

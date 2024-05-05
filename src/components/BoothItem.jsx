@@ -57,12 +57,19 @@ export default function BoothItem({
                   {/* {' '} */}
                   <S.BoothDayBox>
                     <S.BoothMenuParagraph>DAY</S.BoothMenuParagraph>
+                    <ul>
+                      {Object.entries(booth.menuDay).map(([item, price]) => (
+                        <li key={item}>
+                          {item}: {price}
+                        </li>
+                      ))}
+                    </ul>
                   </S.BoothDayBox>
                   <S.BoothMenuDivider />
                   <S.BoothNightBox>
                     <S.BoothMenuParagraph>NIGHT</S.BoothMenuParagraph>
                     <ul>
-                      {Object.entries(booth.menu).map(([item, price]) => (
+                      {Object.entries(booth.menuNight).map(([item, price]) => (
                         <li key={item}>
                           {item}: {price}
                         </li>
