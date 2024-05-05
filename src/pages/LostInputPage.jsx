@@ -28,29 +28,29 @@ export default function Notice() {
     //navigate('/lostItems');
   };
 
-  // 이미지 가져오기
-  const onSelectImage = () => {
-    launchImageLibrary(
-      {
-        madiaType: 'photo',
-        maxWidth: 512,
-        maxHeight: 512,
-        includeBase64: true
-      },
-      (response) => {
-        console.log(response)
-        // console.log(response.assets[0].base64)
-        if (response.didCancel) {
-          return;
-        } else if (response.errorCode) {
-          console.log("Image Error : " + response.errorCode);
-        }
+  // // 이미지 가져오기
+  // const onSelectImage = () => {
+  //   launchImageLibrary(
+  //     {
+  //       madiaType: 'photo',
+  //       maxWidth: 512,
+  //       maxHeight: 512,
+  //       includeBase64: true
+  //     },
+  //     (response) => {
+  //       console.log(response)
+  //       // console.log(response.assets[0].base64)
+  //       if (response.didCancel) {
+  //         return;
+  //       } else if (response.errorCode) {
+  //         console.log("Image Error : " + response.errorCode);
+  //       }
 
-        setResponse(response);
-        setImageFile(response.assets[0].base64);
-      })
+  //       setResponse(response);
+  //       setImageFile(response.assets[0].base64);
+  //     })
 
-  }
+  // }
   return (
     <>
       <S.NoticeLayout>
