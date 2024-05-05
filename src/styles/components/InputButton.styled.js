@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const NoticeForm = styled.button`
+export const NoticeForm = styled.div`
     width: 100px;
     height: 40px;
     padding: 0% 5% 0% 5%;

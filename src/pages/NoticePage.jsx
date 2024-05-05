@@ -25,10 +25,10 @@ export default function Notice() {
         <S.WidthLine></S.WidthLine>
         <S.NoticeH1>NOTICE</S.NoticeH1>
         <S.NoticeBody>
-          {data.map((item) => {
+          {data.map((item,index) => {
             return (
               <NoticeBox
-                key={item.title}
+                key={index}
                 title={item.title}
                 content={item.content}
                 date={item.date}

@@ -24,10 +24,10 @@ export default function FindItems() {
         <ItemSwitch />
         <S.LostBody>
 
-          {LostData.map((item) => {
+          {LostData.map((item,index) => {
             return (
               <ItemBox
-                key={item.id}
+                key = {item.id}
                 name={item.name}
                 location={item.location}
                 date={item.date}
