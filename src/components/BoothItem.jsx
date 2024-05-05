@@ -49,23 +49,25 @@ export default function BoothItem({
         <Sheet.Container>
           <Sheet.Header />
           <Sheet.Content>
-            {/* Display the detailed information about the booth */}
             {booth && (
               <div>
-                <h2>
-                  {booth.boothName} - {booth.major}
-                </h2>
+                <h2>{booth.boothName}</h2>
                 <p>{booth.intro}</p>
-                <ul>
-                  {Object.entries(booth.menu).map(([item, price]) => (
-                    <li key={item}>
-                      {item}: {price}
-                    </li>
-                  ))}
-                </ul>
-                <p>
-                  Instagram: <a href={booth.snsLink}>{booth.snsLink}</a>
-                </p>
+                <div>
+                  {' '}
+                  <ul>
+                    {Object.entries(booth.menu).map(([item, price]) => (
+                      <li key={item}>
+                        {item}: {price}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <p>{booth.account}</p>
+                <button>
+                  <a href={booth.snsLink}>SNS 구경하기</a>
+                </button>
               </div>
             )}
           </Sheet.Content>

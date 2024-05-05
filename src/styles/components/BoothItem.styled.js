@@ -56,6 +56,35 @@ export const CustomSheet = styled(Sheet)`
     /* custom styles */
   }
   .react-modal-sheet-content {
-    /* custom styles */
+    h2 {
+      text-align: center;
+      color: #576141;
+      margin: 5px 0px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    button {
+      width: 40%;
+      height: 35px;
+      display: block;
+      margin: auto !important;
+      background-color: white;
+      border-radius: 25px;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.16);
+    }
+
+    a {
+      text-decoration: none;
+      color: #576141 !important;
+    }
   }
 `;
