@@ -6,10 +6,11 @@ import i from '../assets/images/menubar/menubarImage.svg';
 import ItemBox from '../components/ItemBox';
 import InputButton from '../components/InputButton';
 import ItemSwitch from '../components/ItemSwitch';
-import { Link } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import { LostData } from '../utils/LostData';
 export default function FindItems() {
-
+  const data = useLoaderData();
+  console.log(data);
   return (
     <>
       <MenuBar></MenuBar>
@@ -24,7 +25,7 @@ export default function FindItems() {
         <ItemSwitch />
         <S.LostBody>
 
-          {LostData.map((item,index) => {
+          {/* {data.map((item,index) => {
             return (
               <ItemBox
                 key = {item.id}
@@ -34,11 +35,18 @@ export default function FindItems() {
                 find={true}
               />
             );
-          })}
+          })} */}
         </S.LostBody>
       </S.LostLayout>
 
       <Footer />
     </>
   );
+}
+// get 요청
+export async function loadLis2() {
+  const response = await fetch('http://dev.skufestival2024.site/api/lostitem/posts?lastId=0&size=8');
+  // url
+  console.log(response);
+  return response;
 }

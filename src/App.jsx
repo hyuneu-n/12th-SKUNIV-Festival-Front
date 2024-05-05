@@ -11,7 +11,7 @@ import TimeTable from './pages/TimeTable.jsx';
 import TimeTable2 from './pages/TimeTable2.jsx';
 import TimeTable3 from './pages/TimeTable3.jsx';
 import TimeTable4 from './pages/TimeTable4.jsx';
-import LostPage from './pages/LostPage.jsx';
+import LostPage , { loads as getList } from './pages/LostPage.jsx';
 import NoticeInput, { action as postData } from './pages/NoticeInputPage.jsx';
 import LostInput from './pages/LostInputPage.jsx';
 import LostFind from './pages/LostFindPage.jsx';
@@ -69,6 +69,7 @@ const router = createBrowserRouter([
   {
     path: '/lostItems',
     element: <LostPage />,
+    loader: getList,
   },
   {
     path: '/noticeInput',

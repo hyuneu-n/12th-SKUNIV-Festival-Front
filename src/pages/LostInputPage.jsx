@@ -10,28 +10,7 @@ import img_p from '../assets/images/icon_photo.svg';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
-const Container = () => {
-  const [isDropdownView, setDropdownView] = useState(false)
 
-  const handleClickContainer = () => {
-    setDropdownView(!isDropdownView)
-  }
-
-  const handleBlurContainer = () => {
-    setTimeout(() => {
-      setDropdownView(false)
-    }, 200);
-  }
-
-  return (
-    <div className="container" onBlur={handleBlurContainer}>
-      <label onClick={handleClickContainer}>
-        <button>Dropdown Menu{isDropdownView ? '▲' : '▼'}</button>
-      </label>
-      {isDropdownView && <Dropdown />}
-    </div>
-  )
-}
 export default function Notice() {
   const navigate = useNavigate();
   const [lName, setName] = useState('');

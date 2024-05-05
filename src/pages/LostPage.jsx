@@ -3,20 +3,14 @@ import MenuBar from '../components/MenuBar';
 import * as S from '../styles/pages/LostPage.styled';
 import ItemSwitch from '../components/ItemSwitch';
 import ItemBox from '../components/ItemBox';
-import { LostData } from '../utils/LostData';
-import { Link } from 'react-router-dom';
+//import { LostData } from '../utils/LostData';
+import { Link , useLoaderData} from 'react-router-dom';
 import InputButton from '../components/InputButton';
 import i from '../assets/images/menubar/menubarImage.svg';
-import { useState, useEffect } from 'react';
 export default function ItemsLost() {
-  const [itemData, setData] = useState([]);
-
-  useEffect(() => {
-    console.log("entered");
-    fetch('http://dev.skufestival2024.site/api/lostitem/posts?lastId=0&size=8')
-      .then(response => response.json())
-      .then(json => console.log(json))
-  }, []);
+  
+  const data = useLoaderData();
+  console.log(data);
   return (
     <>
       <MenuBar></MenuBar>
@@ -29,7 +23,7 @@ export default function ItemsLost() {
         <S.LostImg src={i}></S.LostImg>
         <ItemSwitch />
         <S.LostBody>
-          {LostData.map((item) => {
+          {data.map((item) => {
             return (
               <ItemBox
                 key={item.id}
@@ -44,4 +38,9 @@ export default function ItemsLost() {
       <Footer />
     </>
   );
+}// get 요청
+export async function loads() {
+  const response = await fetch('http://dev.skufestival2024.site/api/lostitem/posts?lastId=0&size=8');
+  console.log(response);
+  return response;
 }
