@@ -27,9 +27,10 @@ export default function ItemsLost() {
             return (
               <ItemBox
                 key={item.id}
-                name={item.name}
-                location={item.location}
-                date={item.date}
+                name={item.lostItemName}
+                location={item.lostLocation}
+                date={item.lostDate}
+                img = {item.lostItemImagePath}
               />
             );
           })}

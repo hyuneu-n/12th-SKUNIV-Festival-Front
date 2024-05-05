@@ -4,7 +4,7 @@ import def from '../assets/images/footer/logo.svg';
 export default function ItemBox({ name, location, date, link, img, find = false}) {
     return (
         <S.ItemBox>
-            <S.ItemImage src={find ? complete : def} alt = "item"></S.ItemImage>
+            <S.ItemImage src={find ? complete : img} alt = "item"></S.ItemImage>
             <S.ItemLine></S.ItemLine>
             <S.ItemName>{name}</S.ItemName>
             <S.ItemDate>{date}</S.ItemDate>
