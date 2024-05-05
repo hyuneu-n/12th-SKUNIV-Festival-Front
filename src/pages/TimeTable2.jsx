@@ -7,7 +7,7 @@ import SpecialComponent from '../../src/components/Specialguest';
 import SpecialComponent2 from '../../src/components/Specialguest2';
 import Footer from '../components/Footer';
 import fromis9 from '../assets/images/timetable/fromis9(2).svg';
-import Backimage from '../assets/images/timetable/background.png';
+import Backimage from '../assets/images/timetable/bgwithgradient.png';
 import Header from '../components/Header';
 
 
