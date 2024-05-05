@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const NoticeLayout = styled.div`
   width: 100%;
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,6 +19,14 @@ export const NoticeHead = styled.form`
 `;
 export const NoticeBody = styled.div`
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 7% 0% 15% 0%;
+`;
+export const NoticeBodyForm = styled.form`
+  width: 85%;
   display: flex;
   flex-direction: column;
   justify-content: center;

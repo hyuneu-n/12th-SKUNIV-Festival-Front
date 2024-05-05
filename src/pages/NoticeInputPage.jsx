@@ -15,17 +15,20 @@ const NoticeBack = styled.img`
 `;
 
 export default function Notice() {
+  const handleButtonClick = () => {
+    console.log('button clicked');
+    history.goBack();
+  };
   return (
     <>
       <S.NoticeLayout>
         <S.NoticeHead>
-          <Link to={'/findItems'}>
+          <Link to={'/notice'}>
             <NoticeBack src={ss}></NoticeBack>
           </Link>
-          <InputButton></InputButton>
+          <InputButton onClick={handleButtonClick}></InputButton>
         </S.NoticeHead>
-        <S.NoticeBody>
-          <Form method="post">
+          <S.NoticeBodyForm method="post">
             <S.NoticeTitle
               type="text"
               placeholder="제목을 입력해주세요."
@@ -38,9 +41,7 @@ export default function Notice() {
               id="bContent"
               name="bContent"
             ></S.NoticeContent>
-          </Form>
-          <button>save</button>
-        </S.NoticeBody>
+          </S.NoticeBodyForm>
       </S.NoticeLayout>
       <Footer />
     </>
