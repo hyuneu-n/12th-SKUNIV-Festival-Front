@@ -24,7 +24,7 @@ height: 500px;
 margin: 10% 0% 10% 0%;
 padding: 3% 0% 3% 0%;
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 gap: 10px; 
 justify-items: center;
 overflow-y: scroll; 

@@ -22,7 +22,7 @@ export default function Notice() {
           <Link to={'/findItems'}>
             <NoticeBack src={ss}></NoticeBack>
           </Link>
-          {/* <InputButton></InputButton> */}
+          <InputButton></InputButton>
         </S.NoticeHead>
         <S.NoticeBody>
           <Form method="post">

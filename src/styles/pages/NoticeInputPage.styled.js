@@ -23,7 +23,7 @@ export const NoticeBody = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin: 7% 0% 15% 0%;
 `;
 export const NoticeBack = styled.img`
