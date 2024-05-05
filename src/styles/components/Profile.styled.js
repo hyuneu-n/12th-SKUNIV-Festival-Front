@@ -70,7 +70,7 @@ export const ProfileRoleParagraph = styled.p`
     padding-right: 10px;
     font-family: 'Pretendard Variable', arial;
     margin: 2px;
-    margin-left: 37px;
+    margin-left: 28px;
     font-size: 11px;
   }
 `;

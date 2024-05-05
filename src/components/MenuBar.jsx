@@ -16,6 +16,7 @@ const MenuBarLine = styled.hr`
 
 const MenubarLink = styled(Link)`
   color: #215107 !important;
+  font-weight: 440;
 `;
 
 export default function MenuBar() {
@@ -28,12 +29,12 @@ export default function MenuBar() {
       <MenuBarImg src={SconMain} />
       <MenuBarLine />
       <MenubarLink to="/">Home</MenubarLink>
-      <MenubarLink to="/booth">부스맵</MenubarLink>
+      <MenubarLink to="/booth">부스</MenubarLink>
       <MenubarLink to="/timetable">타임테이블</MenubarLink>
-      <MenubarLink to="/notice">총학공지</MenubarLink>
+      <MenubarLink to="/notice">공지사항</MenubarLink>
       <MenubarLink to="/lostItems">분실물</MenubarLink>
       <MenubarLink to="/safety">AED · 대피로</MenubarLink>
-      <MenubarLink to="/about">만든사람들</MenubarLink>
+      <MenubarLink to="/about">ABOUT</MenubarLink>
     </MenuBarLayout>
   );
 }

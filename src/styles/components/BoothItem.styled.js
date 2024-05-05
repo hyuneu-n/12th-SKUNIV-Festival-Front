@@ -70,9 +70,10 @@ export const CustomSheet = styled(Sheet)`
       align-items: center;
     }
 
-    p {
+    p { //인트로
       text-align: center;
-      padding-top: 10px;
+      padding-top: 7px;
+      padding-bottom: 20px;
     }
 
     button {
@@ -89,6 +90,13 @@ export const CustomSheet = styled(Sheet)`
       text-decoration: none;
       color: #576141 !important;
       font-family: Pretendard;
+      font-weight: 600;
     }
   }
+`;
+
+export const BoothItemParagraph = styled.p`
+  white-space: pre-wrap;
+  line-height: 1.4;
+  padding-bottom: 10px;
 `;

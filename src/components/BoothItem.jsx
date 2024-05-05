@@ -52,7 +52,7 @@ export default function BoothItem({
             {booth && (
               <div>
                 <h2>{booth.boothName}</h2>
-                <p>{booth.intro}</p>
+                <S.BoothItemParagraph>{booth.intro}</S.BoothItemParagraph>
                 <div>
                   {' '}
                   <ul>
