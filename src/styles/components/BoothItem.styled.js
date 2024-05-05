@@ -63,19 +63,6 @@ export const CustomSheet = styled(Sheet)`
       font-family: Pretendard;
     }
 
-    div {
-      font-family: Pretendard;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    p { //인트로
-      text-align: center;
-      padding-top: 7px;
-      padding-bottom: 20px;
-    }
-
     button {
       width: 40%;
       height: 35px;
@@ -96,7 +83,44 @@ export const CustomSheet = styled(Sheet)`
 `;
 
 export const BoothItemParagraph = styled.p`
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 20px;
   white-space: pre-wrap;
   line-height: 1.4;
   padding-bottom: 10px;
+`;
+
+export const BoothMenuIntroBox = styled.div`
+  width: 90%;
+  display: flex;
+`;
+
+export const BoothDayBox = styled.div`
+  flex: 3;
+  font-family: Pretendard;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 11px;
+`;
+
+export const BoothMenuDivider = styled.div`
+  width: 1px;
+  background-color: black;
+`;
+export const BoothNightBox = styled.div`
+  flex: 3;
+  font-family: Pretendard;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 11px;
+`;
+
+export const BoothMenuParagraph = styled.p`
+  font-size: 13px;
+  text-align: center;
+  font-family: Pretendard;
+  padding: 0 0 5px 0;
 `;
