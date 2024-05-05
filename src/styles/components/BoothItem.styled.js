@@ -59,10 +59,12 @@ export const CustomSheet = styled(Sheet)`
     h2 {
       text-align: center;
       color: #576141;
-      margin: 5px 0px;
+      margin: 10px 0px;
+      font-family: Pretendard;
     }
 
     div {
+      font-family: Pretendard;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -70,6 +72,7 @@ export const CustomSheet = styled(Sheet)`
 
     p {
       text-align: center;
+      padding-top: 10px;
     }
 
     button {
@@ -85,6 +88,7 @@ export const CustomSheet = styled(Sheet)`
     a {
       text-decoration: none;
       color: #576141 !important;
+      font-family: Pretendard;
     }
   }
 `;
