@@ -28,10 +28,11 @@ export default function FindItems() {
           {data.map((item,index) => {
             return (
               <ItemBox
-                key = {item.id}
-                name={item.name}
-                location={item.location}
-                date={item.date}
+                key={item.id}
+                name={item.lostItemName}
+                location={item.lostLocation}
+                date={item.lostDate}
+                img = {item.lostItemImagePath}
                 find={true}
               />
             );

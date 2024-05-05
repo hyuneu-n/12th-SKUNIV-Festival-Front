@@ -54,16 +54,23 @@ export default function BoothItem({
               <div>
                 <h2>{booth.boothName}</h2>
                 <S.BoothItemParagraph>{booth.intro}</S.BoothItemParagraph>
-                <div>
-                  {' '}
-                  <ul>
-                    {Object.entries(booth.menu).map(([item, price]) => (
-                      <li key={item}>
-                        {item}: {price}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <S.BoothMenuIntroBox>
+                  {/* {' '} */}
+                  <S.BoothDayBox>
+                    <S.BoothMenuParagraph>DAY</S.BoothMenuParagraph>
+                  </S.BoothDayBox>
+                  <S.BoothMenuDivider />
+                  <S.BoothNightBox>
+                    <S.BoothMenuParagraph>NIGHT</S.BoothMenuParagraph>
+                    <ul>
+                      {Object.entries(booth.menu).map(([item, price]) => (
+                        <li key={item}>
+                          {item}: {price}
+                        </li>
+                      ))}
+                    </ul>
+                  </S.BoothNightBox>
+                </S.BoothMenuIntroBox>
 
                 <p>{booth.account}</p>
                 <button>

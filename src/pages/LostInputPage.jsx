@@ -10,25 +10,47 @@ import img_p from '../assets/images/icon_photo.svg';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
-
 export default function Notice() {
   const navigate = useNavigate();
   const [lName, setName] = useState('');
-  const [lDate, setDate] = useState('');
   const [lTime, setTime] = useState('');
+  const [lDate, setDate] = useState('');
   const [lLocation, setLocation] = useState('');
   const handleButtonClick = () => {
     console.log('button clicked');
 
-    console.log(lName + ' + ' + lDate);
-    console.log(lTime + ' + ' + lLocation);
-
     const postData = {
-      title: title,
-      content: content
+      lostItemName: lName,
+      lostLocation: lLocation,
+      lostDate: lDate,
     };
-    navigate('/lostItems');
+    console.log(postData);
+    //navigate('/lostItems');
   };
+
+  // // 이미지 가져오기
+  // const onSelectImage = () => {
+  //   launchImageLibrary(
+  //     {
+  //       madiaType: 'photo',
+  //       maxWidth: 512,
+  //       maxHeight: 512,
+  //       includeBase64: true
+  //     },
+  //     (response) => {
+  //       console.log(response)
+  //       // console.log(response.assets[0].base64)
+  //       if (response.didCancel) {
+  //         return;
+  //       } else if (response.errorCode) {
+  //         console.log("Image Error : " + response.errorCode);
+  //       }
+
+  //       setResponse(response);
+  //       setImageFile(response.assets[0].base64);
+  //     })
+
+  // }
   return (
     <>
       <S.NoticeLayout>

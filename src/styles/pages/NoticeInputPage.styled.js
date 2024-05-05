@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const NoticeLayout = styled.div`
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin:10% 0% 0% 0%;
+  margin:10% 0% 0% 5%;
 `;
 
 export const NoticeHead = styled.form`
