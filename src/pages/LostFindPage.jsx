@@ -25,7 +25,7 @@ export default function FindItems() {
         <ItemSwitch />
         <S.LostBody>
 
-          {/* {data.map((item,index) => {
+          {data.map((item,index) => {
             return (
               <ItemBox
                 key = {item.id}
@@ -35,7 +35,7 @@ export default function FindItems() {
                 find={true}
               />
             );
-          })} */}
+          })}
         </S.LostBody>
       </S.LostLayout>
 

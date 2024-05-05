@@ -83,6 +83,7 @@ const router = createBrowserRouter([
   {
     path: '/findItems',
     element: <LostFind />,
+    loader: getList,
   },
 ]);
 

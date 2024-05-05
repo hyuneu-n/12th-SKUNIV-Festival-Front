@@ -63,7 +63,7 @@ export default function MadeBy() {
             major="컴퓨터공학과 22"
             image={hyun}
             role="기능 아이디어 구상" />
-          <Profile
+          <Profile 
             name="김소연"
             major="소프트웨어학과 20"
             image={so}
