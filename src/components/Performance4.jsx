@@ -37,7 +37,7 @@ top: 30%; /* 위쪽 기준으로 가운데 정렬을 위해 50%로 설정 */
 color: #55A161;
 font-size: 20px;
 font-family: 'Pretendard Variable';
-font-weight: 610;
+font-weight: 900;
 `;
 
 const Text2 = styled.div`
