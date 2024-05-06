@@ -45,11 +45,18 @@ const DateContainer = styled.div`
   margin-bottom: 10%;
 `;
 
+const DateRow4 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%; /* 각 행의 상단 여백 조절 */
+`;
+
 const DateRow = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0%; /* 각 행의 상단 여백 조절 */
+  margin-left: 0%; /* 각 행의 상단 여백 조절 */
 `;
 
 const NumberFirst = styled.h1`
@@ -57,9 +64,9 @@ const NumberFirst = styled.h1`
   font-family: SUIT Variable, sans-serif;
   font-weight: bold; /* 굵기 추가 */
   color: #55A161;
-  margin: 0 30%;
+  margin: 0 25%;
   color: #55A161;
-  
+   
 `;
 
 const NumberSecond = styled.h1`
@@ -229,11 +236,11 @@ export default function TimeTable2() {
         <TitleText>TIME TABLE</TitleText>
       </Title>
       <DateContainer>
-        <DateRow>
+        <DateRow4>
         
           <NumberFirst>9</NumberFirst>
           <NumberButton2 to="/timetable4">10</NumberButton2>
-        </DateRow>
+        </DateRow4>
         <DateRow>
           <Day>thu</Day>
           <Day>fri</Day>

@@ -98,7 +98,7 @@ const SmallTitle = styled.div`
 
 const SmallIcon = styled.img`
   width: 10px;
-  margin-left: 10%;
+  margin-left: 200%;
 `;
 
 const TitleText = styled.div`
