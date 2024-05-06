@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 // 공지
 export const NoticeBox = styled.a`
-    width: 300px;
+    width: 80vw;
     height: 67px;
     background-color: #F6F6F670;
     color: #000000;
