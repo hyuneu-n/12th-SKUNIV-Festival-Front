@@ -103,7 +103,7 @@ export const HorizonBody = styled.div`
   justify-content: space-between;
   align-items: center;
 `;
-export const BtnImage = styled.img`
+export const BtnImage = styled.div`
   width: 67px;
   height: 67px;
   border: none;

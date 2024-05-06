@@ -23,11 +23,42 @@ export default function Notice() {
       lostItemName: lName,
       lostLocation: lLocation,
       lostDate: lDate,
-    };
-    console.log(postData);
-    //navigate('/lostItems');
-  };
 
+    };
+    const formData = new FormData();
+    for (const key in postData) {
+      formData.append(key, postData[key]);
+    }
+    const fileInput = document.getElementById('fileInput');
+    const file = fileInput.files[0]
+    if (!file) {
+      alert('파일을 선택해주세요.'); // 파일을 선택하지 않은 경우 메시지 표시
+      return;
+    }
+    else console.log("not null");
+    formData.append('file', file); // file은 실제 파일 객체입니다.
+    console.log(postData);
+    fetch('https://dev.skufestival2024.site/api/lostitem/post', {
+      method: 'POST',
+      body: formData,
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('Success:', data);
+        navigate('/lostItems');
+      })
+      .catch(error => {
+        console.log('Error:', error);
+        navigate('/lostItems');
+      });
+  };
+  //lostItemImagePath: "https://skufestival.s3.ap-northeast-2.amazonaws.com/lostItems/43d55df0-7bc4-4c06-916b-0f8b6ea8fb9daed.jpg",
+  //navigate('/lostItems');
   // // 이미지 가져오기
   // const onSelectImage = () => {
   //   launchImageLibrary(
@@ -66,7 +97,12 @@ export default function Notice() {
               id="lName"
               name="lName"
               onChange={(e) => setName(e.target.value)} />
-            <S.BtnImage src={img_p}></S.BtnImage>
+            <S.BtnImage src={img_p}>
+              <input
+                id="fileInput"
+                type="file"
+                accept="image/png, image/jpeg, image/jpg"
+              /></S.BtnImage>
           </S.HorizonBody>
 
           <S.NoticeTitle
@@ -94,25 +130,3 @@ export default function Notice() {
     </>
   );
 }
-const ModalStyle = {
-  overlay: {
-    position : 'fixed',
-    top : 0,
-    left : 0,
-    right : 0,
-    bottom : 0,
-    zIndex : 10,
-    backgroundColor: 'rgba(0,0,0,0.5)',
-  },
-  content : {
-    display : 'flex',
-    justifyContent : 'center',
-    alignItems : 'center',
-    flexDirection : 'column',
-    backgroundColor : 'white',
-    top : '32vh',
-    left : '12vw',
-    right : '12vw',
-    bottom : '50vh',
-  }
-};
