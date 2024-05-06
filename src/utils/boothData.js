@@ -64,6 +64,7 @@ import urban from '../assets//images/logo/urban.png';
 import logistics from '../assets//images/logo/logistics.png';
 import ncbe from '../assets//images/logo/ncbe.png';
 import art from '../assets//images/logo/art.png';
+import und from '../assets//images/logo/undefeated.jpg';
 
 export const boothData = [
   //모두 저녁장사 메뉴만 기입
@@ -77,6 +78,7 @@ export const boothData = [
     major: 'NATURAL SCIENCE & ENGINEERING',
     intro:
       '✨서경제일 줄넘기✨\n평점: 10/10\n소인이 찾던 바로 그 대결이오.\n막차까지 즐기고 싶소이다.\n슬러시도 준다니 안 할 이유가 없소.',
+    introImage: und,
     menuDay: {
       슬러쉬: '1.0',
       '서경제일 줄넘기 대회': '1.0',

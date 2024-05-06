@@ -49,8 +49,8 @@ export const CustomSheet = styled(Sheet)`
     /* custom styles */
   }
   .react-modal-sheet-container {
-    width: ${({ $width }) => `${$width}px`} !important;
-    left: ${({ $left }) => `${$left}px`} !important;
+    width: ${({ $width }) => `${1.1* $width}px`} !important;
+    left: ${({ $left }) => `${0.55 * $left}px`} !important;
     height: ${({ $height }) => `calc(100vh - 40vh)`} !important;
   }
   .react-modal-sheet-header {
