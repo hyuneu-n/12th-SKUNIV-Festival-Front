@@ -3,6 +3,7 @@ export const NoticeCon = styled.div`
 background: linear-gradient(180deg, #FFFFF2 0%, #FFFFF6 0.01%, #D3DDC0 100%);
 
 `
+
 export const Title = styled.p`
 position: absolute;
 width: 80vw;
@@ -78,4 +79,18 @@ left: 35px;
 top: 157px;
 
 border: 1px solid rgba(0, 0, 0, 0.5);
+`
+export const IconCon =styled.div`
+position: absolute;
+width: 80vw;
+height: 26px;
+left: 40px;
+top: 90px;
+display: flex; /* Flexbox를 활용 */
+  justify-content: flex-end; /* 자식 요소들을 우측으로 정렬 */
+  gap: 10px; /* IconImg 사이의 간격 설정 */
+`
+export const IconImg =styled.img`
+width:20px;
+height:23px;
 `
