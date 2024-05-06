@@ -55,7 +55,7 @@ export default function ItemsLost() {
   );
 }// get 요청
 export async function loads() {
-  const response = await fetch('http://dev.skufestival2024.site/api/lostitem/posts?lastId=0&size=8');
+  const response = await fetch('https://dev.skufestival2024.site/api/lostitem/posts?lastId=0&size=8');
   console.log(response);
   return response;
 }

@@ -60,7 +60,7 @@ export default function FindItems() {
 }
 // get 요청
 export async function loadLis2() {
-  const response = await fetch('http://dev.skufestival2024.site/api/lostitem/posts?lastId=0&size=8');
+  const response = await fetch('https://dev.skufestival2024.site/api/lostitem/posts?lastId=0&size=8');
   // url
   console.log(response);
   return response;
