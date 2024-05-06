@@ -8,17 +8,31 @@ import InputButton from '../components/InputButton';
 import ItemSwitch from '../components/ItemSwitch';
 import { Link, useLoaderData } from 'react-router-dom';
 import { LostData } from '../utils/LostData';
+import Modal from 'react-modal';
+import React, { useState } from 'react'
 export default function FindItems() {
+  const [modalSwitch, setModalSwitch] = useState(false);
   const data = useLoaderData();
+  const checkPass = () => {
+    const inputValue = document.getElementById('pass').value;
+    if (inputValue === '7777') {
+      window.location.href = '/lostInput'; // 특정 페이지로 이동
+    } else {
+      setModalSwitch(false);
+    }
+  }
   console.log(data);
   return (
     <>
       <MenuBar></MenuBar>
+      <Modal isOpen={modalSwitch} onRequestClose={() => setModalSwitch(false)} style={ModalStyle}>
+        <h5>관리자 로그인</h5>
+        <input id='pass'></input>
+        <button onClick={() => checkPass()}>aa</button>
+      </Modal>
       <S.LostLayout>
         <S.LostHead>
-          <Link to={"/lostInput"}>
-            <InputButton></InputButton>
-          </Link>
+            <InputButton onClick={() => setModalSwitch(true)}></InputButton>
         </S.LostHead>
         <S.LostImg src={i}></S.LostImg>
         <S.LostWrite></S.LostWrite>
