@@ -21,7 +21,7 @@ export const NoticeHead = styled.div`
 `;
 export const NoticeBody = styled.div`
 width: 100%;
-height: 500px;
+height: auto;
 margin: 0% 0% 10% 0%;
 padding: 3% 0% 3% 0%;
 display: grid;
@@ -51,9 +51,9 @@ export const NoticeWrite = styled.a`
   right: 0;
 `;
 export const WidthLine = styled.hr`
-  width: 100%;
+  width: 90%;
   border: 1px solid;
-  margin: 10% 0% 10% 0%;
+  margin: 10% 0% 3% 1%;
 `;
 
 export const StyledLink = styled(RouterLink)`

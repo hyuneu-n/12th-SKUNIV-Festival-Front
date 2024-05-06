@@ -1,4 +1,3 @@
-import Footer from '../components/Footer';
 import MenuBar from '../components/MenuBar';
 import Switch from '../components/Switch';
 import * as S from '../styles/pages/NoticePage.styled';
