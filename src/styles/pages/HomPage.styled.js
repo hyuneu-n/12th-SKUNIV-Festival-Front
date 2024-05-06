@@ -57,6 +57,6 @@ export const HomePageDayHeading = styled.h1`
 `;
 export const HomePageBottomImage = styled.img`
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   width: 375px;
 `;
