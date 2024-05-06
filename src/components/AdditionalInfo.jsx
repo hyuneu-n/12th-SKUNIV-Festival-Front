@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Group from '../assets/images/timetable/Hawsa.svg';
+import Group from '../assets/images/timetable/hwasaaa.png';
 import {Link, useLocation} from 'react-router-dom';
 
 const AdditionalInfoContainer = styled.div`
@@ -11,8 +11,8 @@ const AdditionalInfoContainer = styled.div`
 
 const CircleIcon = styled.img`
   margin-top: 5%;
-  width: 160px; /* 조정 */
-  height: 140px; /* 조정 */
+  width: 140px; /* 조정 */
+  height: auto; /* 조정 */
 `;
 
 const Text = styled.p`
