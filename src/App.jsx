@@ -80,21 +80,21 @@ const router = createBrowserRouter([
         element: <TimeTable2 />,
       },
       {
-        path: 'lostItems',
+        path: 'lostitems',
         element: <LostPage />,
         loader: getList,
       },
       {
-        path: 'noticeInput',
+        path: 'noticeinput',
         element: <NoticeInput />,
         action: postData,
       },
       {
-        path: 'lostInput',
+        path: 'lostinput',
         element: <LostInput />,
       },
       {
-        path: 'findItems',
+        path: 'finditems',
         element: <LostFind />,
         loader: getList,
       },
