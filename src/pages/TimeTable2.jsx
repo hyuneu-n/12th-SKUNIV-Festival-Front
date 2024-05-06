@@ -8,7 +8,7 @@ import SpecialComponent from '../../src/components/Specialguest';
 import SpecialComponent2 from '../../src/components/Specialguest2';
 import fromis9 from '../assets/images/timetable/fromis9(2).svg';
 import haswa3  from '../assets/images/timetable/haswa3.svg';
-import Backimage from '../assets/images/timetable/background.png';
+import Backimage from '../assets/images/timetable/ttback.png';
 import Header from '../components/Header';
 import SpecialComponent3 from '../../src/components/Specialguest3';
 import dynamicduo2 from'../assets/images/timetable/dynamicduo2.svg';

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import play from '../assets/images/timetable/play.svg';
+import play from '../assets/images/timetable/Vector (2).svg';
 import PerformanceComponent from '../../src/components/Performance';
 import PerformanceComponent2 from '../../src/components/Performance2';
 import PerformanceComponent3 from '../../src/components/Performance3';
@@ -17,7 +17,7 @@ import Header from '../components/Header';
 import React, { useState } from 'react';
 
 
-import Backimage from '../assets/images/timetable/background.png';
+import Backimage from '../assets/images/timetable/ttback.png';
 
 
 const Layout = styled.div`
