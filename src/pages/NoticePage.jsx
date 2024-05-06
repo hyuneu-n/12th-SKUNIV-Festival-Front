@@ -23,7 +23,7 @@ export default function Notice() {
   const data = useLoaderData();
 
   console.log(data);
-
+  const checkPass2 = () => {window.location.href = '/noticeinput';}
   return (
     <>
       <MenuBar></MenuBar>
@@ -36,6 +36,7 @@ export default function Notice() {
         <input id="pass"></input>
         <button onClick={() => checkPass()}>aa</button>
       </Modal>
+      <button onClick={() => checkPass2()}>aa</button>
       <S.NoticeLayout>
         <S.NoticeHead>
           <InputButton onClick={() => setModalSwitch(true)}></InputButton>
