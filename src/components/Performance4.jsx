@@ -22,7 +22,7 @@ const InnerContainer = styled.div`
   height: 80px;
   background-color: white;
   opacity: 0.8;
-  border-radius: 20px;
+  border-radius: 18px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column; /* 컨테이너들을 세로로 배열 */
