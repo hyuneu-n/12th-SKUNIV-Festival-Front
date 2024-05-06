@@ -126,10 +126,11 @@ export const BoothDayBox = styled.div`
   font-family: Pretendard;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   font-size: 11px;
   align-self: flex-start;
   padding: 0 8px 0 8px;
+  white-space:nowrap;
 `;
 
 export const BoothMenuDivider = styled.div`
@@ -145,10 +146,11 @@ export const BoothNightBox = styled.div`
   font-family: Pretendard;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   font-size: 11px;
   align-self: flex-start;
   padding: 0 8px 0 8px;
+  white-space:nowrap;
 `;
 
 export const BoothMenuParagraph = styled.p`
@@ -156,4 +158,18 @@ export const BoothMenuParagraph = styled.p`
   text-align: center;
   font-family: Pretendard;
   padding: 9px 0 10px 0;
+`;
+
+export const MenuItem = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 3px 0;
+`;
+
+export const MenuItemName = styled.span`
+  font-weight: bold;
+`;
+
+export const MenuItemPrice = styled.span`
+  font-weight: normal;
 `;

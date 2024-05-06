@@ -32,7 +32,7 @@ export default function MiniTimeTable() {
             <S.TimeLine key={item.id} style={{ whiteSpace: 'nowrap' }}>
               <span>
                 {' '}
-                {item.time} <span style={{ fontWeight: 800 }}>{item.info}</span>
+                {item.time} <span style={{ fontWeight: 800, paddingLeft: '10px' }}>{item.info}</span>
               </span>
             </S.TimeLine>
           );

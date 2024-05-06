@@ -56,27 +56,25 @@ export default function BoothItem({
                 <S.BoothItemParagraph>{booth.intro}</S.BoothItemParagraph>
                 <S.BoothMenuIntroBox>
                   <S.BoothDayBox>
-                    <S.BoothMenuParagraph>🌞</S.BoothMenuParagraph>
-                    <ul>
-                      {Object.entries(booth.menuDay).map(([item, price]) => (
-                        <li key={item}>
-                          {item}: {price}
-                        </li>
-                      ))}
-                    </ul>
+                    <S.BoothMenuParagraph>🌞 Day Menu</S.BoothMenuParagraph>
+                    {Object.entries(booth.menuDay).map(([item, price]) => (
+                      <S.MenuItem key={item}>
+                        <S.MenuItemName>{item}</S.MenuItemName>
+                        <S.MenuItemPrice>{price}</S.MenuItemPrice>
+                      </S.MenuItem>
+                    ))}
                   </S.BoothDayBox>
 
                   <S.BoothMenuDivider />
-                  
+
                   <S.BoothNightBox>
-                    <S.BoothMenuParagraph>🌙</S.BoothMenuParagraph>
-                    <ul>
-                      {Object.entries(booth.menuNight).map(([item, price]) => (
-                        <li key={item}>
-                          {item}: {price}
-                        </li>
-                      ))}
-                    </ul>
+                    <S.BoothMenuParagraph>🌙 Night Menu</S.BoothMenuParagraph>
+                    {Object.entries(booth.menuNight).map(([item, price]) => (
+                      <S.MenuItem key={item}>
+                        <S.MenuItemName>{item}</S.MenuItemName>
+                        <S.MenuItemPrice>{price}</S.MenuItemPrice>
+                      </S.MenuItem>
+                    ))}
                   </S.BoothNightBox>
                 </S.BoothMenuIntroBox>
 

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import i from '../../assets/images/homePage/main.png'
 export const HomePageLayout = styled.div`
   width: 100%;
