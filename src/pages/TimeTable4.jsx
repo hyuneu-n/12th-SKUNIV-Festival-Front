@@ -14,6 +14,7 @@ import Heize3 from '../assets/images/timetable/Heize3.svg';
 import Day6 from '../assets/images/timetable/Day6(3).svg';
 import DJ2 from '../assets/images/timetable/DJ2.svg';
 import Header from '../components/Header';
+import React, { useState } from 'react';
 
 
 import Backimage from '../assets/images/timetable/background.png';
@@ -203,6 +204,23 @@ const WhiteContainer2 = styled.div`
   margin-top: 10;
 `;
 export default function TimeTable4() {
+  const StyledLink = styled(Link)`
+  color: ${({ active }) => (active ? '#55A161' : 'black')};
+`;
+  const NumberButton2 = ({ to, children }) => {
+    const [isActive, setIsActive] = useState(false);
+  
+    const handleClick = () => {
+      setIsActive(!isActive);
+    };
+    return (
+      <NumberFirst>
+        <StyledLink to={to} active={isActive} onClick={handleClick}>
+          {children}
+        </StyledLink>
+      </NumberFirst>
+    );
+  };
   return (
     <Layout>
       <Title>
@@ -214,7 +232,7 @@ export default function TimeTable4() {
       </Title>
       <DateContainer>
         <DateRow>
-          <NumberFirst>9</NumberFirst>
+          <NumberButton2 to="/timetable2">9</NumberButton2>
           <NumberSecond>10</NumberSecond>
         </DateRow>
         <DateRow>

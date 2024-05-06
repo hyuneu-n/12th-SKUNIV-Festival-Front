@@ -13,6 +13,7 @@ import Header from '../components/Header';
 import SpecialComponent3 from '../../src/components/Specialguest3';
 import dynamicduo2 from'../assets/images/timetable/dynamicduo2.svg';
 import SpecialComponent4 from '../../src/components/Specialguest4';
+import React, { useState } from 'react';
 
 
 
@@ -201,6 +202,23 @@ const WhiteContainer2 = styled.div`
   margin-top: 10;
 `;
 export default function TimeTable2() {
+  const StyledLink = styled(Link)`
+  color: ${({ active }) => (active ? '#55A161' : 'black')};
+`;
+  const NumberButton2 = ({ to, children }) => {
+    const [isActive, setIsActive] = useState(false);
+  
+    const handleClick = () => {
+      setIsActive(!isActive);
+    };
+    return (
+      <NumberFirst>
+        <StyledLink to={to} active={isActive} onClick={handleClick}>
+          {children}
+        </StyledLink>
+      </NumberFirst>
+    );
+  };
   return (
     <Layout>
       <Title>
@@ -212,8 +230,9 @@ export default function TimeTable2() {
       </Title>
       <DateContainer>
         <DateRow>
+        
           <NumberFirst>9</NumberFirst>
-          <NumberSecond>10</NumberSecond>
+          <NumberButton2 to="/timetable4">10</NumberButton2>
         </DateRow>
         <DateRow>
           <Day>thu</Day>
