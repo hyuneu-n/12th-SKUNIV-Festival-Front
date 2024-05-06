@@ -56,6 +56,7 @@ export const CustomSheet = styled(Sheet)`
 }
 @media (max-width: 390px) {
     .react-modal-sheet-container {
+        overflow-y: auto;
         height: 85vh; 
         width: 90%;    
         left: 5%;      

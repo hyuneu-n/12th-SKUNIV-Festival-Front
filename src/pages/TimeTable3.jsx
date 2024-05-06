@@ -62,7 +62,7 @@ const Day = styled.h1`
   font-family: SUIT Variable, sans-serif;
   font-weight: bold; /* 굵기 추가 */
   color: #5e5e5e;
-  margin: 0 40%;
+  margin: 0 26px 0 14px;
 `;
 const TimeTableContainer = styled.div`
   display: flex;

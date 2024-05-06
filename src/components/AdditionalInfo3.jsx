@@ -35,7 +35,7 @@ const AdditionalInfo3 = () => {
       <AdditionalInfoContainer>
         <CircleIcon src={Group} alt="Circle Icon" />
       </AdditionalInfoContainer>
-      <Text>Dynamicduo</Text>
+      <Text>Dynamic Duo</Text>
       </Link>
     </div>
   );
