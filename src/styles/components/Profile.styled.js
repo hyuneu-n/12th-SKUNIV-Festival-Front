@@ -54,7 +54,7 @@ export const ProfileItemBox = styled.div`
 
 export const ProfileLogoImg = styled.img`
   width: 60px;
-  height: 60px;
+  height: auto;
   margin : 0 10px 0 10px;
 `;
 
