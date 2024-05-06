@@ -54,7 +54,7 @@ export default function ItemsLost() {
           })}
         </S.LostBody>
       </S.LostLayout>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }// get 요청

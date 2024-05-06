@@ -137,7 +137,7 @@ export default function Notice() {
         style={{ display: 'none' }}
         ref={fileInputRef}
       />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

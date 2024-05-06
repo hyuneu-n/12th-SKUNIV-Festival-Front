@@ -55,7 +55,7 @@ export default function FindItems() {
         </S.LostBody>
       </S.LostLayout>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

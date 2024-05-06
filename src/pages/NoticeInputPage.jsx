@@ -68,7 +68,7 @@ export default function Notice() {
               onChange={(e) => setContent(e.target.value)} />
           </S.NoticeBodyForm>
       </S.NoticeLayout>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
