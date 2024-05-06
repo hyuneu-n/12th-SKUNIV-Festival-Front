@@ -58,7 +58,8 @@ export const CustomSheet = styled(Sheet)`
           height: 85vh; 
           width: 90%;    
           left: 5%;      
-          bottom: 5%;    
+          bottom: 5%;   
+          overflow-y: auto; 
       }
 }
 
