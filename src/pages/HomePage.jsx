@@ -16,7 +16,7 @@ import pinkMuhly from '../assets/images/homePage/Pinkmuhly.png';
 import test3 from '../assets/images/homePage/main3.png';
 import cd from '../assets/images/homePage/cdreal.png';
 import playlist from '../assets/images/homePage/playlist.png';
-import AllLogo from '../assets/images/homePage/allLGO.svg';
+import AllLogo from '../assets/images/homePage/bottom.png';
 import playbar from '../assets/images/homePage/playbar.svg';
 import bgimg from '../assets/images/homePage/backgroundimage.png';
 import cdleft from '../assets/images/homePage/cdleft.svg';
