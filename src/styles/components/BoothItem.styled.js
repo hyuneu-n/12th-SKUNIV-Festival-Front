@@ -54,6 +54,11 @@ export const CustomSheet = styled(Sheet)`
     height: 60vh !important;
     overflow-y: auto;
   }
+  @media (max-width: 768px) { /* 모바일 디바이스를 위한 미디어 쿼리 */
+    .react-modal-sheet-container {
+        height: 90vh; /* 모바일에서는 높이를 더 늘립니다 */
+    }
+}
   .react-modal-sheet-header {
     /* custom styles */
   }

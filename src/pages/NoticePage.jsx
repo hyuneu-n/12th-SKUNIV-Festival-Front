@@ -90,16 +90,12 @@ const ModalStyle = {
     alignItems: 'center',
     flexDirection: 'column',
     backgroundColor: 'white',
-    top: '260px',
-    left: '40px',
-    right: '40px',
-    bottom: '460px',
+    top: '200px',  // 위쪽 여백을 줄입니다.
+    left: '20px',  // 왼쪽 여백을 줄입니다.
+    right: '20px', // 오른쪽 여백을 줄입니다.
+    bottom: '200px', // 아래쪽 여백을 줄입니다.
     borderRadius: '20px',
     opacity: '0.9',
     lineHeight: '2.5',
-  },
-  inputContainer: {
-    marginTop: '10px', 
-    marginBottom: '10px', 
   },
 };
