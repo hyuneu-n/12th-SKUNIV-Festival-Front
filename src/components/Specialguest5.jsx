@@ -41,11 +41,11 @@ const Title = styled.div`
   position: relative;
   padding-top: 5%;
   color: #55A161;
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Pretendard Variable';
   font-weight: 900;
   text-align: start;
-  padding-left: 7%;
+  padding-left: 14.5%;
 `;
 
 const Time = styled.div`
