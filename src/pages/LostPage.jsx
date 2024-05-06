@@ -9,6 +9,9 @@ import InputButton from '../components/InputButton';
 import i from '../assets/images/menubar/menubarImage.svg';
 import Modal from 'react-modal';
 import React, { useState } from 'react'
+
+
+
 export default function ItemsLost() {
   const [modalSwitch, setModalSwitch] = useState(false);
   const data = useLoaderData();
