@@ -11,7 +11,7 @@ import MenuBar from '../components/MenuBar';
 import MiniTimeTable from '../components/MiniTimeTable';
 
 //svg
-import map from '../assets/images/homePage/boothmap.png';
+import map from '../assets/images/homePage/3dmapp.png';
 import pinkMuhly from '../assets/images/homePage/Pinkmuhly.png';
 import test3 from '../assets/images/homePage/main3.png';
 import cd from '../assets/images/homePage/cdreal.png';
@@ -53,7 +53,7 @@ export default function HomePage() {
 
         <S.HomePageBox>
           <S.HomePageTitleHeading>BOOTH MAP</S.HomePageTitleHeading>
-          <img src={map} style={{ width: '350px', height: 'auto' }} />
+          <img src={map} style={{ width: '340px', height: 'auto' }} />
           <Link to="/booth">부스 둘러보기</Link>
         </S.HomePageBox>
 
