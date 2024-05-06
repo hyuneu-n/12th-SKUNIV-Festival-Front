@@ -5,10 +5,10 @@ export const ItemBox = styled.div`
     height: 210px;
     background-color: #F6F6F6;
     color: #000000;
-    border-radius: 10px;
+    border-radius: 14px;
     border: none;
     
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 4px 4px rgba(299, 220, 218, 0.35);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,6 +22,8 @@ export const ItemName = styled.h1`
     font-weight: 600;
     font-style: normal;
     font-size: 1em;
+    font-family:Pretendard;
+    padding-bottom:5px;
 `;
 // 날짜
 export const ItemDate = styled.h1`
@@ -30,6 +32,9 @@ export const ItemDate = styled.h1`
     font-style: normal;
     font-size: 1em;
     color: #000000a5;
+
+    font-family:Pretendard;
+    padding-bottom:3px;
 `;
 // 장소
 export const ItemLocation = styled.h1`
@@ -37,6 +42,7 @@ export const ItemLocation = styled.h1`
     font-weight: 600;
     font-style: normal;
     font-size: 1em;
+    font-family:Pretendard;
 `;
 // 구분 선
 export const ItemLine = styled.hr`

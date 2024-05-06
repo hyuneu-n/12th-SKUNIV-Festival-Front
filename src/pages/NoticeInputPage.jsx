@@ -57,12 +57,12 @@ export default function Notice() {
           <S.NoticeBodyForm method="post">
             <S.NoticeTitle
               type="text"
-              placeholder="제목을 입력해주세요."
+              placeholder="제목을 입력해주세요"
               id="bTitle"
               onChange={(e) => setTitle(e.target.value)} />
             <S.NoticeContent
               type="text"
-              placeholder="내용을 입력해주세요."
+              placeholder="내용을 입력해주세요"
               id="bContent"
               name="bContent"
               onChange={(e) => setContent(e.target.value)} />

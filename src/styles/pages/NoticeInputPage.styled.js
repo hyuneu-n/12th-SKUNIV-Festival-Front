@@ -58,7 +58,7 @@ export const NoticeTitle = styled.input`
   color: #636363;
   font-weight: 600;
   font-family: 'Pretendard Variable', arial;
-  font-size: 1.2em;
+  font-size: 17px;
   background-color: ;
 `;
 export const NoticeContent = styled.textarea`
@@ -93,7 +93,7 @@ export const NoticeName = styled.input`
   color: #636363;
   font-weight: 600;
   font-family: 'Pretendard Variable', arial;
-  font-size: 1.2em;
+  font-size: 17px;
 `;
 export const HorizonBody = styled.div`
   width: 100%;

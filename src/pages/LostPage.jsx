@@ -34,7 +34,7 @@ export default function ItemsLost() {
       >
         <h5>관리자 로그인</h5>
         <input id="pass"></input>
-        <button onClick={() => checkPass()}>aa</button>
+        <button onClick={() => checkPass()}>login</button>
       </Modal>
       <S.LostLayout>
         <S.LostHead>
