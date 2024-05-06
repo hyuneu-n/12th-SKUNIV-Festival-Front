@@ -62,7 +62,7 @@ export default function ItemsLost() {
 } // get 요청
 export async function loads() {
   const response = await fetch(
-    'https://dev.skufestival2024.site/api/lostitem/posts?lastId=0&size=8'
+    'https://dev.skufestival2024.site/api/lostitem/posts'
   );
   console.log(response);
   return response;
