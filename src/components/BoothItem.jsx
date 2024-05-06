@@ -54,7 +54,7 @@ export default function BoothItem({
               <div>
                 <h2>{booth.boothName}</h2>
                 <S.BoothItemParagraph>{booth.intro}</S.BoothItemParagraph>
-                {booth.introImage && <img src={booth.introImage} style={{ width: '50%', display: 'block', marginLeft: 'auto', marginRight: 'auto',
+                {booth.introImage && <img src={booth.introImage} style={{ width: '30%', display: 'block', marginLeft: 'auto', marginRight: 'auto',
       paddingTop: '6px', 
       paddingBottom: '20px' }} />}
                 <S.BoothMenuIntroBox>
