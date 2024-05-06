@@ -43,6 +43,14 @@ export const FooterInstaLink = styled(Link)`
   margin: 0 3px;
 `;
 
+export const FooterLoginBtn = styled.button`
+  display: inline-block;
+  width: 20px;
+  margin: 0 3px;
+  border: none;
+  background-color: transparent;
+`;
+
 export const FooterLogoImg = styled.img`
   width: 100%;
 `;

@@ -1,11 +1,9 @@
 import { Outlet } from 'react-router-dom';
-import Footer from './Footer';
 
-export default function NoticeRootLayout() {
+export default function AdminRootLayout() {
   return (
     <>
       <Outlet />
-      <Footer />
     </>
   );
 }

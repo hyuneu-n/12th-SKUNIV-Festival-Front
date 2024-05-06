@@ -11,30 +11,25 @@ import NoticeBox from '../components/NoticeBox';
 import { Notices } from '../utils/NoticeData';
 import { Link, useRouteLoaderData } from 'react-router-dom';
 
-
 export default function NoticeShowPage() {
   const data = useLoaderData();
-  console.log(data);
+
   return (
     <>
-    
-    <MenuBar></MenuBar>
-    <S.IconCon>
-      <S.IconImg src={deleted}></S.IconImg>
-      <S.IconImg src={sidebar}></S.IconImg>
-      <S.IconImg src={edit}></S.IconImg>
-    </S.IconCon>
+      <MenuBar></MenuBar>
+      <S.IconCon>
+        <S.IconImg src={deleted}></S.IconImg>
+        <S.IconImg src={sidebar}></S.IconImg>
+        <S.IconImg src={edit}></S.IconImg>
+      </S.IconCon>
       <S.Title>{data.title}</S.Title>
       <S.date>{data.date}</S.date>
       <S.border></S.border>
 
       <S.contentBody>
-          <S.contentParagraph>{data.content}</S.contentParagraph>
-        </S.contentBody>
-        
-  
-      
-      </>
+        <S.contentParagraph>{data.content}</S.contentParagraph>
+      </S.contentBody>
+    </>
   );
 }
 

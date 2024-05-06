@@ -1,5 +1,9 @@
 import { GlobalStyle } from './styles/components/GlobalStyles.js';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from 'react-router-dom';
 
 import HomePage from './pages/HomePage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
@@ -20,8 +24,13 @@ import NoticeShowPage, {
   loader as getDetailData,
 } from './pages/NoticeShowPage';
 import NoticeRootLayout from './components/NoticRootLayout.jsx';
+import AdminLogin from './pages/AdminLogin.jsx';
+import { useLoginStore } from './store/store.js';
+import AdminRootLayout from './components/AdminRootLayout.jsx';
 
+const { isLogined } = useLoginStore;
 const router = createBrowserRouter([
+  // user router
   {
     path: '/',
     element: <RootLayout />,
@@ -97,6 +106,26 @@ const router = createBrowserRouter([
         path: 'finditems',
         element: <LostFind />,
         loader: getList,
+      },
+      // protected router
+      {
+        path: 'admin',
+        element: <AdminRootLayout />,
+        children: [
+          {
+            index: true,
+            element: <AdminLogin />,
+          },
+          {
+            path: 'edit',
+            element: isLogined ? (
+              <Notice />
+            ) : (
+              <Navigate to="/" replace={true} />
+            ),
+            loader: getData,
+          },
+        ],
       },
     ],
   },

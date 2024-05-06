@@ -14,7 +14,7 @@ export default function Footer() {
         <S.FooterImageBox>
           <S.FooterInstaLink style={{ marginTop: '7px', marginBottom: '10px' }}>
             <S.FooterLogoImg src={logo} />
-          </S.FooterInstaLink >
+          </S.FooterInstaLink>
           <S.FooterInstaLink to="https://www.instagram.com/likelion_skuniv/">
             <S.FooterLogoImg src={insta} />
           </S.FooterInstaLink>
