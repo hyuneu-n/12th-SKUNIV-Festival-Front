@@ -116,13 +116,17 @@ export const BtnImage = styled.img`
   padding: 3% 3% 3% 3%;
   background-size: cover;
 `;
-export const NoticeInImage = styled.img`
+export const NoticeInImage = styled.div`
   width: 100%;
   height: 188px;
   margin: 2% 0% 2% 0%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
   border: none;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #F8F8F8;
-  background-size: contain;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 `;

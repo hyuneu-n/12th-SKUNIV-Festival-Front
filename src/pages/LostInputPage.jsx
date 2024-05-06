@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import img_i from '../assets/images/icon_back.svg';
 import img_p from '../assets/images/icon_photo.svg';
 import { useNavigate } from 'react-router-dom';
-import { useState,useRef } from 'react';
+import { useState, useRef } from 'react';
 import styled from 'styled-components';
 
 export default function Notice() {
@@ -19,6 +19,29 @@ export default function Notice() {
   const fileInputRef = useRef(null);
   const handleImageClick = () => {
     fileInputRef.current.click();
+    const fileInput = document.getElementById('fileInput');
+    const fileView = document.getElementById('fileView');
+
+    // 파일 입력(input) 요소에 change 이벤트를 추가하여 파일이 변경될 때마다 실행되는 함수를 정의합니다.
+    fileInput.addEventListener('change', function (event) {
+      // 파일이 선택되었는지 확인합니다.
+      if (fileInput.files && fileInput.files[fileInput.files.length - 1]) {
+        // FileReader 객체를 생성합니다.
+        const reader = new FileReader();
+
+        // 파일이 로드될 때 실행될 콜백 함수를 정의합니다.
+        reader.onload = function (event) {
+          // 파일을 읽어서 이미지 URL로 변환합니다.
+          const imageURL = event.target.result;
+
+          // fileView 요소의 배경 이미지를 설정합니다.
+          fileView.style.backgroundImage = `url(${imageURL})`;
+        };
+
+        // 파일을 읽어서 데이터 URL로 변환합니다.
+        reader.readAsDataURL(fileInput.files[fileInput.files.length - 1]);
+      }
+    });
   };
   const handleButtonClick = () => {
     console.log('button clicked');
@@ -34,12 +57,14 @@ export default function Notice() {
       formData.append(key, postData[key]);
     }
     const fileInput = document.getElementById('fileInput');
-    const file = fileInput.files[0]
+    const file = fileInput.files[fileInput.files.length - 1]
     if (!file) {
       alert('파일을 선택해주세요.'); // 파일을 선택하지 않은 경우 메시지 표시
       return;
     }
-    else console.log("not null");
+    else {
+      console.log("not null");
+    }
     formData.append('file', file); // file은 실제 파일 객체입니다.
     console.log(postData);
     fetch('https://dev.skufestival2024.site/api/lostitem/post', {
@@ -90,7 +115,7 @@ export default function Notice() {
             id="lDate"
             name="lDate"
             onChange={(e) => setDate(e.target.value)} />
-          <S.NoticeInImage src={img_p}></S.NoticeInImage>
+          <S.NoticeInImage id = "fileView" ></S.NoticeInImage>
           <S.NoticeTitle
             type="text"
             placeholder="시간을 입력해주세요."
@@ -112,7 +137,7 @@ export default function Notice() {
         style={{ display: 'none' }}
         ref={fileInputRef}
       />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

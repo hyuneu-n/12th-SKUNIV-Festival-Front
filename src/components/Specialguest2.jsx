@@ -41,7 +41,7 @@ const Title = styled.div`
   color: #55A161;
   font-size: 20px;
   font-family: 'Pretendard Variable';
-  font-weight: 610;
+  font-weight: 900;
   text-align: start;
   padding-left: 14%;
 `;

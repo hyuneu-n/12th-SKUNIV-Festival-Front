@@ -6,7 +6,7 @@ import i from '../assets/images/menubar/menubarImage.svg';
 import ItemBox from '../components/ItemBox';
 import InputButton from '../components/InputButton';
 import ItemSwitch from '../components/ItemSwitch';
-import { Link, useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData,useNavigate } from 'react-router-dom';
 import { LostData } from '../utils/LostData';
 import Modal from 'react-modal';
 import React, { useState } from 'react'
@@ -16,7 +16,8 @@ export default function FindItems() {
   const checkPass = () => {
     const inputValue = document.getElementById('pass').value;
     if (inputValue === '7777') {
-      window.location.href = '/lostInput'; // 특정 페이지로 이동
+      window.location.href = '/lostInput';
+      //useNavigate('/lostInput');
     } else {
       setModalSwitch(false);
     }
@@ -54,7 +55,7 @@ export default function FindItems() {
         </S.LostBody>
       </S.LostLayout>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

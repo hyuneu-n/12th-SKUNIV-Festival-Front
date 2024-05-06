@@ -89,7 +89,6 @@ export default function MadeBy() {
 
         <S.AboutLogoImg src={Hansup} style={{ width: '130px', height: 'auto', paddingTop: '60px', paddingBottom: '0px' }}></S.AboutLogoImg>
         <S.AboutPartHeading style={{ marginBottom: '3px' }}>총학생회 한마디</S.AboutPartHeading>
-        <Script>멋사야 고맙다</Script>
       </S.AboutLayout>
     </>
   );

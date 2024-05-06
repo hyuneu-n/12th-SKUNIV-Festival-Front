@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-
+import i from '../../assets/images/homePage/main.png'
 export const HomePageLayout = styled.div`
   width: 100%;
-  background-image: url('../assets/images/homePage/backgroundimage.png') !important;
+  background-image: url('BG_Home.svg') !important;
   display: flex;
   flex-direction: column;
   align-items: center;

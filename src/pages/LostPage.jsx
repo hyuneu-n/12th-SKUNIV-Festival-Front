@@ -4,7 +4,7 @@ import * as S from '../styles/pages/LostPage.styled';
 import ItemSwitch from '../components/ItemSwitch';
 import ItemBox from '../components/ItemBox';
 //import { LostData } from '../utils/LostData';
-import { Link, useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData,useNavigate } from 'react-router-dom';
 import InputButton from '../components/InputButton';
 import i from '../assets/images/menubar/menubarImage.svg';
 import Modal from 'react-modal';
@@ -18,7 +18,8 @@ export default function ItemsLost() {
   const checkPass = () => {
     const inputValue = document.getElementById('pass').value;
     if (inputValue === '7777') {
-      window.location.href = '/lostInput'; // 특정 페이지로 이동
+      window.location.href = '/lostInput';
+      //useNavigate('/lostInput');
     } else {
       setModalSwitch(false);
     }
@@ -53,7 +54,7 @@ export default function ItemsLost() {
           })}
         </S.LostBody>
       </S.LostLayout>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }// get 요청

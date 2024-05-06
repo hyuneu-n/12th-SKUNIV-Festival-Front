@@ -33,18 +33,19 @@ const ImageContainer = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  height: auto; /* 높이는 자동으로 조정됩니다. */
+  height: 100%; /* 높이는 자동으로 조정됩니다. */
   border-radius: 0px; /* 컨테이너와 일치하도록 둥근 모서리 설정 */
+  object-fit: cover
 `;
 const Title = styled.div`
   position: relative;
   padding-top: 5%;
   color: #55A161;
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Pretendard Variable';
-  font-weight: 610;
+  font-weight: 900;
   text-align: start;
-  padding-left: 7%;
+  padding-left: 14.5%;
 `;
 
 const Time = styled.div`
