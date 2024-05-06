@@ -21,10 +21,10 @@ export const LostHead = styled.div`
 `;
 export const LostBody = styled.div`
   width: 90%;
-  margin: 10% 0% 10% 0%;
+  margin: 10% 0% 0% 0%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 20px; 
+  gap: 10px; 
   justify-items: center;
   overflow-y: auto; 
   max-height: 80vh; 
