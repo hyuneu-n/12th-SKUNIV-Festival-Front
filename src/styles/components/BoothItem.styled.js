@@ -52,6 +52,7 @@ export const CustomSheet = styled(Sheet)`
     width: ${({ $width }) => `${1.1* $width}px`} !important;
     left: ${({ $left }) => `${0.55 * $left}px`} !important;
     height: ${({ $height }) => `calc(100vh - 40vh)`} !important;
+    overflow-y: auto;
   }
   .react-modal-sheet-header {
     /* custom styles */
