@@ -4,7 +4,7 @@ import Switch from '../components/Switch';
 import * as S from '../styles/pages/NoticePage.styled';
 import NoticeBox from '../components/NoticeBox';
 import { Notices } from '../utils/NoticeData';
-import { Link, useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData,useNavigate } from 'react-router-dom';
 import InputButton from '../components/InputButton';
 import { StyledLink } from '../styles/pages/NoticePage.styled';
 import Modal from 'react-modal';
@@ -15,7 +15,8 @@ export default function Notice() {
   const checkPass = () => {
     const inputValue = document.getElementById('pass').value;
     if (inputValue === '7777') {
-      window.location.href = '/noticeinput'; // 특정 페이지로 이동
+      //window.location.href = '/noticeinput'; // 특정 페이지로 이동
+      useNavigate('/noticeinput');
     } else {
       setModalSwitch(false);
     }
