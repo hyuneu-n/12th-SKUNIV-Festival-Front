@@ -94,7 +94,7 @@ export const BoothItemParagraph = styled.p`
   font-size:13px;
   padding-top: 7px;
   white-space: pre-wrap;
-  line-height: 1.4;
+  line-height: 1.6;
   padding-bottom: 13px;
 `;
 
