@@ -3,12 +3,12 @@ import MenuBar from '../components/MenuBar';
 import Switch from '../components/Switch';
 import * as S from '../styles/pages/NoticeInputPage.styled';
 import InputButton from '../components/InputButton';
-import { Notices } from '../utils/NoticeData';
 import { Link } from 'react-router-dom';
 import img_i from '../assets/images/icon_back.svg';
 import img_p from '../assets/images/icon_photo.svg';
 import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useState,useRef } from 'react';
+import styled from 'styled-components';
 
 export default function Notice() {
   const navigate = useNavigate();
@@ -16,6 +16,10 @@ export default function Notice() {
   const [lTime, setTime] = useState('');
   const [lDate, setDate] = useState('');
   const [lLocation, setLocation] = useState('');
+  const fileInputRef = useRef(null);
+  const handleImageClick = () => {
+    fileInputRef.current.click();
+  };
   const handleButtonClick = () => {
     console.log('button clicked');
 
@@ -23,34 +27,41 @@ export default function Notice() {
       lostItemName: lName,
       lostLocation: lLocation,
       lostDate: lDate,
+
     };
+    const formData = new FormData();
+    for (const key in postData) {
+      formData.append(key, postData[key]);
+    }
+    const fileInput = document.getElementById('fileInput');
+    const file = fileInput.files[0]
+    if (!file) {
+      alert('파일을 선택해주세요.'); // 파일을 선택하지 않은 경우 메시지 표시
+      return;
+    }
+    else console.log("not null");
+    formData.append('file', file); // file은 실제 파일 객체입니다.
     console.log(postData);
-    //navigate('/lostItems');
+    fetch('https://dev.skufestival2024.site/api/lostitem/post', {
+      method: 'POST',
+      body: formData,
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('Success:', data);
+        navigate('/lostItems');
+      })
+      .catch(error => {
+        console.log('Error:', error);
+        navigate('/lostItems');
+      });
   };
-
-  // // 이미지 가져오기
-  // const onSelectImage = () => {
-  //   launchImageLibrary(
-  //     {
-  //       madiaType: 'photo',
-  //       maxWidth: 512,
-  //       maxHeight: 512,
-  //       includeBase64: true
-  //     },
-  //     (response) => {
-  //       console.log(response)
-  //       // console.log(response.assets[0].base64)
-  //       if (response.didCancel) {
-  //         return;
-  //       } else if (response.errorCode) {
-  //         console.log("Image Error : " + response.errorCode);
-  //       }
-
-  //       setResponse(response);
-  //       setImageFile(response.assets[0].base64);
-  //     })
-
-  // }
+  const img_l = 'url("../assets/images/icon_back.svg")';
   return (
     <>
       <S.NoticeLayout>
@@ -66,7 +77,11 @@ export default function Notice() {
               id="lName"
               name="lName"
               onChange={(e) => setName(e.target.value)} />
-            <S.BtnImage src={img_p}></S.BtnImage>
+            <S.BtnImage
+              id="imgBtn"
+              src={img_p}
+              onClick={handleImageClick}>
+            </S.BtnImage>
           </S.HorizonBody>
 
           <S.NoticeTitle
@@ -90,29 +105,14 @@ export default function Notice() {
             onChange={(e) => setLocation(e.target.value)} />
         </S.NoticeBody>
       </S.NoticeLayout>
+      <input
+        id="fileInput"
+        type="file"
+        accept="image/png, image/jpeg, image/jpg"
+        style={{ display: 'none' }}
+        ref={fileInputRef}
+      />
       <Footer />
     </>
   );
 }
-const ModalStyle = {
-  overlay: {
-    position : 'fixed',
-    top : 0,
-    left : 0,
-    right : 0,
-    bottom : 0,
-    zIndex : 10,
-    backgroundColor: 'rgba(0,0,0,0.5)',
-  },
-  content : {
-    display : 'flex',
-    justifyContent : 'center',
-    alignItems : 'center',
-    flexDirection : 'column',
-    backgroundColor : 'white',
-    top : '32vh',
-    left : '12vw',
-    right : '12vw',
-    bottom : '50vh',
-  }
-};

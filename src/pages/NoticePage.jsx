@@ -63,7 +63,7 @@ export default function Notice() {
 // get 요청은 정상작동 확인
 export async function loader() {
   const response = await fetch(
-    'http://dev.skufestival2024.site/api/notice/posts'
+    'https://dev.skufestival2024.site/api/notice/posts'
   );
   // url
   console.log(response);

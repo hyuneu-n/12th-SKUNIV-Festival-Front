@@ -28,7 +28,7 @@ export default function Notice() {
       title: title,
       content: content
     };
-    fetch('http://dev.skufestival2024.site/api/notice/post', {
+    fetch('https://dev.skufestival2024.site/api/notice/post', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

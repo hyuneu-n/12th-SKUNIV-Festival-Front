@@ -10,7 +10,6 @@ import seung from '../assets//images/seung.png';
 import hyo from '../assets//images/hyo.png';
 import Chang from '../assets//images/Chang.png';
 import styled from 'styled-components';
-import Footer from '../components/Footer';
 import MenuBar from '../components/MenuBar';
 import * as S from '../styles/pages/AboutPage.styled';
 import Header from '../components/Header';
@@ -91,7 +90,6 @@ export default function MadeBy() {
         <S.AboutLogoImg src={Hansup} style={{ width: '130px', height: 'auto', paddingTop: '60px', paddingBottom: '0px' }}></S.AboutLogoImg>
         <S.AboutPartHeading style={{ marginBottom: '3px' }}>총학생회 한마디</S.AboutPartHeading>
         <Script>멋사야 고맙다</Script>
-        <Footer />
       </S.AboutLayout>
     </>
   );

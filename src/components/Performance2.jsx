@@ -19,39 +19,37 @@ const Container = styled.div`
 
 const InnerContainer = styled.div`
   position: absolute;
-  width: 140px;
+  width: 136px;
   height: 80px;
   background-color: white;
+  opacity: 0.8;
   border-radius: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column; /* 컨테이너들을 세로로 배열 */
 `;
-
 const Text1 = styled.div`
  
 position: relative;
-
-  text-align: start;
-  left: 15%; 
-top: 25%; /* 위쪽 기준으로 가운데 정렬을 위해 50%로 설정 */
-color: #55A161;;
-font-size: 22px;
+  text-align: start; 
+  left:15%;
+top: 30%; /* 위쪽 기준으로 가운데 정렬을 위해 50%로 설정 */
+color: #55A161;
+font-size: 20px;
 font-family: 'Pretendard Variable';
-font-weight: 900;
+font-weight: 610;
 `;
 
 const Text2 = styled.div`
-position: relative;
-  text-align: center;    
-  top: 20%; /* 위쪽 기준으로 가운데 정렬을 위해 50%로 설정 */
+  position: relative;
+  text-align: center; /* 왼쪽 기준으로 가운데 정렬을 위해 50%로 설정 */
+  top: 22%; /* 위쪽 기준으로 가운데 정렬을 위해 50%로 설정 */
  color: black;
   font-size: 15px;
   font-family: 'Pretendard Variable';
   font-weight: 600;
   opacity: 0.7;
 `;
-
 const PerformanceComponent2 = ({ name, time }) => {
   return (
     <Wrapper>

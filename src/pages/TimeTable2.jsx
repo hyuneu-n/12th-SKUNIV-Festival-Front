@@ -6,7 +6,6 @@ import PerformanceComponent2 from '../components/Performance2';
 import PerformanceComponent3 from '../components/Performance3';
 import SpecialComponent from '../../src/components/Specialguest';
 import SpecialComponent2 from '../../src/components/Specialguest2';
-import Footer from '../components/Footer';
 import fromis9 from '../assets/images/timetable/fromis9(2).svg';
 import haswa3  from '../assets/images/timetable/haswa3.svg';
 import Backimage from '../assets/images/timetable/background.png';
@@ -14,6 +13,7 @@ import Header from '../components/Header';
 import SpecialComponent3 from '../../src/components/Specialguest3';
 import dynamicduo2 from'../assets/images/timetable/dynamicduo2.svg';
 import SpecialComponent4 from '../../src/components/Specialguest4';
+import React, { useState } from 'react';
 
 
 
@@ -100,7 +100,12 @@ const SmallIcon = styled.img`
 `;
 
 const TitleText = styled.div`
-  margin-left: 30%;
+  margin-left: 32%;
+  font-family: Paytone One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #576141;
 `;
 
 const TitleText2 = styled.div`
@@ -197,6 +202,23 @@ const WhiteContainer2 = styled.div`
   margin-top: 10;
 `;
 export default function TimeTable2() {
+  const StyledLink = styled(Link)`
+  color: ${({ active }) => (active ? '#55A161' : 'black')};
+`;
+  const NumberButton2 = ({ to, children }) => {
+    const [isActive, setIsActive] = useState(false);
+  
+    const handleClick = () => {
+      setIsActive(!isActive);
+    };
+    return (
+      <NumberFirst>
+        <StyledLink to={to} active={isActive} onClick={handleClick}>
+          {children}
+        </StyledLink>
+      </NumberFirst>
+    );
+  };
   return (
     <Layout>
       <Title>
@@ -208,8 +230,9 @@ export default function TimeTable2() {
       </Title>
       <DateContainer>
         <DateRow>
+        
           <NumberFirst>9</NumberFirst>
-          <NumberSecond>10</NumberSecond>
+          <NumberButton2 to="/timetable4">10</NumberButton2>
         </DateRow>
         <DateRow>
           <Day>thu</Day>
@@ -279,7 +302,7 @@ export default function TimeTable2() {
             imageSrc={haswa3}
             altText="haswa3 이미지"
             timeText="21:00 ~ 21:30"
-            titleText="Haswa"
+            titleText="Hwasa"
           />
           <SpecialComponent4
             imageSrc={dynamicduo2}
@@ -290,8 +313,6 @@ export default function TimeTable2() {
          
         </DiverColmun>
       </Textdiv>
-
-      <Footer />
     </Layout>
   );
 }

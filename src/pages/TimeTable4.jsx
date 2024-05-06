@@ -9,12 +9,12 @@ import PerformanceComponent5 from '../../src/components/Performance5';
 import SpecialComponent3 from '../../src/components/Specialguest3';
 import SpecialComponent2 from '../../src/components/Specialguest2';
 import SpecialComponent5 from '../../src/components/Specialguest5';
-import Footer from '../components/Footer';
 import Heize2 from '../assets/images/timetable/Heize2.png';
 import Heize3 from '../assets/images/timetable/Heize3.svg';
 import Day6 from '../assets/images/timetable/Day6(3).svg';
 import DJ2 from '../assets/images/timetable/DJ2.svg';
 import Header from '../components/Header';
+import React, { useState } from 'react';
 
 
 import Backimage from '../assets/images/timetable/background.png';
@@ -59,9 +59,7 @@ const NumberFirst = styled.h1`
   font-size: 35px;
   font-family: SUIT Variable, sans-serif;
   font-weight: bold; /* 굵기 추가 */
-  color: #55A161;
   margin: 0 30%;
-  color: #55A161;
   
 `;
 
@@ -70,6 +68,7 @@ const NumberSecond = styled.h1`
   font-family: SUIT Variable, sans-serif;
   font-weight: bold; /* 굵기 추가 */
   margin: 0 20%;
+  color: #55A161;
 `;
 
 const Day = styled.h1`
@@ -103,7 +102,12 @@ const SmallIcon = styled.img`
 `;
 
 const TitleText = styled.div`
-  margin-left: 30%;
+  margin-left: 32%;
+  font-family: Paytone One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #576141;
 `;
 
 const TitleText2 = styled.div`
@@ -200,6 +204,23 @@ const WhiteContainer2 = styled.div`
   margin-top: 10;
 `;
 export default function TimeTable4() {
+  const StyledLink = styled(Link)`
+  color: ${({ active }) => (active ? '#55A161' : 'black')};
+`;
+  const NumberButton2 = ({ to, children }) => {
+    const [isActive, setIsActive] = useState(false);
+  
+    const handleClick = () => {
+      setIsActive(!isActive);
+    };
+    return (
+      <NumberFirst>
+        <StyledLink to={to} active={isActive} onClick={handleClick}>
+          {children}
+        </StyledLink>
+      </NumberFirst>
+    );
+  };
   return (
     <Layout>
       <Title>
@@ -211,7 +232,7 @@ export default function TimeTable4() {
       </Title>
       <DateContainer>
         <DateRow>
-          <NumberFirst>9</NumberFirst>
+          <NumberButton2 to="/timetable2">9</NumberButton2>
           <NumberSecond>10</NumberSecond>
         </DateRow>
         <DateRow>
@@ -291,7 +312,6 @@ export default function TimeTable4() {
         </DiverColmun>
       </Textdiv>
 
-      <Footer />
     </Layout>
   );
 }

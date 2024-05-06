@@ -21,12 +21,14 @@ export const FooterHead = styled.p`
   text-align: center;
   font-size: 0.5em;
   font-weight: bold;
+  font-family: Pretendard;
 `;
 
 export const FooterParagraph = styled.p`
   text-align: center;
   color: #5e5e5e;
   font-size: 0.4em;
+  font-family: Pretendard;
   margin-top: 5px;
 `;
 

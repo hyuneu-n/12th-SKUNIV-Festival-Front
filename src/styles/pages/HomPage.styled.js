@@ -15,7 +15,7 @@ export const HomePageLayout = styled.div`
     font-size: 0.75em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
 
-    margin: 20% 35% 10% 35%;
+    margin: 15% 35% 10% 35%;
     background-color: #f6f6f6;
     color: #4d5359;
     border-radius: 10px;
@@ -57,6 +57,6 @@ export const HomePageDayHeading = styled.h1`
 `;
 export const HomePageBottomImage = styled.img`
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   width: 375px;
 `;

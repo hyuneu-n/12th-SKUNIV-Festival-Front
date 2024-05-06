@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 export const NoticeLayout = styled.div`
   width: 90%;
   display: flex;
@@ -115,6 +114,7 @@ export const BtnImage = styled.img`
   background-color: #F8F8F8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
   padding: 3% 3% 3% 3%;
+  background-size: cover;
 `;
 export const NoticeInImage = styled.img`
   width: 100%;
