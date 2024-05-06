@@ -38,7 +38,7 @@ export default function Notice() {
       >
         <h5>관리자 로그인</h5>
         <input id="pass"></input>
-        <button onClick={() => checkPass()}>aa</button>
+        <button onClick={() => checkPass()}>login</button>
       </Modal>
       <S.NoticeLayout>
         <S.NoticeHead>
@@ -48,14 +48,14 @@ export default function Notice() {
         <S.NoticeH1>NOTICE</S.NoticeH1>
 
         <S.NoticeBody>
-          {data.map((item) => (
-            <Link to={`${item.id}`}>
-              <NoticeBox
-                id={item.id}
-                title={item.title}
-                content={item.content}
-                date={item.date}
-              />
+        {data && data.map((item) => (
+          <Link to={`${item.id}`} key={item.id}>
+            <NoticeBox
+              id={item.id}
+              title={item.title}
+              content={item.content}
+              date={item.date}
+            />
             </Link>
           ))}
         </S.NoticeBody>
@@ -95,5 +95,12 @@ const ModalStyle = {
     left: '12vw',
     right: '12vw',
     bottom: '50vh',
+    borderRadius: '20px',
+    opacity: '0.9',
+    lineHeight: '2.5',
+  },
+  inputContainer: {
+    marginTop: '10px', // 입력란 위쪽 간격
+    marginBottom: '10px', // 입력란 아래쪽 간격
   },
 };
