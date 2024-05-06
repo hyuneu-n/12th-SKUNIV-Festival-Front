@@ -43,7 +43,8 @@ const Title = styled.div`
   font-size: 22px;
   font-family: 'Pretendard Variable';
   font-weight: 900;
-  text-align: center;
+  text-align: start;
+  padding-left: 20%;
 `;
 
 const Time = styled.div`

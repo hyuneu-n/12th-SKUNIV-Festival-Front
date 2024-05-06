@@ -40,7 +40,7 @@ const Title = styled.div`
   position: relative;
   padding-top: 5%;
   text-align: center;
-  color: #2e4966;
+  color: #55A161;
   font-size: 22px;
   font-family: 'Pretendard Variable';
   font-weight: 900;

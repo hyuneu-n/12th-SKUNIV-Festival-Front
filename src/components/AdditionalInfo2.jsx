@@ -19,7 +19,7 @@ const Text = styled.p`
   align-items: center;
   justify-content: center;
   font-family: SUIT Variable, sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   color: #5e5e5e;
   margin-bottom: 5%;

@@ -3,11 +3,16 @@ import styled from 'styled-components';
 import play from '../assets/images/timetable/play.svg';
 import PerformanceComponent from '../../src/components/Performance';
 import PerformanceComponent2 from '../../src/components/Performance2';
+import PerformanceComponent3 from '../../src/components/Performance3';
+import PerformanceComponent5 from '../../src/components/Performance5';
+
 import SpecialComponent3 from '../../src/components/Specialguest3';
 import SpecialComponent2 from '../../src/components/Specialguest2';
+import SpecialComponent5 from '../../src/components/Specialguest5';
 import Footer from '../components/Footer';
 import Heize2 from '../assets/images/timetable/Heize2.png';
-import Day6 from '../assets/images/timetable/Day6(2).svg';
+import Heize3 from '../assets/images/timetable/Heize3.svg';
+import Day6 from '../assets/images/timetable/Day6(3).svg';
 import DJ2 from '../assets/images/timetable/DJ2.svg';
 import Header from '../components/Header';
 
@@ -202,6 +207,7 @@ export default function TimeTable4() {
         <Link to="/timetable">
           <SmallIcon src={play} />{' '}
         </Link>
+        <TitleText>TIME TABLE</TitleText>
       </Title>
       <DateContainer>
         <DateRow>
@@ -215,7 +221,7 @@ export default function TimeTable4() {
       </DateContainer>
       <Textdiv>
         <Textdiv3>
-          <PerformanceComponent name="실용음악학부" time="16:30 ~ 18:30" />
+          <PerformanceComponent5 name="실용음악학부" time="16:30 ~ 18:30" />
 
           <PerformanceComponent name="워커스" time="19:00 ~ 19:30" />
 
@@ -223,13 +229,13 @@ export default function TimeTable4() {
         
  
           <SpecialComponent2
-            imageSrc={Heize2}
+            imageSrc={Heize3}
             altText="헤이즈 이미지"
             timeText="20:30 ~ 21:00"
             titleText="Heize"
           />
             <WhiteContainer></WhiteContainer>
-<SpecialComponent2
+<SpecialComponent5
             imageSrc={DJ2}
             altText="DJ2 이미지"
             timeText="21:30 ~ 22:30"
@@ -270,8 +276,8 @@ export default function TimeTable4() {
         </DiverColmun>
         <DiverColmun>
           <WhiteContainer></WhiteContainer>
-          <PerformanceComponent2 name="예교원 실용무용" time="17:00 ~ 17:30" />
-          <PerformanceComponent2 name="실용무용" time="18:30 ~ 19:00" />
+          <PerformanceComponent3 name="예교원 실용무용" time="18:30 ~ 19:00" />
+          <PerformanceComponent2 name="실용무용" time="19:30 ~ 20:00" />
           <WhiteContainer></WhiteContainer>
           <SpecialComponent3
             imageSrc={Day6}
