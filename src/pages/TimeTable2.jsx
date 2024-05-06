@@ -314,7 +314,7 @@ export default function TimeTable2() {
           <SpecialComponent4
             imageSrc={dynamicduo2}
             altText="dynamicduo2 이미지"
-            timeText="21:00 ~ 21:30"
+            timeText="22:00 ~ 22:30"
             titleText="Dynamic duo"
           />
          
