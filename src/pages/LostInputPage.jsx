@@ -25,7 +25,7 @@ export default function Notice() {
     // 파일 입력(input) 요소에 change 이벤트를 추가하여 파일이 변경될 때마다 실행되는 함수를 정의합니다.
     fileInput.addEventListener('change', function (event) {
       // 파일이 선택되었는지 확인합니다.
-      if (fileInput.files && fileInput.files[0]) {
+      if (fileInput.files && fileInput.files[fileInput.files.length - 1]) {
         // FileReader 객체를 생성합니다.
         const reader = new FileReader();
 
@@ -39,7 +39,7 @@ export default function Notice() {
         };
 
         // 파일을 읽어서 데이터 URL로 변환합니다.
-        reader.readAsDataURL(fileInput.files[0]);
+        reader.readAsDataURL(fileInput.files[fileInput.files.length - 1]);
       }
     });
   };
@@ -57,7 +57,7 @@ export default function Notice() {
       formData.append(key, postData[key]);
     }
     const fileInput = document.getElementById('fileInput');
-    const file = fileInput.files[0]
+    const file = fileInput.files[fileInput.files.length - 1]
     if (!file) {
       alert('파일을 선택해주세요.'); // 파일을 선택하지 않은 경우 메시지 표시
       return;
