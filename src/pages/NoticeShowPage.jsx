@@ -7,45 +7,35 @@ import Switch from '../components/Switch';
 import * as S from '../styles/pages/NoticePage.styled';
 import NoticeBox from '../components/NoticeBox';
 import { Notices } from '../utils/NoticeData';
-import { Link } from 'react-router-dom';
+import { Link, useRouteLoaderData } from 'react-router-dom';
 
 export default function NoticeShowPage() {
-    let { id } = useParams(); 
-    const [notice, setNotice] = useState(null); 
+  // const data = useRouteLoaderData('event-detail');
+  // console.log(data);
+  // let { id } = useParams();
+  // const [notice, setNotice] = useState(null);
 
-    useEffect(() => {
-        // 데이터 로드 함수
-        const fetchData = async () => {
-            try {
-                const response = await fetch(`/api/notice/posts/${id}`);
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const data = await response.json();
-                setNotice(data);  // 상태 업데이트
-            } catch (error) {
-                console.error('Fetch error:', error);
-            }
-        };
+  // useEffect(() => {
+  //   // 데이터 로드 함수
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch(`/api/notice/posts/1`);
+  //       if (!response.ok) {
+  //         throw new Error('Network response was not ok');
+  //       }
+  //       const data = await response.json();
+  //       setNotice(data); // 상태 업데이트
+  //     } catch (error) {
+  //       console.error('Fetch error:', error);
+  //     }
+  //   };
 
-        fetchData();
-    }, [id]);
+  //   fetchData();
+  // }, [id]);
 
-    return (
-        <>
-            <MenuBar />
-            <div>
-                {notice ? (
-                    <div>
-                        <h1>{notice.title}</h1> 
-                        <p>{notice.content}</p>
-                        <small>{notice.date}</small>
-                    </div>
-                ) : (
-                    <p>Loading...</p>
-                )}
-            </div>
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <p>test</p>
+    </>
+  );
 }

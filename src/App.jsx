@@ -11,12 +11,13 @@ import TimeTable from './pages/TimeTable.jsx';
 import TimeTable2 from './pages/TimeTable2.jsx';
 import TimeTable3 from './pages/TimeTable3.jsx';
 import TimeTable4 from './pages/TimeTable4.jsx';
-import LostPage , { loads as getList } from './pages/LostPage.jsx';
+import LostPage, { loads as getList } from './pages/LostPage.jsx';
 import NoticeInput, { action as postData } from './pages/NoticeInputPage.jsx';
 import LostInput from './pages/LostInputPage.jsx';
 import LostFind from './pages/LostFindPage.jsx';
 import RootLayout from './components/RootLayout.jsx';
 import NoticeShowPage from './pages/NoticeShowPage';
+import NoticeRootLayout from './components/NoticRootLayout.jsx';
 
 const router = createBrowserRouter([
   {
@@ -33,67 +34,66 @@ const router = createBrowserRouter([
       },
       {
         path: 'notice',
-        element: <Notice />,
-        loader: getData,
+        element: <NoticeRootLayout />,
+        children: [
+          {
+            index: true,
+            element: <Notice />,
+            loader: getData,
+          },
+          {
+            path: ':id',
+            element: <NoticeShowPage />,
+          },
+        ],
       },
       {
         path: 'safety',
-        element: <EvacuationPage />, 
+        element: <EvacuationPage />,
       },
-    ],
-  },
-  {
-    path: '/timetable',
-    element: <TimeTable />,
-  },
-
-  {
-    path: '/about',
-    element: <AboutPage />,
-  },
-  {
-    path: '/timetable2',
-    element: <TimeTable2 />,
-  },
-  {
-    path: '/timetable3',
-    element: <TimeTable3 />,
-  },
-  {
-    path: '/timetable4',
-    element: <TimeTable4 />,
-  },
-  {
-    path: '/timetable2',
-    element: <TimeTable2 />,
-  },
-  {
-    path: '/lostItems',
-    element: <LostPage />,
-    loader: getList,
-  },
-  {
-    path: '/noticeInput',
-    element: <NoticeInput />,
-    action: postData,
-  },
-  {
-    path: '/lostInput',
-    element: <LostInput />,
-  },
-  {
-    path: '/findItems',
-    element: <LostFind />,
-    loader: getList,
-  },
-  {
-    path: 'notice',
-    element: <Notice />,
-    loader: getData,
-    children: [
       {
-        path: ':id',
-        element: <NoticeShowPage />,
+        path: 'timetable',
+        element: <TimeTable />,
+      },
+
+      {
+        path: 'about',
+        element: <AboutPage />,
+      },
+      {
+        path: 'timetable2',
+        element: <TimeTable2 />,
+      },
+      {
+        path: 'timetable3',
+        element: <TimeTable3 />,
+      },
+      {
+        path: 'timetable4',
+        element: <TimeTable4 />,
+      },
+      {
+        path: 'timetable2',
+        element: <TimeTable2 />,
+      },
+      {
+        path: 'lostItems',
+        element: <LostPage />,
+        loader: getList,
+      },
+      {
+        path: 'noticeInput',
+        element: <NoticeInput />,
+        action: postData,
+      },
+      {
+        path: 'lostInput',
+        element: <LostInput />,
+      },
+      {
+        path: 'findItems',
+        element: <LostFind />,
+        loader: getList,
       },
     ],
   },

@@ -8,7 +8,7 @@ import { Link, useLoaderData } from 'react-router-dom';
 import InputButton from '../components/InputButton';
 import { StyledLink } from '../styles/pages/NoticePage.styled';
 import Modal from 'react-modal';
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 export default function Notice() {
   const [modalSwitch, setModalSwitch] = useState(false);
@@ -19,7 +19,7 @@ export default function Notice() {
     } else {
       setModalSwitch(false);
     }
-  }
+  };
   const data = useLoaderData();
 
   console.log(data);
@@ -27,27 +27,32 @@ export default function Notice() {
   return (
     <>
       <MenuBar></MenuBar>
-      <Modal isOpen={modalSwitch} onRequestClose={() => setModalSwitch(false)} style={ModalStyle}>
+      <Modal
+        isOpen={modalSwitch}
+        onRequestClose={() => setModalSwitch(false)}
+        style={ModalStyle}
+      >
         <h5>관리자 로그인</h5>
-        <input id='pass'></input>
+        <input id="pass"></input>
         <button onClick={() => checkPass()}>aa</button>
       </Modal>
       <S.NoticeLayout>
         <S.NoticeHead>
-            <InputButton onClick={() => setModalSwitch(true)}></InputButton>
+          <InputButton onClick={() => setModalSwitch(true)}></InputButton>
         </S.NoticeHead>
         <S.WidthLine></S.WidthLine>
         <S.NoticeH1>NOTICE</S.NoticeH1>
+
         <S.NoticeBody>
-          {data.map((item, index) => (
-            <StyledLink to={`/notice/${item.id}`}>
-            <NoticeBox
-              id={item.id}
-              title={item.title}
-              content={item.content}
-              date={item.date}
-            />
-          </StyledLink>
+          {data.map((item) => (
+            <Link to={`${item.id}`}>
+              <NoticeBox
+                id={item.id}
+                title={item.title}
+                content={item.content}
+                date={item.date}
+              />
+            </Link>
           ))}
         </S.NoticeBody>
       </S.NoticeLayout>
@@ -57,31 +62,34 @@ export default function Notice() {
 
 // get 요청은 정상작동 확인
 export async function loader() {
-  const response = await fetch('http://dev.skufestival2024.site/api/notice/posts');
+  const response = await fetch(
+    'http://dev.skufestival2024.site/api/notice/posts'
+  );
   // url
   console.log(response);
 
   return response;
 }
+
 const ModalStyle = {
   overlay: {
-    position : 'fixed',
-    top : 0,
-    left : 0,
-    right : 0,
-    bottom : 0,
-    zIndex : 10,
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    zIndex: 10,
     backgroundColor: 'rgba(0,0,0,0.5)',
   },
-  content : {
-    display : 'flex',
-    justifyContent : 'center',
-    alignItems : 'center',
-    flexDirection : 'column',
-    backgroundColor : 'white',
-    top : '32vh',
-    left : '12vw',
-    right : '12vw',
-    bottom : '50vh',
-  }
+  content: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    backgroundColor: 'white',
+    top: '32vh',
+    left: '12vw',
+    right: '12vw',
+    bottom: '50vh',
+  },
 };
