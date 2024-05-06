@@ -90,16 +90,16 @@ const ModalStyle = {
     alignItems: 'center',
     flexDirection: 'column',
     backgroundColor: 'white',
-    top: '32vh',
-    left: '12vw',
-    right: '12vw',
-    bottom: '50vh',
+    top: '260px',
+    left: '40px',
+    right: '40px',
+    bottom: '460px',
     borderRadius: '20px',
     opacity: '0.9',
     lineHeight: '2.5',
   },
   inputContainer: {
-    marginTop: '10px', // 입력란 위쪽 간격
-    marginBottom: '10px', // 입력란 아래쪽 간격
+    marginTop: '10px', 
+    marginBottom: '10px', 
   },
 };
