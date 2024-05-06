@@ -18,7 +18,7 @@ const SpecaiContainer = styled.div`
 const ItemContainer = styled.div`
   position: relative;
   width: 136px;
-  height: 150px;
+  height: 22vh;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -43,7 +43,7 @@ const Title = styled.div`
   font-family: 'Pretendard Variable';
   font-weight: 610;
   text-align: start;
-  padding-left: 20%;
+  padding-left: 14%;
 `;
 
 const Time = styled.div`

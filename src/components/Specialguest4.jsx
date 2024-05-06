@@ -18,7 +18,7 @@ const SpecaiContainer = styled.div`
 // 자식 컨테이너 스타일
 const ItemContainer = styled.div`
   position: relative;
-  width: 140px;
+  width: 136px;
   height: 22vh;
   background-color: white;
   border-radius: 20px;
@@ -26,6 +26,7 @@ const ItemContainer = styled.div`
   margin-top: 10%;
   margin-bottom: 10%;
 `;
+
 
 const ImageContainer = styled.div`
   position: relative;
