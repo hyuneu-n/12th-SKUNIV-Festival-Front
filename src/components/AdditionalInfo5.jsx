@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Group from '../assets/images/timetable/Day6.svg';
+import Group from '../assets/images/timetable/day6.svg';
 
 const AdditionalInfoContainer = styled.div`
   display: flex;
