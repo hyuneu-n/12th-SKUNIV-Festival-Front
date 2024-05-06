@@ -16,7 +16,9 @@ import NoticeInput, { action as postData } from './pages/NoticeInputPage.jsx';
 import LostInput from './pages/LostInputPage.jsx';
 import LostFind from './pages/LostFindPage.jsx';
 import RootLayout from './components/RootLayout.jsx';
-import NoticeShowPage from './pages/NoticeShowPage';
+import NoticeShowPage, {
+  loader as getDetailData,
+} from './pages/NoticeShowPage';
 import NoticeRootLayout from './components/NoticRootLayout.jsx';
 
 const router = createBrowserRouter([
@@ -44,6 +46,7 @@ const router = createBrowserRouter([
           {
             path: ':id',
             element: <NoticeShowPage />,
+            loader: getDetailData,
           },
         ],
       },

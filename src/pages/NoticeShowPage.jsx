@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useLoaderData, useParams } from 'react-router-dom';
 
 import Footer from '../components/Footer';
 import MenuBar from '../components/MenuBar';
@@ -10,32 +10,24 @@ import { Notices } from '../utils/NoticeData';
 import { Link, useRouteLoaderData } from 'react-router-dom';
 
 export default function NoticeShowPage() {
-  // const data = useRouteLoaderData('event-detail');
-  // console.log(data);
-  // let { id } = useParams();
-  // const [notice, setNotice] = useState(null);
-
-  // useEffect(() => {
-  //   // 데이터 로드 함수
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await fetch(`/api/notice/posts/1`);
-  //       if (!response.ok) {
-  //         throw new Error('Network response was not ok');
-  //       }
-  //       const data = await response.json();
-  //       setNotice(data); // 상태 업데이트
-  //     } catch (error) {
-  //       console.error('Fetch error:', error);
-  //     }
-  //   };
-
-  //   fetchData();
-  // }, [id]);
-
+  const data = useLoaderData();
+  console.log(data);
   return (
     <>
-      <p>test</p>
+      <p>{data.title}</p>
+      <p>{data.content}</p>
     </>
   );
+}
+
+export async function loader({ params }) {
+  const id = params.id;
+  const response = await fetch(
+    'http://dev.skufestival2024.site/api/notice/post/' + id
+  );
+  console.log(id);
+  // url
+  console.log(response);
+
+  return response;
 }
