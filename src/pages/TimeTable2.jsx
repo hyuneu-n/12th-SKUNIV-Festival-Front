@@ -6,7 +6,6 @@ import PerformanceComponent2 from '../components/Performance2';
 import PerformanceComponent3 from '../components/Performance3';
 import SpecialComponent from '../../src/components/Specialguest';
 import SpecialComponent2 from '../../src/components/Specialguest2';
-import Footer from '../components/Footer';
 import fromis9 from '../assets/images/timetable/fromis9(2).svg';
 import haswa3  from '../assets/images/timetable/haswa3.svg';
 import Backimage from '../assets/images/timetable/background.png';
@@ -100,7 +99,12 @@ const SmallIcon = styled.img`
 `;
 
 const TitleText = styled.div`
-  margin-left: 30%;
+  margin-left: 32%;
+  font-family: Paytone One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #576141;
 `;
 
 const TitleText2 = styled.div`
@@ -290,8 +294,6 @@ export default function TimeTable2() {
          
         </DiverColmun>
       </Textdiv>
-
-      <Footer />
     </Layout>
   );
 }

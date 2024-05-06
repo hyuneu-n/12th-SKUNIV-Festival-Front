@@ -18,10 +18,11 @@ const Text = styled.p`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: SUIT Variable, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
+  font-family: Pretendard, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
   color: #5e5e5e;
+  margin-top: 3%;
   margin-bottom: 5%;
 `;
 

@@ -10,19 +10,18 @@ import Backimage from '../assets/images/timetable/background.png';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-
 const Layout = styled.div`
 background-image: url(${Backimage}); 
-  min-height: 100vh; // 최소 높이를 화면 전체로 설정
+  height: 940px;
   background-size: cover; // 배경 이미지가 화면을 전체적으로 커버하도록 설정
   background-position: center; // 배경 이미지를 중앙에 위치시킴
   background-repeat: no-repeat; // 배경 이미지가 반복되지 않도록 설정
 `;
 
 const Title = styled.h1`
-  margin-top: 7%;
+  margin-top: 0%;
   font-size: 18px;
-  font-family: SUIT Variable, sans-serif;
+  font-family: Pretendard, sans-serif;
   font-style: extra-bold;
   font-weight: bold; /* 굵기 추가 */
   text-align: center; /* 가운데 정렬 */
@@ -193,7 +192,6 @@ export default function TimeTable3() {
         <AdditionalInfo5/>
         <AdditionalInfo6/>
       </TimeTableContainer>
-      <Footer />
     </Layout>
   );
 }

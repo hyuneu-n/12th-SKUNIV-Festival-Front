@@ -9,7 +9,6 @@ import PerformanceComponent5 from '../../src/components/Performance5';
 import SpecialComponent3 from '../../src/components/Specialguest3';
 import SpecialComponent2 from '../../src/components/Specialguest2';
 import SpecialComponent5 from '../../src/components/Specialguest5';
-import Footer from '../components/Footer';
 import Heize2 from '../assets/images/timetable/Heize2.png';
 import Heize3 from '../assets/images/timetable/Heize3.svg';
 import Day6 from '../assets/images/timetable/Day6(3).svg';
@@ -103,7 +102,12 @@ const SmallIcon = styled.img`
 `;
 
 const TitleText = styled.div`
-  margin-left: 30%;
+  margin-left: 32%;
+  font-family: Paytone One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #576141;
 `;
 
 const TitleText2 = styled.div`
@@ -291,7 +295,6 @@ export default function TimeTable4() {
         </DiverColmun>
       </Textdiv>
 
-      <Footer />
     </Layout>
   );
 }
