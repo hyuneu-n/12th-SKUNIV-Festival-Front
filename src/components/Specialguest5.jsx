@@ -33,8 +33,9 @@ const ImageContainer = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  height: auto; /* 높이는 자동으로 조정됩니다. */
+  height: 100%; /* 높이는 자동으로 조정됩니다. */
   border-radius: 0px; /* 컨테이너와 일치하도록 둥근 모서리 설정 */
+  object-fit: cover
 `;
 const Title = styled.div`
   position: relative;
