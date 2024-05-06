@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import Backimage from '../assets/images/timetable/background.png';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 
 
