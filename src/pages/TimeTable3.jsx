@@ -39,7 +39,7 @@ const DateRow = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5%; /* 각 행의 상단 여백 조절 */
+  margin-top: 0%; /* 각 행의 상단 여백 조절 */
 `;
 
 const NumberFirst = styled.h1`
@@ -62,7 +62,7 @@ const Day = styled.h1`
   font-family: SUIT Variable, sans-serif;
   font-weight: bold; /* 굵기 추가 */
   color: #5e5e5e;
-  margin: 0 30%;
+  margin: 0 40%;
 `;
 const TimeTableContainer = styled.div`
   display: flex;

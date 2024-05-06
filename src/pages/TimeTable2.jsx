@@ -1,14 +1,19 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import play from '../assets/images/timetable/play.svg';
+import play from '../assets/images/timetable/Vector (2).svg';
 import PerformanceComponent from '../../src/components/Performance';
-import PerformanceComponent2 from '../../src/components/Performance2';
+import PerformanceComponent2 from '../components/Performance2';
+import PerformanceComponent3 from '../components/Performance3';
 import SpecialComponent from '../../src/components/Specialguest';
 import SpecialComponent2 from '../../src/components/Specialguest2';
 import Footer from '../components/Footer';
 import fromis9 from '../assets/images/timetable/fromis9(2).svg';
+import haswa3  from '../assets/images/timetable/haswa3.svg';
 import Backimage from '../assets/images/timetable/background.png';
 import Header from '../components/Header';
+import SpecialComponent3 from '../../src/components/Specialguest3';
+import dynamicduo2 from'../assets/images/timetable/dynamicduo2.svg';
+import SpecialComponent4 from '../../src/components/Specialguest4';
 
 
 const Layout = styled.div`
@@ -90,7 +95,7 @@ const SmallTitle = styled.div`
 
 const SmallIcon = styled.img`
   width: 10px;
-  margin-left: 10%;
+  margin-left: 200%;
 `;
 
 const TitleText = styled.div`
@@ -214,7 +219,7 @@ export default function TimeTable2() {
         <Textdiv3>
           <PerformanceComponent name="SDR" time="16:30 ~ 17:00" />
 
-          <PerformanceComponent name="철인28호" time="17:30 ~ 18:00" />
+          <PerformanceComponent name="철인 28호" time="17:30 ~ 18:00" />
 
           <PerformanceComponent name="화락" time="19:00 ~ 19:30" />
 
@@ -257,16 +262,31 @@ export default function TimeTable2() {
           <Circle2 />
              </Divider>
              <Divider>
-              
+             <Circle2/>
             </Divider>
+            <Divider>
+         
+              </Divider>
         </DiverColmun>
         <DiverColmun>
           <WhiteContainer></WhiteContainer>
           <PerformanceComponent2 name="유드림" time="17:00 ~ 17:30" />
           <PerformanceComponent2 name="그라미" time="18:30 ~ 19:00" />
-          <PerformanceComponent2 name="꽃과 어린왕자" time="19:30 ~ 20:00" />
-
-          <SpecialComponent></SpecialComponent>
+          <PerformanceComponent3 name="꽃과 어린왕자" time="19:30 ~ 20:00" />
+         
+          <SpecialComponent3
+            imageSrc={haswa3}
+            altText="haswa3 이미지"
+            timeText="21:00 ~ 21:30"
+            titleText="Haswa"
+          />
+          <SpecialComponent4
+            imageSrc={dynamicduo2}
+            altText="dynamicduo2 이미지"
+            timeText="21:00 ~ 21:30"
+            titleText="Dynamic duo"
+          />
+         
         </DiverColmun>
       </Textdiv>
 

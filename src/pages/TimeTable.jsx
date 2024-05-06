@@ -7,7 +7,7 @@ import AdditionalInfo3 from '../components/AdditionalInfo3';
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import Backimage from '../assets/images/timetable/background.png';
-import Header from '../components/Header';
+import Header from '../components/Header'; 
 
 
 const Layout = styled.div`
@@ -19,7 +19,7 @@ background-image: url(${Backimage});
 `;
 
 const Title = styled.h1`
-  margin-top: 7%;
+  margin-top: 0%;
   font-size: 18px;
   font-family: SUIT Variable, sans-serif;
   font-style: extra-bold;
@@ -39,7 +39,7 @@ const DateRow = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5%; /* 각 행의 상단 여백 조절 */
+  margin-top: 0%; /* 각 행의 상단 여백 조절 */
 `;
 
 const NumberFirst = styled.h1`
@@ -62,7 +62,7 @@ const Day = styled.h1`
   font-family: SUIT Variable, sans-serif;
   font-weight: bold; /* 굵기 추가 */
   color: #5e5e5e;
-  margin: 0 30%;
+  margin: 0 40%;
 `;
 const TimeTableContainer = styled.div`
   display: flex;
@@ -127,6 +127,10 @@ const VetcorIcon = styled.img`
   height: 10px;
 `;
 
+const RowContainer = styled.img`
+display: flex;
+flex-direction: row;
+`;
 
 const StyledLink = styled(Link)`
   color: ${({ active }) => (active ? '#55A161' : 'black')};
@@ -166,8 +170,11 @@ const NumberButton2 = ({ to, children }) => {
 export default function TimeTable() {
   return (
     <Layout>
-      <MenuBar></MenuBar>
+      
+      
+      <MenuBar />
       <Header title="TIME TABLE" />
+     
       
       <DateContainer>
         <DateRow>

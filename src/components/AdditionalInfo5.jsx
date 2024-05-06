@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Group from '../assets/images/timetable/day6.svg';
+import Group from '../assets/images/timetable/Day6.svg';
 
 const AdditionalInfoContainer = styled.div`
   display: flex;
@@ -19,7 +19,7 @@ const Text = styled.p`
   align-items: center;
   justify-content: center;
   font-family: SUIT Variable, sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   color: #5e5e5e;
   margin-bottom: 5%;
