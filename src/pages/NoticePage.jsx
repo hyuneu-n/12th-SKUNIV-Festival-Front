@@ -15,8 +15,7 @@ export default function Notice() {
   const checkPass = () => {
     const inputValue = document.getElementById('pass').value;
     if (inputValue === '7777') {
-      //window.location.href = '/noticeinput'; // 특정 페이지로 이동
-      useNavigate('/noticeinput');
+      window.location.href = '/noticeinput'; // 특정 페이지로 이동
     } else {
       setModalSwitch(false);
     }

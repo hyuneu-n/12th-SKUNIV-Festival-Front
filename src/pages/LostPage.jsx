@@ -18,8 +18,8 @@ export default function ItemsLost() {
   const checkPass = () => {
     const inputValue = document.getElementById('pass').value;
     if (inputValue === '7777') {
-      //window.location.href = '/lostInput';
-      useNavigate('/lostInput');
+      window.location.href = '/lostInput';
+      //useNavigate('/lostInput');
     } else {
       setModalSwitch(false);
     }
