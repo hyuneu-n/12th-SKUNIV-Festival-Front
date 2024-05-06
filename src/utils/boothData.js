@@ -61,9 +61,9 @@ import publicc from '../assets//images/logo/publicc.png';
 import military from '../assets//images/logo/military.png';
 import software from '../assets//images/logo/software.png';
 import urban from '../assets//images/logo/urban.png';
-import logistics from '../assets//images/logo/logisticss.png';
-import ncbe from '../assets//images/logo/ncbee.png';
-import art from '../assets//images/logo/artt.png';
+import logistics from '../assets//images/logo/logistics.png';
+import ncbe from '../assets//images/logo/ncbe.png';
+import art from '../assets//images/logo/art.png';
 
 export const boothData = [
   //모두 저녁장사 메뉴만 기입
