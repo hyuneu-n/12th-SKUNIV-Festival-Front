@@ -83,23 +83,39 @@ export const CustomSheet = styled(Sheet)`
       color: #576141 !important;
       font-family: Pretendard;
       font-weight: 600;
+      padding-bottom:20px;
     }
   }
 `;
 
 export const BoothItemParagraph = styled.p`
   text-align: center;
+  font-family: Pretendard;
+  font-size:13px;
   padding-top: 7px;
-  padding-bottom: 20px;
   white-space: pre-wrap;
   line-height: 1.4;
-  padding-bottom: 10px;
+  padding-bottom: 13px;
+`;
+
+export const BoothAccountParagraph = styled.p`
+  text-align: center;
+  font-family: Pretendard;
+  font-weight: 450;
+  font-size:15px;
+  padding-top: 7px;
+  white-space: pre-wrap;
+  line-height: 1.4;
+  padding-top: 15px;
+  padding-bottom: 13px;
 `;
 
 export const BoothMenuIntroBox = styled.div`
   width: 90%;
   height: 150px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #eeeeee;
   margin: auto;
   border-radius: 5px;
@@ -112,11 +128,17 @@ export const BoothDayBox = styled.div`
   flex-direction: column;
   align-items: center;
   font-size: 11px;
+  align-self: flex-start;
+  padding: 0 8px 0 8px;
 `;
 
 export const BoothMenuDivider = styled.div`
-  width: 1px;
-  background-color: black;
+  width: 1.5px;
+  height: 125px;
+  background-color: #282E18;
+  opacity: 0.4;
+  align-self: center;
+  border-radius: 3px
 `;
 export const BoothNightBox = styled.div`
   flex: 3;
@@ -125,11 +147,13 @@ export const BoothNightBox = styled.div`
   flex-direction: column;
   align-items: center;
   font-size: 11px;
+  align-self: flex-start;
+  padding: 0 8px 0 8px;
 `;
 
 export const BoothMenuParagraph = styled.p`
   font-size: 13px;
   text-align: center;
   font-family: Pretendard;
-  padding: 0 0 5px 0;
+  padding: 9px 0 10px 0;
 `;

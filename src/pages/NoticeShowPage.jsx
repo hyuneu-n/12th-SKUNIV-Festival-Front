@@ -23,7 +23,7 @@ export default function NoticeShowPage() {
 export async function loader({ params }) {
   const id = params.id;
   const response = await fetch(
-    'http://dev.skufestival2024.site/api/notice/post/' + id
+    'https://dev.skufestival2024.site/api/notice/post/' + id
   );
   console.log(id);
   // url

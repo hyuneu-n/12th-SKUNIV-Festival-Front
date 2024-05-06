@@ -55,9 +55,8 @@ export default function BoothItem({
                 <h2>{booth.boothName}</h2>
                 <S.BoothItemParagraph>{booth.intro}</S.BoothItemParagraph>
                 <S.BoothMenuIntroBox>
-                  {/* {' '} */}
                   <S.BoothDayBox>
-                    <S.BoothMenuParagraph>DAY</S.BoothMenuParagraph>
+                    <S.BoothMenuParagraph>🌞</S.BoothMenuParagraph>
                     <ul>
                       {Object.entries(booth.menuDay).map(([item, price]) => (
                         <li key={item}>
@@ -66,9 +65,11 @@ export default function BoothItem({
                       ))}
                     </ul>
                   </S.BoothDayBox>
+
                   <S.BoothMenuDivider />
+                  
                   <S.BoothNightBox>
-                    <S.BoothMenuParagraph>NIGHT</S.BoothMenuParagraph>
+                    <S.BoothMenuParagraph>🌙</S.BoothMenuParagraph>
                     <ul>
                       {Object.entries(booth.menuNight).map(([item, price]) => (
                         <li key={item}>
@@ -79,7 +80,7 @@ export default function BoothItem({
                   </S.BoothNightBox>
                 </S.BoothMenuIntroBox>
 
-                <p>{booth.account}</p>
+                <S.BoothAccountParagraph>{booth.account}</S.BoothAccountParagraph>
                 <button>
                   <a href={booth.snsLink}>SNS 구경하기</a>
                 </button>
