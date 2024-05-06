@@ -18,7 +18,7 @@ export default function Footer() {
           <S.FooterInstaLink to="https://www.instagram.com/likelion_skuniv/">
             <S.FooterLogoImg src={insta} />
           </S.FooterInstaLink>
-          <S.FooterInstaLink to="/">
+          <S.FooterInstaLink to="https://github.com/LikeLion-SKU">
             <S.FooterLogoImg src={github} />
           </S.FooterInstaLink>
         </S.FooterImageBox>

@@ -26,7 +26,7 @@ export default function MenuBar() {
       pageWrapId={'app'}
       // outerContainerId={'outer-container'}
     >
-      <MenuBarImg src={SconMain} />
+      <Link to="/"><MenuBarImg src={SconMain} /></Link>
       <MenuBarLine />
       <MenubarLink to="/">Home</MenubarLink>
       <MenubarLink to="/booth">부스</MenubarLink>
