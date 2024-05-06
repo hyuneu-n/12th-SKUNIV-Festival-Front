@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 export const FooterLayout = styled.div`
   width: 100%;
   margin: auto;
+  margin-bottom:12px;
 `;
 
 export const FooterCol = styled.div`
@@ -40,7 +41,7 @@ export const FooterImageBox = styled.div`
 export const FooterInstaLink = styled(Link)`
   display: inline-block;
   width: 20px;
-  margin: 0 3px;
+  margin: 0 5px;
 `;
 
 export const FooterLoginBtn = styled.button`
