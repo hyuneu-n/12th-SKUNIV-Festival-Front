@@ -3,12 +3,12 @@ import MenuBar from '../components/MenuBar';
 import Switch from '../components/Switch';
 import * as S from '../styles/pages/NoticeInputPage.styled';
 import InputButton from '../components/InputButton';
-import { Notices } from '../utils/NoticeData';
 import { Link } from 'react-router-dom';
 import img_i from '../assets/images/icon_back.svg';
 import img_p from '../assets/images/icon_photo.svg';
 import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useState,useRef } from 'react';
+import styled from 'styled-components';
 
 export default function Notice() {
   const navigate = useNavigate();
@@ -16,6 +16,10 @@ export default function Notice() {
   const [lTime, setTime] = useState('');
   const [lDate, setDate] = useState('');
   const [lLocation, setLocation] = useState('');
+  const fileInputRef = useRef(null);
+  const handleImageClick = () => {
+    fileInputRef.current.click();
+  };
   const handleButtonClick = () => {
     console.log('button clicked');
 
@@ -57,31 +61,7 @@ export default function Notice() {
         navigate('/lostItems');
       });
   };
-  //lostItemImagePath: "https://skufestival.s3.ap-northeast-2.amazonaws.com/lostItems/43d55df0-7bc4-4c06-916b-0f8b6ea8fb9daed.jpg",
-  //navigate('/lostItems');
-  // // 이미지 가져오기
-  // const onSelectImage = () => {
-  //   launchImageLibrary(
-  //     {
-  //       madiaType: 'photo',
-  //       maxWidth: 512,
-  //       maxHeight: 512,
-  //       includeBase64: true
-  //     },
-  //     (response) => {
-  //       console.log(response)
-  //       // console.log(response.assets[0].base64)
-  //       if (response.didCancel) {
-  //         return;
-  //       } else if (response.errorCode) {
-  //         console.log("Image Error : " + response.errorCode);
-  //       }
-
-  //       setResponse(response);
-  //       setImageFile(response.assets[0].base64);
-  //     })
-
-  // }
+  const img_l = 'url("../assets/images/icon_back.svg")';
   return (
     <>
       <S.NoticeLayout>
@@ -97,12 +77,11 @@ export default function Notice() {
               id="lName"
               name="lName"
               onChange={(e) => setName(e.target.value)} />
-            <S.BtnImage src={img_p}>
-              <input
-                id="fileInput"
-                type="file"
-                accept="image/png, image/jpeg, image/jpg"
-              /></S.BtnImage>
+            <S.BtnImage
+              id="imgBtn"
+              src={img_p}
+              onClick={handleImageClick}>
+            </S.BtnImage>
           </S.HorizonBody>
 
           <S.NoticeTitle
@@ -126,6 +105,13 @@ export default function Notice() {
             onChange={(e) => setLocation(e.target.value)} />
         </S.NoticeBody>
       </S.NoticeLayout>
+      <input
+        id="fileInput"
+        type="file"
+        accept="image/png, image/jpeg, image/jpg"
+        style={{ display: 'none' }}
+        ref={fileInputRef}
+      />
       <Footer />
     </>
   );

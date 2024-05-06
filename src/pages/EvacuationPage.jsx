@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import MenuBar from '../components/MenuBar';
 import evacuationRouteGif from '../assets/images/aedGIFPNG.gif';
 import background from '../assets/images/bg.png'
-import infoImage from '../assets/images/info.png'
+import infoImage from '../assets/images/info2.png'
 
 const EvacuationPage = () => {
   return (
