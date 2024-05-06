@@ -1,5 +1,6 @@
 import * as S from '../styles/components/BoothItem.styled';
 import { boothData } from '../utils/boothData';
+import sample from '../assets/images/hyun.png'
 
 import Sheet from 'react-modal-sheet';
 import { useState } from 'react';
@@ -26,7 +27,7 @@ export default function BoothItem({
         setPinLeft(pinLeft);
       }}
     >
-      <S.BoothItemGrayBox />
+      <S.BoothItemGrayBox imageUrl={booth ? booth.image : sample} />
       <S.BoothItemInfoBox>
         <S.BoothItemTitleP>
           {booth ? booth.boothName : 'Loading...'}
@@ -52,17 +53,31 @@ export default function BoothItem({
             {booth && (
               <div>
                 <h2>{booth.boothName}</h2>
-                <p>{booth.intro}</p>
-                <div>
-                  {' '}
-                  <ul>
-                    {Object.entries(booth.menu).map(([item, price]) => (
-                      <li key={item}>
-                        {item}: {price}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <S.BoothItemParagraph>{booth.intro}</S.BoothItemParagraph>
+                <S.BoothMenuIntroBox>
+                  {/* {' '} */}
+                  <S.BoothDayBox>
+                    <S.BoothMenuParagraph>DAY</S.BoothMenuParagraph>
+                    <ul>
+                      {Object.entries(booth.menuDay).map(([item, price]) => (
+                        <li key={item}>
+                          {item}: {price}
+                        </li>
+                      ))}
+                    </ul>
+                  </S.BoothDayBox>
+                  <S.BoothMenuDivider />
+                  <S.BoothNightBox>
+                    <S.BoothMenuParagraph>NIGHT</S.BoothMenuParagraph>
+                    <ul>
+                      {Object.entries(booth.menuNight).map(([item, price]) => (
+                        <li key={item}>
+                          {item}: {price}
+                        </li>
+                      ))}
+                    </ul>
+                  </S.BoothNightBox>
+                </S.BoothMenuIntroBox>
 
                 <p>{booth.account}</p>
                 <button>

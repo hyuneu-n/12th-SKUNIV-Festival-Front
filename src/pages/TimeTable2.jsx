@@ -16,6 +16,7 @@ import dynamicduo2 from'../assets/images/timetable/dynamicduo2.svg';
 import SpecialComponent4 from '../../src/components/Specialguest4';
 
 
+
 const Layout = styled.div`
 background-image: url(${Backimage}); 
   min-height: 100vh; // 최소 높이를 화면 전체로 설정

@@ -4,7 +4,8 @@ import InputButton from '../components/InputButton';
 import { Form, Link, redirect } from 'react-router-dom';
 import styled from 'styled-components';
 import ss from '../assets/images/icon_back.svg';
-
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 const NoticeBack = styled.img`
   margin: 5% 0% 0% 5%;
   width: 20px;
@@ -15,32 +16,57 @@ const NoticeBack = styled.img`
 `;
 
 export default function Notice() {
+  const navigate = useNavigate();
+  const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
+
+  const handleButtonClick = () => {
+    console.log('button clicked');
+
+    console.log(title + ' + ' + content);
+    const postData = {
+      title: title,
+      content: content
+    };
+    fetch('http://dev.skufestival2024.site/api/notice/post', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(postData)
+    })
+    .then(response => {console.log('response:', response);})
+    .then(data => {
+      // 전송 완료
+      console.log('Success:', data);
+      navigate('/notice');
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  };
   return (
     <>
       <S.NoticeLayout>
         <S.NoticeHead>
-          <Link to={'/findItems'}>
+          <Link to={'/notice'}>
             <NoticeBack src={ss}></NoticeBack>
           </Link>
-          <InputButton></InputButton>
+          <InputButton onClick={handleButtonClick}></InputButton>
         </S.NoticeHead>
-        <S.NoticeBody>
-          <Form method="post">
+          <S.NoticeBodyForm method="post">
             <S.NoticeTitle
               type="text"
               placeholder="제목을 입력해주세요."
               id="bTitle"
-              name="bTitle"
-            />
+              onChange={(e) => setTitle(e.target.value)} />
             <S.NoticeContent
               type="text"
               placeholder="내용을 입력해주세요."
               id="bContent"
               name="bContent"
-            ></S.NoticeContent>
-          </Form>
-          <button>save</button>
-        </S.NoticeBody>
+              onChange={(e) => setContent(e.target.value)} />
+          </S.NoticeBodyForm>
       </S.NoticeLayout>
       <Footer />
     </>

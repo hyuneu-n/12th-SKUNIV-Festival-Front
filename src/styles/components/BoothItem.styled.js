@@ -12,6 +12,10 @@ export const BoothItemGrayBox = styled.div`
   flex-shrink: 0;
   width: 80px;
   height: 9vh;
+  background-image: url(${props => props.imageUrl});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: gray;
   border-radius: 5px 0 0 5px;
 `;
@@ -56,20 +60,12 @@ export const CustomSheet = styled(Sheet)`
     /* custom styles */
   }
   .react-modal-sheet-content {
+    overflow-y: scroll;
     h2 {
       text-align: center;
       color: #576141;
-      margin: 5px 0px;
-    }
-
-    div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    p {
-      text-align: center;
+      margin: 10px 0px;
+      font-family: Pretendard;
     }
 
     button {
@@ -85,6 +81,55 @@ export const CustomSheet = styled(Sheet)`
     a {
       text-decoration: none;
       color: #576141 !important;
+      font-family: Pretendard;
+      font-weight: 600;
     }
   }
+`;
+
+export const BoothItemParagraph = styled.p`
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 20px;
+  white-space: pre-wrap;
+  line-height: 1.4;
+  padding-bottom: 10px;
+`;
+
+export const BoothMenuIntroBox = styled.div`
+  width: 90%;
+  height: 150px;
+  display: flex;
+  background-color: #eeeeee;
+  margin: auto;
+  border-radius: 5px;
+`;
+
+export const BoothDayBox = styled.div`
+  flex: 3;
+  font-family: Pretendard;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 11px;
+`;
+
+export const BoothMenuDivider = styled.div`
+  width: 1px;
+  background-color: black;
+`;
+export const BoothNightBox = styled.div`
+  flex: 3;
+  font-family: Pretendard;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 11px;
+`;
+
+export const BoothMenuParagraph = styled.p`
+  font-size: 13px;
+  text-align: center;
+  font-family: Pretendard;
+  padding: 0 0 5px 0;
 `;

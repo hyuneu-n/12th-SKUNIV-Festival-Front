@@ -7,7 +7,9 @@ import AdditionalInfo3 from '../components/AdditionalInfo3';
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import Backimage from '../assets/images/timetable/background.png';
-import Header from '../components/Header'; 
+import Header from '../components/Header';
+
+
 
 
 const Layout = styled.div`
@@ -68,15 +70,15 @@ const TimeTableContainer = styled.div`
   display: flex;
 
   flex-direction: column;
-  width: 360px;
-  height: 95vh;
+  width: 330px;
+  height: 720px;
   background: linear-gradient(90deg, rgba(244, 231, 228, 0.5) 10%, rgba(245, 248, 234, 0.5) 100%); // RGBA 형식으로 투명도 적용
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
   border-radius: 30px;
   border: 1px solid #DCDCDC;
   border-radius: 20px;
   margin: auto;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 `;
 
 const SmallTitle = styled.div`
@@ -94,11 +96,11 @@ const SmallIcon = styled.img`
 
 const Container = styled.div`
   position: relative;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
 `;
 
 const GrayBackground = styled.div`
-   width: 133px;
+  width: 133px;
   height: 43px;
   position: absolute;
   left: 0;
@@ -112,12 +114,13 @@ const GrayBackground = styled.div`
 
 const Text = styled.div`
   left: 15px;
-  top: 15px;
+  top: 14px;
+  left: 18px;
   position: absolute;
   text-align: center;
   color: rgba(0, 0, 0, 0.7);
   font-size: 15px;
-  font-family: 'Sumana';
+  font-family: 'Pretendard';
   font-weight: 700;
   word-wrap: break-word;
 `;
@@ -199,6 +202,7 @@ export default function TimeTable() {
         <AdditionalInfo2 />
         <AdditionalInfo3 />
       </TimeTableContainer>
+      <Footer />
     </Layout>
   );
 }

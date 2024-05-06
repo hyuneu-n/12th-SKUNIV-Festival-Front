@@ -57,7 +57,7 @@ export const AboutItemBox = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   justify-content: flex-start;
   align-items: center;
 `;

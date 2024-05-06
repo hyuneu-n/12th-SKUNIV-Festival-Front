@@ -11,11 +11,12 @@ import TimeTable from './pages/TimeTable.jsx';
 import TimeTable2 from './pages/TimeTable2.jsx';
 import TimeTable3 from './pages/TimeTable3.jsx';
 import TimeTable4 from './pages/TimeTable4.jsx';
-import LostPage from './pages/LostPage.jsx';
+import LostPage , { loads as getList } from './pages/LostPage.jsx';
 import NoticeInput, { action as postData } from './pages/NoticeInputPage.jsx';
 import LostInput from './pages/LostInputPage.jsx';
 import LostFind from './pages/LostFindPage.jsx';
 import RootLayout from './components/RootLayout.jsx';
+import NoticeShowPage from './pages/NoticeShowPage';
 
 const router = createBrowserRouter([
   {
@@ -69,6 +70,7 @@ const router = createBrowserRouter([
   {
     path: '/lostItems',
     element: <LostPage />,
+    loader: getList,
   },
   {
     path: '/noticeInput',
@@ -82,6 +84,18 @@ const router = createBrowserRouter([
   {
     path: '/findItems',
     element: <LostFind />,
+    loader: getList,
+  },
+  {
+    path: 'notice',
+    element: <Notice />,
+    loader: getData,
+    children: [
+      {
+        path: ':id',
+        element: <NoticeShowPage />,
+      },
+    ],
   },
 ]);
 

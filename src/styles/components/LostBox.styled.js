@@ -18,27 +18,31 @@ export const ItemBox = styled.div`
 `;
 // 이름
 export const ItemName = styled.h1`
-    font-family: Inter, sans-serif;
-    font-weight: 700;
-    font-size: 0.1em;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1em;
 `;
 // 날짜
 export const ItemDate = styled.h1`
-    font-family: Inter, sans-serif;
+    font-family: "Libre Caslon Text", serif;
     font-weight: 700;
-    font-size: 0.1em;
+    font-style: normal;
+    font-size: 1em;
+    color: #000000a5;
 `;
 // 장소
 export const ItemLocation = styled.h1`
-    font-family: Inter, sans-serif;
-    font-weight: 700;
-    font-size: 0.1em;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1em;
 `;
 // 구분 선
 export const ItemLine = styled.hr`
     width: 85%;
     color: #000000a5;
-    margin: -1px 0px 0px 0px;
+    margin: -1px 0px 10px 0px;
     border: none;
 `;
 // 이미지
@@ -48,5 +52,4 @@ export const ItemImage = styled.img`
     border-radius: 10px 10px 0px 0px;
     margin: 0px 0px 0px 0px;
     background-color: #000000a5 !important;
-
 `;

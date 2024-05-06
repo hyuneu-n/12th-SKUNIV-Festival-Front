@@ -3,10 +3,14 @@ import styled from 'styled-components';
 export const ProfileLayout = styled.div`
   display: flex;
   width: 300px; 
-  height: 80px;
+  min-height: 80px;
+  height: 100%;
   flex-direction: row;
   align-items: center;
   border-radius: 15px;
+  background-image: url('/ProfileBoxLarge.png');;
+  background-size: 100% 100%;
+  padding: 10px 10px 10px 10px;
 `;
 
 export const NameBlockContainer = styled.div`
@@ -14,7 +18,7 @@ export const NameBlockContainer = styled.div`
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 30px;
+    height: 100%;
     align-items: center;
     padding-left: 15px;
     & img {
@@ -41,11 +45,9 @@ export const ProfileItemBox = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90px;
+    height: 100%;
     padding-top: 2px;
     justify-content: center;
-    background-image: url('/ProfileBoxLarge.png');;
-    background-size: 100% 100%;
   }
 
 `;
@@ -53,21 +55,22 @@ export const ProfileItemBox = styled.div`
 export const ProfileLogoImg = styled.img`
   width: 60px;
   height: 60px;
+  margin : 0 10px 0 10px;
 `;
 
 export const ProfileRoleParagraph = styled.p`
 
-  padding-left: 69px;
+  padding-left: 0px;
   padding-right: 10px;
   font-family: 'Pretendard Variable', arial;
   margin: 2px;
   font-size: 5%;
   @media screen and (max-width: 500px) {
-    padding-left: 69px;
+    padding-left: 0px;
     padding-right: 10px;
     font-family: 'Pretendard Variable', arial;
     margin: 2px;
-    margin-left: 37px;
+    margin-left: 28px;
     font-size: 11px;
   }
 `;
