@@ -283,7 +283,7 @@ export default function TimeTable2() {
             imageSrc={haswa3}
             altText="haswa3 이미지"
             timeText="21:00 ~ 21:30"
-            titleText="Haswa"
+            titleText="Hwasa"
           />
           <SpecialComponent4
             imageSrc={dynamicduo2}

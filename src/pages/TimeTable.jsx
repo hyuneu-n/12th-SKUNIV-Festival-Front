@@ -4,7 +4,7 @@ import Vector from '../assets/images/timetable/Vector.svg';
 import AdditionalInfo from '../components/AdditionalInfo';
 import AdditionalInfo2 from '../components/AdditionalInfo2';
 import AdditionalInfo3 from '../components/AdditionalInfo3';
-import { Link } from 'react-router-dom';
+import { Link,useLocation } from 'react-router-dom';
 import React, { useState } from 'react';
 import Backimage from '../assets/images/timetable/background.png';
 import Header from '../components/Header';
@@ -169,6 +169,8 @@ const NumberButton2 = ({ to, children }) => {
 
 
 export default function TimeTable() {
+  const location = useLocation();
+  const pathname = location.pathname;
   return (
     <Layout>
       
@@ -188,14 +190,18 @@ export default function TimeTable() {
         </DateRow>
       </DateContainer>
       <TimeTableContainer>
+      
         <SmallTitle>
           <Container>
             <GrayBackground />
+            <Link to="/timetable2" isClicked={pathname ==='/timetable2'}>
             <Text>
               TIME TABLE <VetcorIcon src={Vector} alt="Vetcor Icon" />
             </Text>
+            </Link>
           </Container>
         </SmallTitle>
+        
         <AdditionalInfo />
         <AdditionalInfo2 />
         <AdditionalInfo3 />

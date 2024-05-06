@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Group from '../assets/images/timetable/Dynamicduo.svg';
-
+import {Link, useLocation} from 'react-router-dom';
 const AdditionalInfoContainer = styled.div`
   display: flex;
   align-items: center;
@@ -27,12 +27,16 @@ const Text = styled.p`
 `;
 
 const AdditionalInfo3 = () => {
+  const location = useLocation();
+  const pathname = location.pathname;
   return (
     <div>
+      <Link to="/timetable2" isClicked={pathname ==='/timetable2'}>
       <AdditionalInfoContainer>
         <CircleIcon src={Group} alt="Circle Icon" />
       </AdditionalInfoContainer>
       <Text>Dynamicduo</Text>
+      </Link>
     </div>
   );
 };

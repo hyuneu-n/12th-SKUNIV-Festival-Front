@@ -58,9 +58,7 @@ const NumberFirst = styled.h1`
   font-size: 35px;
   font-family: SUIT Variable, sans-serif;
   font-weight: bold; /* 굵기 추가 */
-  color: #55A161;
   margin: 0 30%;
-  color: #55A161;
   
 `;
 
@@ -69,6 +67,7 @@ const NumberSecond = styled.h1`
   font-family: SUIT Variable, sans-serif;
   font-weight: bold; /* 굵기 추가 */
   margin: 0 20%;
+  color: #55A161;
 `;
 
 const Day = styled.h1`
