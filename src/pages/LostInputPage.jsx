@@ -16,6 +16,7 @@ export default function Notice() {
   const [lTime, setTime] = useState('');
   const [lDate, setDate] = useState('');
   const [lLocation, setLocation] = useState('');
+  const [lfind, setFind] = useState(false);
   const fileInputRef = useRef(null);
   const handleImageClick = () => {
     fileInputRef.current.click();
@@ -50,7 +51,7 @@ export default function Notice() {
       lostItemName: lName,
       lostLocation: lLocation,
       lostDate: lDate,
-      lost : true,
+      lost : lfind,
     };
     const formData = new FormData();
     for (const key in postData) {
