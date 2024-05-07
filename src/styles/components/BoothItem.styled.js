@@ -52,14 +52,13 @@ export const CustomSheet = styled(Sheet)`
     width: ${({ $width }) => `${$width}px`} !important;
     left: ${({ $left }) => `${$left}px`} !important;
     height: 60vh !important;
-    overflow-y: auto;
     @media (max-width: 400px) {
       .react-modal-sheet-container {
           height: 90vh; 
           width: 90%;    
           left: 5%;      
           bottom: 5%;   
-          overflow-y: auto; 
+         
       }
 }
 
@@ -71,7 +70,7 @@ export const CustomSheet = styled(Sheet)`
   }
   .react-modal-sheet-content {
     overflow-y: scroll !important;
-    height: 300px !important;
+
     h2 {
       text-align: center;
       color: #576141;
