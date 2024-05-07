@@ -67,8 +67,25 @@ export const CustomSheet = styled(Sheet)`
     /* custom styles */
   }
   .react-modal-sheet-content {
-    overflow-y: scroll !important;
-    height: calc(100% - 40px); 
+    overflow-y: scroll !important;  /* 항상 스크롤 표시 */
+    height: calc(100% - 40px);      /* 헤더나 기타 요소 높이를 빼고 계산 */
+    -webkit-overflow-scrolling: touch; /* iOS에서 스크롤 성능 개선 */
+    scrollbar-width: thin;         /* 스크롤바 두께 설정 (Firefox) */
+    scrollbar-color: #888 #ffffff; /* 스크롤바 색상 설정 (Firefox) */
+
+    /* 크롬, 사파리, 엣지에서 스크롤바 항상 보이게 설정 */
+    &::-webkit-scrollbar {
+      width: 8px;                /* 스크롤바 너비 설정 */
+    }
+    &::-webkit-scrollbar-track {
+      background: #ffffff;       /* 스크롤바 트랙 색상 */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #888;    /* 스크롤바 핸들 색상 */
+      border-radius: 10px;       /* 스크롤바 핸들 둥글게 */
+      border: 2px solid #ffffff; /* 스크롤바 핸들 테두리 */
+    }
+  }
 
     h2 {
       text-align: center;
