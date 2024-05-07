@@ -71,7 +71,15 @@ export default function MadeBy() {
             name="김소연"
             major="소프트웨어학과 20"
             image={so}
-            role="기능 아이디어 구상" />
+            role={
+              <>
+                - 백엔드 서버 구축 및 설계<br />
+                - 이미지 데이터 처리<br />
+                - 공지사항 상세 페이지 UI 작업<br />
+                - 타임테이블 일부 로직 추가<br />
+              </>
+            } />
+
           <Profile
             name="고승범"
             major="소프트웨어학과 18"

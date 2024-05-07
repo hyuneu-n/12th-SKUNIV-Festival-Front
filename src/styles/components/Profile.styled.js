@@ -53,9 +53,9 @@ export const ProfileItemBox = styled.div`
 `;
 
 export const ProfileLogoImg = styled.img`
-  width: 60px;
+  width: 80px;
   height: auto;
-  margin : 0 10px 0 10px;
+  margin : 0 0px 0 10px;
 `;
 
 export const ProfileRoleParagraph = styled.p`
@@ -65,6 +65,8 @@ export const ProfileRoleParagraph = styled.p`
   font-family: 'Pretendard Variable', arial;
   margin: 2px;
   font-size: 5%;
+  line-height: 1.4;
+
   @media screen and (max-width: 500px) {
     padding-left: 0px;
     padding-right: 10px;
@@ -72,5 +74,6 @@ export const ProfileRoleParagraph = styled.p`
     margin: 2px;
     margin-left: 28px;
     font-size: 11px;
+    line-height: 1.4;
   }
 `;
