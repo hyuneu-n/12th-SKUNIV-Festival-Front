@@ -57,7 +57,9 @@ export default function MadeBy() {
             image={dong}
             role={
               <>
-                기능 아이디어 구상<br />
+                - 기획 · 디자인 파트장<br />
+                - 홍보게시글 작성 및 디자인<br />
+                - X배너 디자인<br />
               </>
             } />
 
@@ -65,12 +67,25 @@ export default function MadeBy() {
             name="김정현"
             major="아트테크놀로지학과 23"
             image={jung}
-            role="기능 아이디어 구상" />
+            role={
+              <>
+                - 전 페이지 디자인<br />
+                - 홍보게시글 작성 및 디자인<br />
+                - X배너 디자인<br />
+              </>
+            } />
           <Profile
             name="유서진"
             major="디자인학부 22"
             image={seo}
-            role="기능 아이디어 구상" />
+            role={
+              <>
+                - <br />
+                - <br />
+                - <br />
+                - <br />
+              </>
+            } />
         </S.AboutItemBox>
 
         <S.AboutPartHeading style={{ marginTop: '50px', marginBottom: '20px' }}>DEVELOPERS</S.AboutPartHeading>
