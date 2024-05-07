@@ -51,7 +51,7 @@ export const CustomSheet = styled(Sheet)`
   .react-modal-sheet-container {
     width: ${({ $width }) => `${$width}px`} !important;
     left: ${({ $left }) => `${$left}px`} !important;
-    height: 70vh !important;
+    height: 60vh !important;
     @media (max-width: 400px) {
       .react-modal-sheet-container {
           height: 90vh; 
