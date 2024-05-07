@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ProfileLayout = styled.div`
   display: flex;
-  width: 300px; 
+  width: 280px; 
   min-height: 80px;
   height: 100%;
   flex-direction: row;
@@ -20,7 +20,7 @@ export const NameBlockContainer = styled.div`
     width: 100%;
     height: 100%;
     align-items: center;
-    padding-left: 15px;
+    padding-left: 5px;
     & img {
       width: 80px;
       height: auto;
@@ -53,7 +53,7 @@ export const ProfileItemBox = styled.div`
 `;
 
 export const ProfileLogoImg = styled.img`
-  width: 80px;
+  width: 50px;
   height: auto;
   margin : 0 0px 0 10px;
 `;

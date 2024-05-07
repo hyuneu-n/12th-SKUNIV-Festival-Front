@@ -69,6 +69,7 @@ export const CustomSheet = styled(Sheet)`
   }
   .react-modal-sheet-content {
     overflow-y: scroll !important;
+    height: calc(100% - 40px); 
 
     h2 {
       text-align: center;

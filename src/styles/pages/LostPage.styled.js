@@ -44,4 +44,5 @@ export const LostImg = styled.img`
   width: 100%;
   height: 70px;
   margin: 10% 0 0 0;
+  opacity:0.4;
 `;

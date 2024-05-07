@@ -21,6 +21,7 @@ import playbar from '../assets/images/homePage/playbar.svg';
 import bgimg from '../assets/images/homePage/backgroundimage.png';
 import cdleft from '../assets/images/homePage/cdleft.svg';
 import cdright from '../assets/images/homePage/cdright2.png';
+import tree from '../assets/images/homePage/tree.png';
 
 export default function HomePage() {
   return (
@@ -53,6 +54,7 @@ export default function HomePage() {
 
         <S.HomePageBox>
           <S.HomePageTitleHeading>BOOTH MAP</S.HomePageTitleHeading>
+          <img src={tree} style={{ width: '22px', height: 'auto' , paddingBottom: '3px'}} />
           <img src={map} style={{ width: '340px', height: 'auto' }} />
           <Link to="/booth">부스 둘러보기</Link>
         </S.HomePageBox>
