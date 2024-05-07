@@ -18,82 +18,73 @@ export default function Notice() {
   const [lLocation, setLocation] = useState('');
   const [lfind, setFind] = useState(false);
   const fileInputRef = useRef(null);
+
   const handleImageClick = () => {
     fileInputRef.current.click();
     const fileInput = document.getElementById('fileInput');
     const fileView = document.getElementById('fileView');
 
-    // 파일 입력(input) 요소에 change 이벤트를 추가하여 파일이 변경될 때마다 실행되는 함수를 정의합니다.
     fileInput.addEventListener('change', function (event) {
-      // 파일이 선택되었는지 확인합니다.
       if (fileInput.files && fileInput.files[fileInput.files.length - 1]) {
-        // FileReader 객체를 생성합니다.
         const reader = new FileReader();
 
-        // 파일이 로드될 때 실행될 콜백 함수를 정의합니다.
         reader.onload = function (event) {
-          // 파일을 읽어서 이미지 URL로 변환합니다.
           const imageURL = event.target.result;
-
-          // fileView 요소의 배경 이미지를 설정합니다.
           fileView.style.backgroundImage = `url(${imageURL})`;
         };
 
-        // 파일을 읽어서 데이터 URL로 변환합니다.
         reader.readAsDataURL(fileInput.files[fileInput.files.length - 1]);
       }
     });
   };
+
   const handleButtonClick = () => {
     console.log('button clicked');
 
-    const postData = {
-      lostItemName: lName,
-      lostLocation: lLocation,
-      lostDate: lDate,
-<<<<<<< HEAD
-      lost: false
-=======
-      lost : lfind,
->>>>>>> 784c35be6a1332a2e5c5c88af8072a0baa3cc1aa
-    };
-    console.log('postdata',postData);
-    const formData = new FormData();
-    for (const key in postData) {
-      formData.append(key, postData[key]);
-    }
+    // 파일을 가져옵니다.
     const fileInput = document.getElementById('fileInput');
     const file = fileInput.files[fileInput.files.length - 1];
     if (!file) {
-      alert('파일을 선택해주세요.'); // 파일을 선택하지 않은 경우 메시지 표시
+      alert('파일을 선택해주세요.');
       return;
     } else {
       console.log('not null');
     }
-    formData.append('file', file); // file은 실제 파일 객체입니다.
-    console.log('formdata',formData);
-    fetch('https://dev.skufestival2024.site/api/lostitem/post', {
+
+    const formData = new FormData();
+    formData.append('file', file);
+
+    // 쿼리 파라미터를 URL에 포함시킵니다.
+    const queryParams = new URLSearchParams({
+      lostItemName: lName,
+      lostDate: lDate,
+      lostLocation: lLocation,
+      lost: lfind
+    }).toString();
+
+    const requestUrl = `https://dev.skufestival2024.site/api/lostitem/post?${queryParams}`;
+
+    fetch(requestUrl, {
       method: 'POST',
       body: formData,
-      headers: {
-        'Content-Type': 'multipart/form-data',
-      },
+      // 'Content-Type': 'multipart/form-data' 헤더는 제거합니다.
     })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then((data) => {
-        console.log('Success:', data);
-        navigate('/lostItems');
-      })
-      .catch((error) => {
-        console.log('Error:', error);
-        navigate('/lostItems');
-      });
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log('Success:', data);
+      navigate('/lostItems');
+    })
+    .catch((error) => {
+      console.log('Error:', error);
+      navigate('/lostItems');
+    });
   };
+
   const img_l = 'url("../assets/images/icon_back.svg")';
   return (
     <>
