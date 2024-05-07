@@ -31,6 +31,16 @@ export default function MadeBy() {
         <S.AboutTitleHeading style={{ marginTop: '0px' }}></S.AboutTitleHeading>
         <S.AboutLogoImg src={LogoSquare} style={{ width: '100px', height: 'auto', paddingTop: '20px', paddingBottom: '13px' }}></S.AboutLogoImg>
         <S.AboutInfoHeading>서경대 멋쟁이사자처럼 12TH</S.AboutInfoHeading>
+
+        <S.AboutPartHeading style={{ marginTop: '20px', marginBottom: '20px' }}>총괄</S.AboutPartHeading>
+        <S.AboutItemBox style={{ marginBottom: '50px' }}>
+          <Profile
+            name="서현은"
+            major="컴퓨터공학과 22"
+            image={hyun}
+            role="기능 아이디어 구상" />
+          </S.AboutItemBox>
+          
         <S.AboutPartHeading style={{ marginBottom: '20px' }}>PM · DESIGN</S.AboutPartHeading>
         <S.AboutItemBox>
           <Profile
@@ -57,11 +67,6 @@ export default function MadeBy() {
 
         <S.AboutPartHeading style={{ marginTop: '50px', marginBottom: '20px' }}>DEVELOPERS</S.AboutPartHeading>
         <S.AboutItemBox>
-          <Profile
-            name="서현은"
-            major="컴퓨터공학과 22"
-            image={hyun}
-            role="기능 아이디어 구상" />
           <Profile 
             name="김소연"
             major="소프트웨어학과 20"
@@ -73,7 +78,7 @@ export default function MadeBy() {
             image={seung}
             role="기능 아이디어 구상" />
         </S.AboutItemBox>
-        <S.AboutItemBox style={{ marginTop: '20px' }}>
+        <S.AboutItemBox style={{ marginTop: '10px' }}>
 
           <Profile
             name="김효중"
