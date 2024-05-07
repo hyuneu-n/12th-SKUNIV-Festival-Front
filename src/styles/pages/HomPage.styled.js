@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import i from '../../assets/images/homePage/main.png'
 export const HomePageLayout = styled.div`
   width: 100%;
-  background-image: url('BG_Home.svg') !important;
+  background-image: url('BG_Home.png') !important;
   display: flex;
   flex-direction: column;
   align-items: center;
