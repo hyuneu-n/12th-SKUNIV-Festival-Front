@@ -43,6 +43,7 @@ export default function MadeBy() {
                 - 백엔드 파트장<br />
                 - 공지 및 분실물 관련 전 API 구현<br />
                 - 부스페이지 모달 UI 구현<br />
+                - ABOUT 페이지 구현<br />
                 - AED·대피로 애니메이션 제작 <br />
                 ㅤ및 페이지 구현
               </>
