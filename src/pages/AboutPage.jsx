@@ -67,7 +67,7 @@ export default function MadeBy() {
 
           <Profile
             name="김정현"
-            major="아트테크놀로지학과 23"
+            major="아트앤테크놀로지학과 23"
             image={jung}
             role={
               <>
