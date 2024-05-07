@@ -47,7 +47,7 @@ export default function ItemsLost() {
           .map((item,index) => {
             return (
               <ItemBox
-                key={index}
+                key={item.id}
                 name={item.lostItemName}
                 location={item.lostLocation}
                 date={item.lostDate}
