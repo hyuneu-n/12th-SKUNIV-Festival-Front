@@ -64,12 +64,11 @@ export default function FindItems() {
   );
 }
 // get 요청
-export async function loadLis2() {
+export async function loader() {
   const response = await fetch(
     'https://dev.skufestival2024.site/api/lostitem/posts?lost=true'
   );
-  // url
-  console.log(response);
+  console.log("response : " + response);
   return response;
 }
 const ModalStyle = {

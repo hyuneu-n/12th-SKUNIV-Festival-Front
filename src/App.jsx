@@ -18,7 +18,7 @@ import TimeTable4 from './pages/TimeTable4.jsx';
 import LostPage, { loads as getList } from './pages/LostPage.jsx';
 import NoticeInput, { action as postData } from './pages/NoticeInputPage.jsx';
 import LostInput from './pages/LostInputPage.jsx';
-import LostFind from './pages/LostFindPage.jsx';
+import LostFinde, { loader as getList2 }  from './pages/LostFindPage.jsx';
 import RootLayout from './components/RootLayout.jsx';
 import NoticeShowPage, {
   loader as getDetailData,
@@ -104,8 +104,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'finditems',
-        element: <LostFind />,
-        loader: getList,
+        element: <LostFinde />,
+        loader: getList2,
       },
       // protected router
       {

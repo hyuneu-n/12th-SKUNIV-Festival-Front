@@ -41,7 +41,17 @@ export default function Notice() {
   const handleButtonClick = () => {
     console.log('button clicked');
 
-    // 파일을 가져옵니다.
+    const postData = {
+      lostItemName: lName,
+      lostLocation: lLocation,
+      lostDate: lDate,
+      lost : lfind,
+    };
+    console.log('postdata',postData);
+    const formData = new FormData();
+    for (const key in postData) {
+      formData.append(key, postData[key]);
+    }
     const fileInput = document.getElementById('fileInput');
     const file = fileInput.files[fileInput.files.length - 1];
     if (!file) {
@@ -50,8 +60,6 @@ export default function Notice() {
     } else {
       console.log('not null');
     }
-
-    const formData = new FormData();
     formData.append('file', file);
 
     // 쿼리 파라미터를 URL에 포함시킵니다.
