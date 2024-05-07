@@ -196,7 +196,7 @@ export const boothData = [
     //중어 _ 인스타 없음
     id: 7,
     boothNumber: 7,
-    boothName: '중어학과',
+    boothName: '중어전공',
     major: 'Chinese Language',
     intro: '중어의 아찔한 대륙 마라맛 승부!',
     menuDay: {'운영하지 않습니다':''},
@@ -217,7 +217,7 @@ export const boothData = [
     //영어 _ 인스타 없음, 낮 장사만
     id: 8,
     boothNumber: 8,
-    boothName: '영어학과',
+    boothName: '영어전공',
     major: 'English Language',
     intro:
       '※ 축제 기간 한정 머글 입장 가능\n(음료에 500원 추가 시 폴라로이드 사진 1장)',
@@ -237,7 +237,7 @@ export const boothData = [
     //노어
     id: 9,
     boothNumber: 9,
-    boothName: '노어학과',
+    boothName: '노어전공',
     major: 'Russian Language',
     intro: '그대의 눈동자에 치얼스\n(낮 칵테일은 모두 3500원 입니다.)',
     menuDay: {
@@ -263,7 +263,7 @@ export const boothData = [
     //일어 _ 인스타 없음
     id: 10,
     boothNumber: 10,
-    boothName: '일어학과',
+    boothName: '일어전공',
     major: 'Japanese Language',
     intro: '일본 현지의 느낌을 전해드립니다.',
     menuDay: {'타코야끼(6개)': '3.0',
