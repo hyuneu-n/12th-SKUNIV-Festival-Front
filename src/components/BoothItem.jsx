@@ -50,49 +50,51 @@ export default function BoothItem({
         <Sheet.Container>
           <Sheet.Header />
           <Sheet.Content>
-            <h2>{booth.boothName}</h2>
-            <S.BoothItemParagraph>{booth.intro}</S.BoothItemParagraph>
-            {booth.introImage && (
-              <img
-                src={booth.introImage}
-                style={{
-                  width: '30%',
-                  display: 'block',
-                  marginLeft: 'auto',
-                  marginRight: 'auto',
-                  paddingTop: '6px',
-                  paddingBottom: '20px',
-                }}
-              />
-            )}
-            <S.BoothMenuIntroBox>
-              <S.BoothDayBox>
-                <S.BoothMenuParagraph>🌞 Day Menu</S.BoothMenuParagraph>
-                {Object.entries(booth.menuDay).map(([item, price]) => (
-                  <S.MenuItem key={item}>
-                    <S.MenuItemName>{item}</S.MenuItemName>
-                    <S.MenuItemPrice>{price}</S.MenuItemPrice>
-                  </S.MenuItem>
-                ))}
-              </S.BoothDayBox>
+            <Sheet.Scroller>
+              <h2>{booth.boothName}</h2>
+              <S.BoothItemParagraph>{booth.intro}</S.BoothItemParagraph>
+              {booth.introImage && (
+                <img
+                  src={booth.introImage}
+                  style={{
+                    width: '30%',
+                    display: 'block',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    paddingTop: '6px',
+                    paddingBottom: '20px',
+                  }}
+                />
+              )}
+              <S.BoothMenuIntroBox>
+                <S.BoothDayBox>
+                  <S.BoothMenuParagraph>🌞 Day Menu</S.BoothMenuParagraph>
+                  {Object.entries(booth.menuDay).map(([item, price]) => (
+                    <S.MenuItem key={item}>
+                      <S.MenuItemName>{item}</S.MenuItemName>
+                      <S.MenuItemPrice>{price}</S.MenuItemPrice>
+                    </S.MenuItem>
+                  ))}
+                </S.BoothDayBox>
 
-              <S.BoothMenuDivider />
+                <S.BoothMenuDivider />
 
-              <S.BoothNightBox>
-                <S.BoothMenuParagraph>🌙 Night Menu</S.BoothMenuParagraph>
-                {Object.entries(booth.menuNight).map(([item, price]) => (
-                  <S.MenuItem key={item}>
-                    <S.MenuItemName>{item}</S.MenuItemName>
-                    <S.MenuItemPrice>{price}</S.MenuItemPrice>
-                  </S.MenuItem>
-                ))}
-              </S.BoothNightBox>
-            </S.BoothMenuIntroBox>
+                <S.BoothNightBox>
+                  <S.BoothMenuParagraph>🌙 Night Menu</S.BoothMenuParagraph>
+                  {Object.entries(booth.menuNight).map(([item, price]) => (
+                    <S.MenuItem key={item}>
+                      <S.MenuItemName>{item}</S.MenuItemName>
+                      <S.MenuItemPrice>{price}</S.MenuItemPrice>
+                    </S.MenuItem>
+                  ))}
+                </S.BoothNightBox>
+              </S.BoothMenuIntroBox>
 
-            <S.BoothAccountParagraph>{booth.account}</S.BoothAccountParagraph>
-            <button>
-              <a href={booth.snsLink}>SNS 구경하기</a>
-            </button>
+              <S.BoothAccountParagraph>{booth.account}</S.BoothAccountParagraph>
+              <button>
+                <a href={booth.snsLink}>SNS 구경하기</a>
+              </button>
+            </Sheet.Scroller>
           </Sheet.Content>
         </Sheet.Container>
         <Sheet.Backdrop />
