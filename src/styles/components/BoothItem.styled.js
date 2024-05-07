@@ -58,7 +58,6 @@ export const CustomSheet = styled(Sheet)`
           width: 90%;    
           left: 5%;      
           bottom: 5%;   
-         
       }
 }
 
