@@ -38,7 +38,14 @@ export default function MadeBy() {
             name="서현은"
             major="컴퓨터공학과 22"
             image={hyun}
-            role="기능 아이디어 구상" />
+            role={
+              <>
+                - 타임테이블 전반 구현<br />
+                - 공지 및 분실물 관련 전 API 구현<br />
+                - 부스페이지 모달 구현<br />
+                - AED&대피로 애니메이션 제작 및 페이지 구현<br />
+              </>
+            } />
           </S.AboutItemBox>
           
         <S.AboutPartHeading style={{ marginBottom: '20px' }}>PM · DESIGN</S.AboutPartHeading>
@@ -75,7 +82,7 @@ export default function MadeBy() {
               <>
                 - 백엔드 서버 구축 및 설계<br />
                 - 이미지 데이터 처리<br />
-                - 공지사항 상세 페이지 UI 작업<br />
+                - 공지사항 상세 페이지 기능 구현<br />
                 - 타임테이블 일부 로직 추가<br />
               </>
             } />
@@ -84,7 +91,12 @@ export default function MadeBy() {
             name="고승범"
             major="소프트웨어학과 18"
             image={seung}
-            role="기능 아이디어 구상" />
+            role={
+              <>
+                - 프론트 파트장<br />
+                - 타임테이블 전반 기능 구현<br />
+              </>
+            } />
         </S.AboutItemBox>
         <S.AboutItemBox style={{ marginTop: '10px' }}>
 
@@ -92,12 +104,28 @@ export default function MadeBy() {
             name="김효중"
             major="컴퓨터공학과 19"
             image={hyo}
-            role="기능 아이디어 구상" />
+            role={
+              <>
+                - ABOUT 페이지 구현<br />
+                - 메뉴 기능 구현<br />
+                - 공지 조회 및 등록페이지 구현<br />
+                - 분실물 조회 및 등록페이지 구현<br />
+                - API 서버 연동<br />
+              </>
+            } />
           <Profile
             name="유창호"
             major="컴퓨터공학과 20"
             image={Chang}
-            role="기능 아이디어 구상" />
+            role={
+              <>
+                - ABOUT 페이지 구현<br />
+                - <br />
+                - <br />
+                - <br />
+                - <br />
+              </>
+            } />
         </S.AboutItemBox>
 
         <S.AboutLogoImg src={Hansup} style={{ width: '130px', height: 'auto', paddingTop: '60px', paddingBottom: '0px' }}></S.AboutLogoImg>
