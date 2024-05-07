@@ -60,7 +60,8 @@ export default function MadeBy() {
               <>
                 - 기획 · 디자인 파트장<br />
                 - 홍보게시글 작성 및 디자인<br />
-                - X배너 디자인<br />
+                - X배너 디자인 및 제작<br />
+                - 기능 아이디어 구상
               </>
             } />
 
@@ -70,9 +71,10 @@ export default function MadeBy() {
             image={jung}
             role={
               <>
-                - 전 페이지 디자인<br />
+                - 디자인 전반 담당<br />
+                - 공지 제작<br />
                 - 홍보게시글 작성 및 디자인<br />
-                - X배너 디자인<br />
+                - X배너 디자인 및 제작<br />
               </>
             } />
           <Profile
@@ -81,10 +83,9 @@ export default function MadeBy() {
             image={seo}
             role={
               <>
-                - <br />
-                - <br />
-                - <br />
-                - <br />
+                - 기능 아이디어 구상<br />
+                - 부스맵 제작<br />
+                - 공지 제작<br />
               </>
             } />
         </S.AboutItemBox>
