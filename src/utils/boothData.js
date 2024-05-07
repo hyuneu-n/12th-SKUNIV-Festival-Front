@@ -137,7 +137,7 @@ export const boothData = [
     //토목
     id: 4,
     boothNumber: 4,
-    boothName: '토목공학과',
+    boothName: '토목건축공학과',
     major: 'Civil & Architectural Engineering',
     intro:
       '안녕하세요 제 26대 토목건축공학과 학생회입니다~\n저희 토목건축공학과는 낮에는 에이드와 소세지를 판매하고 저녁에는 제육볶음,묵사발, 콘치즈불닭등을\n판매할 예정이니 많이 찾아와주세요~',
