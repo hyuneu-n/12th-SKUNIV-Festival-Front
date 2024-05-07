@@ -42,7 +42,7 @@ export default function BoothItem({
           setOpen(false);
           setShowPin(false);
         }}
-        rootId="app"
+        // rootId="root"
         $height={height}
         $left={left}
         $width={width}

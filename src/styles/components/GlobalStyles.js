@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     width: 100%;
     min-height: 100vh;
-    
+        -webkit-overflow-scrolling: touch;
     @media only screen and (min-width: 330px) {
       .app {
         background-image: url('background.svg');
@@ -24,7 +24,6 @@ export const GlobalStyle = createGlobalStyle`
         height: 100vh;
         margin: auto;
         background-size : cover;
-        overflow-x: hidden;
         overflow-y: auto;
         -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none; /* Firefox */

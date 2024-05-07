@@ -49,16 +49,17 @@ export const CustomSheet = styled(Sheet)`
     /* custom styles */
   }
   .react-modal-sheet-container {
-    width: 80% !important;      /* 너비를 80%로 설정 */
-    height: 60vh !important;    /* 높이 설정 유지 */
-    left: 10% !important;       /* 좌우 중앙 정렬 */
-    @media (max-width: 768px) {
-      width: 90% !important;    /* 화면이 좁을 때 너비를 90%로 조정 */
-      left: 5% !important;      /* 좌우 중앙 정렬을 위해 조정 */
-      bottom: 5%;               /* 하단 여백 */
-      height: 80vh;             /* 더 작은 화면에서 높이 조정 */
-    }
-  }
+    width: ${({ $width }) => `${$width}px`} !important;
+    left: ${({ $left }) => `${$left}px`} !important;
+    height: 60vh !important;
+    @media (max-width: 400px) {
+      .react-modal-sheet-container {
+          height: 90vh; 
+          width: 90%;    
+          left: 5%;      
+          bottom: 5%;   
+      }
+}
 
   .react-modal-sheet-header {
     /* custom styles */
