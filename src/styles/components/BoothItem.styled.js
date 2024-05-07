@@ -12,7 +12,7 @@ export const BoothItemGrayBox = styled.div`
   flex-shrink: 0;
   width: 80px;
   height: 9vh;
-  background-image: url(${props => props.imageUrl});
+  background-image: url(${(props) => props.imageUrl});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -49,8 +49,8 @@ export const CustomSheet = styled(Sheet)`
     /* custom styles */
   }
   .react-modal-sheet-container {
-    width: ${({ $width }) => `${ $width}px`} !important;
-    left: ${({ $left }) => `${ $left}px`} !important;
+    width: ${({ $width }) => `${$width}px`} !important;
+    left: ${({ $left }) => `${$left}px`} !important;
     height: 60vh !important;
     overflow-y: auto;
     @media (max-width: 400px) {
@@ -70,7 +70,8 @@ export const CustomSheet = styled(Sheet)`
     /* custom styles */
   }
   .react-modal-sheet-content {
-    overflow-y: scroll;
+    overflow-y: scroll !important;
+    height: 300px !important;
     h2 {
       text-align: center;
       color: #576141;
@@ -101,7 +102,7 @@ export const CustomSheet = styled(Sheet)`
 export const BoothItemParagraph = styled.p`
   text-align: center;
   font-family: Pretendard;
-  font-size:13px;
+  font-size: 13px;
   padding-top: 7px;
   white-space: pre-wrap;
   line-height: 1.6;
@@ -112,7 +113,7 @@ export const BoothAccountParagraph = styled.p`
   text-align: center;
   font-family: Pretendard;
   font-weight: 450;
-  font-size:15px;
+  font-size: 15px;
   padding-top: 7px;
   white-space: pre-wrap;
   line-height: 1.4;
@@ -140,16 +141,16 @@ export const BoothDayBox = styled.div`
   font-size: 11px;
   align-self: flex-start;
   padding: 0 8px 0 8px;
-  white-space:nowrap;
+  white-space: nowrap;
 `;
 
 export const BoothMenuDivider = styled.div`
   width: 1.5px;
   height: 125px;
-  background-color: #282E18;
+  background-color: #282e18;
   opacity: 0.4;
   align-self: center;
-  border-radius: 3px
+  border-radius: 3px;
 `;
 export const BoothNightBox = styled.div`
   flex: 3;
@@ -160,7 +161,7 @@ export const BoothNightBox = styled.div`
   font-size: 11px;
   align-self: flex-start;
   padding: 0 8px 0 8px;
-  white-space:nowrap;
+  white-space: nowrap;
 `;
 
 export const BoothMenuParagraph = styled.p`
