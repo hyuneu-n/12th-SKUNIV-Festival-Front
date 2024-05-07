@@ -40,12 +40,8 @@ export default function MadeBy() {
             image={hyun}
             role={
               <>
-                {/* - 백엔드 파트장<br />
-                - 공지 및 분실물 관련 전 API 구현<br />
-                - 부스페이지 모달 UI 구현<br />
-                - ABOUT 페이지 구현<br />
-                - AED·대피로 애니메이션 제작 <br />
-                ㅤ및 페이지 구현 */}
+                백엔드 전 로직 구현, 대피로 애니메이션 제작, <br />
+                프론트 UI 작업 등
               </>
             } />
           </S.AboutItemBox>
@@ -58,10 +54,7 @@ export default function MadeBy() {
             image={dong}
             role={
               <>
-                {/* - 기획 · 디자인 파트장<br />
-                - 홍보게시글 작성 및 디자인<br />
-                - X배너 디자인 및 제작<br />
-                - 기능 아이디어 구상 */}
+                기획 · 디자인 파트장, 기능 구상, X배너 제작 등<br />
               </>
             } />
 
@@ -71,10 +64,7 @@ export default function MadeBy() {
             image={jung}
             role={
               <>
-                {/* - 디자인 전반 담당<br />
-                - 공지 제작<br />
-                - 홍보게시글 작성 및 디자인<br />
-                - X배너 디자인 및 제작<br /> */}
+                디자인 전반 담당, 공지 제작, X배너 제작 등<br />
               </>
             } />
           <Profile
@@ -83,9 +73,7 @@ export default function MadeBy() {
             image={seo}
             role={
               <>
-                {/* - 기능 아이디어 구상<br />
-                - 부스맵 제작<br />
-                - 공지 제작<br /> */}
+                기능 아이디어 구상, 부스맵 제작, 공지 제작 등<br />
               </>
             } />
         </S.AboutItemBox>
@@ -98,10 +86,7 @@ export default function MadeBy() {
             image={so}
             role={
               <>
-                {/* - 백엔드 서버 구축 및 설계<br />
-                - 이미지 데이터 처리<br />
-                - 공지사항 상세 페이지 기능 구현<br />
-                - 타임테이블 일부 로직 추가<br /> */}
+                백엔드 서버 구축 및 설계, 이미지 데이터 처리, 공지사항 상세 페이지 기능 구현 등
               </>
             } />
 
@@ -111,8 +96,7 @@ export default function MadeBy() {
             image={seung}
             role={
               <>
-                {/* - 프론트 파트장<br />
-                - 타임테이블 전반 기능 구현<br /> */}
+                프론트 파트장, 타임테이블 전반 기능 구현 등<br />
               </>
             } />
         </S.AboutItemBox>
@@ -124,11 +108,7 @@ export default function MadeBy() {
             image={hyo}
             role={
               <>
-                {/* - ABOUT 페이지 구현<br />
-                - 메뉴 기능 구현<br />
-                - 공지 조회 및 등록페이지 구현<br />
-                - 분실물 조회 및 등록페이지 구현<br />
-                - API 서버 연동<br /> */}
+                ABOUT, 메뉴, 공지, 분실물 페이지 구현,<br />API 서버 연동 등<br />
               </>
             } />
           <Profile
@@ -137,10 +117,7 @@ export default function MadeBy() {
             image={Chang}
             role={
               <>
-                {/* - 홈화면 기능 전반 구현<br />
-                - 부스 위치 애니메이션 구현<br />
-                - 부스 모달 관련 기능 구현<br />
-                - API 서버 연동<br /> */}
+                홈화면, 부스 위치 애니메이션, 부스 모달 관련 <br />기능 구현, API 서버 연동 등
               </>
             } />
         </S.AboutItemBox>

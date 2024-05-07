@@ -66,14 +66,15 @@ export const ProfileRoleParagraph = styled.p`
   margin: 2px;
   font-size: 5%;
   line-height: 1.4;
+  opacity:0.8;
 
   @media screen and (max-width: 500px) {
     padding-left: 0px;
     padding-right: 10px;
     font-family: 'Pretendard Variable', arial;
     margin: 2px;
-    margin-left: 28px;
-    font-size: 11px;
+    margin-left: 18px;
+    font-size: 9px;
     line-height: 1.4;
   }
 `;
