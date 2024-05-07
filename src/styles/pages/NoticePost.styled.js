@@ -43,6 +43,7 @@ export const ContentBody = styled.div`
   backdrop-filter: blur(10.2px);
   border-radius: 10px;
   padding: 8px;
+  opacity:0.9;
 `
 
 export const ContentParagraph = styled.p`
@@ -52,7 +53,7 @@ export const ContentParagraph = styled.p`
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.5;
   color: #000000;
   padding:10px;
 `

@@ -14,7 +14,7 @@ export default function Notice() {
   const nav = useNavigate();
   const checkPass = () => {
     const inputValue = document.getElementById('pass').value;
-    if (inputValue === '7777') {
+    if (inputValue === 'hansup2024') {
       // window.location.href = '/noticeinput'; // 특정 페이지로 이동
       nav('/noticeinput');
     } else {
@@ -90,10 +90,10 @@ const ModalStyle = {
     alignItems: 'center',
     flexDirection: 'column',
     backgroundColor: 'white',
-    top: '200px',  // 위쪽 여백을 줄입니다.
+    top: '250px',  // 위쪽 여백을 줄입니다.
     left: '20px',  // 왼쪽 여백을 줄입니다.
     right: '20px', // 오른쪽 여백을 줄입니다.
-    bottom: '200px', // 아래쪽 여백을 줄입니다.
+    bottom: '250px', // 아래쪽 여백을 줄입니다.
     borderRadius: '20px',
     opacity: '0.9',
     lineHeight: '2.5',
