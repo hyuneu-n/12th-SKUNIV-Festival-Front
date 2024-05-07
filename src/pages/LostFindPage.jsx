@@ -44,7 +44,6 @@ export default function FindItems() {
         <ItemSwitch />
         <S.LostBody>
           {data
-          .filter(item => item.lost) // find == true
           .map((item, index) => {
             return (
               <ItemBox
@@ -67,7 +66,7 @@ export default function FindItems() {
 // get 요청
 export async function loadLis2() {
   const response = await fetch(
-    'https://dev.skufestival2024.site/api/lostitem/posts?lastId=0&size=8'
+    'https://dev.skufestival2024.site/api/lostitem/posts?lost=true'
   );
   // url
   console.log(response);
