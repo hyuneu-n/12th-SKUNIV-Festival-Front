@@ -5,22 +5,23 @@ export const styles = {
     height: '18px',
     left: '25px',
     top: '25px',
-    zIndex: '1200',
+    zIndex: '1200', // z-index를 높게 설정하여 다른 요소들 위에 보이도록 설정
   },
   bmBurgerBars: {
     height: '15%',
     background: '#000000',
   },
   bmBurgerBarsHover: {
-    background: '##7bd317',
+    background: '#7bd317', // 색상 코드 수정
   },
   bmCrossButton: {
-    height: '524px',
-    width: '54px',
+    height: '24px', // 크기를 더 적절하게 조정
+    width: '24px',  // 너비를 높이와 동일하게 설정
   },
   bmMenuWrap: {
     position: 'fixed',
     height: '100%',
+    width: '300px', // 메뉴의 너비를 300px로 설정
     left: '0px',
   },
   bmMenu: {
@@ -48,7 +49,7 @@ export const styles = {
     fontFamily: 'Pretendard, sans-serif',
   },
   bmOverlay: {
-    width: '100vw',
+    width: '100vw', // 전체 뷰포트 너비로 설정
     background: 'rgba(0, 0, 0, 0.3)',
   },
 };
