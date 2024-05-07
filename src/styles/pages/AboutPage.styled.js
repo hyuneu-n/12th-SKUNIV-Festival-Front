@@ -71,7 +71,7 @@ export const AboutTitleHeading = styled.h1`
 export const AboutInfoHeading = styled.h1`
   margin-top: 5px;
   font-size: 13px;
-  font-family: SUIT, sans-serif;
+  font-family: Pretendard, sans-serif;
   color: #576141;
   font-weight: 800;
   margin-bottom: 30px;

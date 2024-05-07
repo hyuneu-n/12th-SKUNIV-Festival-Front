@@ -10,7 +10,7 @@ export default function Profile({ image, name, role, major }) {
             <p>{name}</p>
             <p>{major}</p>
           </S.NameBlockContainer>
-          <S.ProfileRoleParagraph style={{paddingTop: '3px'}}>{role}</S.ProfileRoleParagraph>
+          {/* <S.ProfileRoleParagraph style={{paddingTop: '3px'}}>{role}</S.ProfileRoleParagraph> */}
         </S.ProfileItemBox>
         
       </S.ProfileLayout>
