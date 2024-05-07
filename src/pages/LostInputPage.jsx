@@ -50,7 +50,9 @@ export default function Notice() {
       lostItemName: lName,
       lostLocation: lLocation,
       lostDate: lDate,
+      lost: false
     };
+    console.log('postdata',postData);
     const formData = new FormData();
     for (const key in postData) {
       formData.append(key, postData[key]);
@@ -64,7 +66,7 @@ export default function Notice() {
       console.log('not null');
     }
     formData.append('file', file); // file은 실제 파일 객체입니다.
-    console.log(postData);
+    console.log('formdata',formData);
     fetch('https://dev.skufestival2024.site/api/lostitem/post', {
       method: 'POST',
       body: formData,
