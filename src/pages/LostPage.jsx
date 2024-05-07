@@ -43,10 +43,12 @@ export default function ItemsLost() {
         <S.LostImg src={i}></S.LostImg>
         <ItemSwitch />
         <S.LostBody>
-          {data.map((item) => {
+          {data
+          .filter(item => !item.lost) // lost == false
+          .map((item,index) => {
             return (
               <ItemBox
-                key={item.id}
+                key={index}
                 name={item.lostItemName}
                 location={item.lostLocation}
                 date={item.lostDate}

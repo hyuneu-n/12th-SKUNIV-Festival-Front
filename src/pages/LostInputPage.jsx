@@ -50,6 +50,7 @@ export default function Notice() {
       lostItemName: lName,
       lostLocation: lLocation,
       lostDate: lDate,
+      lost : true,
     };
     const formData = new FormData();
     for (const key in postData) {
