@@ -43,10 +43,11 @@ export default function ItemsLost() {
         <S.LostImg src={i}></S.LostImg>
         <ItemSwitch />
         <S.LostBody>
-          {data.map((item) => {
+          {data
+          .map((item,index) => {
             return (
               <ItemBox
-                key={item.id}
+                key={index}
                 name={item.lostItemName}
                 location={item.lostLocation}
                 date={item.lostDate}
@@ -62,7 +63,7 @@ export default function ItemsLost() {
 } // get 요청
 export async function loads() {
   const response = await fetch(
-    'https://dev.skufestival2024.site/api/lostitem/posts'
+    'https://dev.skufestival2024.site/api/lostitem/posts?lost=false'
   );
   console.log(response);
   return response;
