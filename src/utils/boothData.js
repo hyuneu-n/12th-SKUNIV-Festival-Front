@@ -493,7 +493,7 @@ export const boothData = [
     boothNumber: 20,
     boothName: '아트앤테크놀로지학과',
     major: 'Art and Technology',
-    intro: '그만들 물어보세요',
+    intro: '그만들 물어보세요\n당신이 생각하는 모든걸 합니다',
     menuDay: {'운영하지 않습니다':''},
     menuNight: {
       분수화채: '5.0',
