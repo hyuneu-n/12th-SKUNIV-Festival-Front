@@ -57,7 +57,7 @@ export default function BoothItem({
                 <img
                   src={booth.introImage}
                   style={{
-                    width: '30%',
+                    width: '60%',
                     display: 'block',
                     marginLeft: 'auto',
                     marginRight: 'auto',
