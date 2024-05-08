@@ -1,14 +1,20 @@
-import * as S from '../styles/components/LostBox.styled';
+import { ItemImage, ItemContent, ItemName, ItemDate, ItemLocation } from '../styles/components/LostBox.styled';
 import complete from '../assets/images/complete.svg';
 import def from '../assets/images/footer/logo.svg';
-export default function ItemBox({ name, location, date, link, img, find = false}) {
+
+const ItemBox = ({ name, location, date, img }) => {
     return (
-        <S.ItemBox>
-            <S.ItemImage src={find ? complete : img} alt = "item"></S.ItemImage>
-            <S.ItemLine></S.ItemLine>
-            <S.ItemName>{name}</S.ItemName>
-            <S.ItemDate>{date}</S.ItemDate>
-            <S.ItemLocation>{location}</S.ItemLocation>
-        </S.ItemBox>
+      <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', width: '100%' }}>
+        <ItemBox>
+        <ItemImage src={img} alt="Lost Item Image" />
+        <ItemContent>
+          <ItemName>{name}</ItemName>
+          <ItemDate>{date}</ItemDate>
+          <ItemLocation>{location}</ItemLocation>
+        </ItemContent>
+        </ItemBox>
+      </div>
     );
-}
+  };
+  
+  export default ItemBox;

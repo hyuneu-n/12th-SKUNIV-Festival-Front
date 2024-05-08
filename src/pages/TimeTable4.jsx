@@ -172,7 +172,7 @@ const Divider = styled.div`
 const Circle2 = styled.div`
   position: absolute;
   top: 50%;
-  left: -6px; /* 구분선 위치에 맞게 조절 */
+  left: -7.5px; /* 구분선 위치에 맞게 조절 */
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
@@ -182,7 +182,7 @@ const Circle2 = styled.div`
 const Circle3 = styled.div`
   position: absolute;
   top: 100%;
-  left: -6px; /* 구분선 위치에 맞게 조절 */
+  left: -7.5px; /* 구분선 위치에 맞게 조절 */
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
