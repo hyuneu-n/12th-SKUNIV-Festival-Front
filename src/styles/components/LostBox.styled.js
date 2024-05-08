@@ -3,11 +3,11 @@ import styled from 'styled-components';
 export const ItemBox = styled.div`
     width: 100%;
     height: auto;  // 높이를 auto로 설정하여 내용에 맞게 조절
-    background-color: rgba(246, 246, 246, 0.8);
+    background-color: rgba(246, 246, 246, 0.9);
     color: #000000;
     border-radius: 12px;
     border: none;
-    box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 0px 3px 3px rgba(149, 174, 110, 0.1);
     
     display: flex;
     flex-direction: row;  // 요소를 수평으로 배치
