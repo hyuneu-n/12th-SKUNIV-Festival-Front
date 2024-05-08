@@ -6,12 +6,12 @@ import PerformanceComponent2 from '../components/Performance2';
 import PerformanceComponent3 from '../components/Performance3';
 import SpecialComponent from '../../src/components/Specialguest';
 import SpecialComponent2 from '../../src/components/Specialguest2';
-import fromis9 from '../assets/images/timetable/fromis9(2).svg';
-import haswa3  from '../assets/images/timetable/haswa3.svg';
+import fromis9 from '../assets/images/timetable/fm9rec.png';
+import haswa3  from '../assets/images/timetable/hwasarec.png';
 import Backimage from '../assets/images/timetable/ttback.png';
 import Header from '../components/Header';
 import SpecialComponent3 from '../../src/components/Specialguest3';
-import dynamicduo2 from'../assets/images/timetable/dynamicduo2.svg';
+import dynamicduo2 from'../assets/images/timetable/ddrec.png';
 import SpecialComponent4 from '../../src/components/Specialguest4';
 import React, { useState } from 'react';
 

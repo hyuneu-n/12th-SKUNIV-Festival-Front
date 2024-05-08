@@ -10,9 +10,9 @@ import SpecialComponent3 from '../../src/components/Specialguest3';
 import SpecialComponent2 from '../../src/components/Specialguest2';
 import SpecialComponent5 from '../../src/components/Specialguest5';
 import Heize2 from '../assets/images/timetable/Heize2.png';
-import Heize3 from '../assets/images/timetable/Heize3.svg';
-import Day6 from '../assets/images/timetable/Day6(3).svg';
-import DJ2 from '../assets/images/timetable/DJ2.svg';
+import Heize3 from '../assets/images/timetable/heizerec.png';
+import Day6 from '../assets/images/timetable/day6rec.png';
+import DJ2 from '../assets/images/timetable/DJrec.png';
 import Header from '../components/Header';
 import React, { useState } from 'react';
 
