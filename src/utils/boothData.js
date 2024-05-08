@@ -407,7 +407,7 @@ export const boothData = [
       불닭: '2.0',
       안성탕면: '2.0',
     },
-    account: '',
+    account: '1000-5149-4472 토스뱅크 김희원',
     snsLink: 'https://www.instagram.com/sku_life/',
     image: ar,
     top: 75,
