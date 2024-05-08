@@ -91,7 +91,7 @@ export const CustomSheet = styled(Sheet)`
       color: #576141 !important;
       font-family: Pretendard;
       font-weight: 600;
-      padding-bottom:20px;
+      padding-bottom: 20px;
     }
   }
 `;
@@ -120,7 +120,7 @@ export const BoothAccountParagraph = styled.p`
 
 export const BoothMenuIntroBox = styled.div`
   width: 90%;
-  height: 150px;
+  height: 180px;
   display: flex;
   justify-content: space-between;
   align-items: center;
