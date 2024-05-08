@@ -19,6 +19,21 @@ export default function NoticeShowPage() {
     return date.toISOString().split('T')[0];
   };
 
+  const handleDelete = async () => {
+    const confirmDelete = window.confirm("삭제하시겠습니까?");
+    if (confirmDelete) {
+      const response = await fetch(`https://dev.skufestival2024.site/api/notice/delete/${data.id}`, {
+        method: 'DELETE',
+      });
+      if (response.ok) {
+        alert("삭제되었습니다");
+
+      } else {
+        alert("Failed");
+      }
+    }
+  };
+  
   return (
     <>
       <MenuBar />
@@ -26,7 +41,7 @@ export default function NoticeShowPage() {
         <S.TitleContainer>
           <S.Title>{data.title}</S.Title>
           <S.IconCon>
-            <S.IconImg src={deleted} />
+            <S.IconImg src={deleted} onClick={handleDelete} />
             <S.IconImg src={sidebar} />
             <S.IconImg src={edit} />
           </S.IconCon>
@@ -40,6 +55,7 @@ export default function NoticeShowPage() {
     </>
   );
 }
+
 export async function loader({ params }) {
   const id = params.id;
   const response = await fetch(
