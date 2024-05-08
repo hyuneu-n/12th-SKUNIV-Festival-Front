@@ -21,7 +21,7 @@ export const styles = {
   bmMenuWrap: {
     position: 'fixed',
     height: '100%',
-    width: '300px', // 메뉴의 너비를 300px로 설정
+    width: '250px', // 메뉴의 너비를 300px로 설정
     left: '0px',
   },
   bmMenu: {
