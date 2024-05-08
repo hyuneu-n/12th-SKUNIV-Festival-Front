@@ -389,7 +389,7 @@ export const boothData = [
     id: 31,
     boothNumber: 31,
     boothName: '예술교육원',
-    major: 'SKU Atrs Institute',
+    major: 'SKU Arts Institute',
     intro: '🫅서경 공주님들 왕자님들 기다리고있어요🤴',
     menuDay: {
       슬러시: '1.5',
