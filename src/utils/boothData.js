@@ -65,6 +65,7 @@ import logistics from '../assets//images/logo/logistics.png';
 import ncbe from '../assets//images/logo/ncbe.png';
 import art from '../assets//images/logo/art.png';
 import und from '../assets//images/logo/undefeated.jpg';
+import ar from '../assets//images/logo/ar.png';
 
 export const boothData = [
   //모두 저녁장사 메뉴만 기입
@@ -370,6 +371,22 @@ export const boothData = [
     left: 240,
   },
   {
+    //예교원
+    id: 31,
+    boothNumber: 31,
+    boothName: '예술교육원',
+    major: 'SKU Atrs Institute',
+    intro:
+      '미용과 & 모델과',
+    menuDay: {'운영하지 않습니다':''},
+    menuNight: {'운영하지 않습니다':''},
+    account: '',
+    snsLink: 'https://www.instagram.com/sku_life/',
+    image:ar,
+    top: 75,
+    left: 234,
+  },
+  {
     //실음
     id: 15,
     boothNumber: 15,
@@ -465,6 +482,22 @@ export const boothData = [
     image:design,
     top: 117,
     left: 245,
+  },
+  {
+    //예대
+    id: 30,
+    boothNumber: 30,
+    boothName: '울림예술대',
+    major: 'COLLEGE OF ARTS',
+    intro:
+      '🚨울림 팔찌 안 차면 수갑 채워드립니다🚨\n당신은 변호사를 선임할 수 있고 …[더보기]',
+    menuDay: {'운영하지 않습니다':''},
+    menuNight: {'운영하지 않습니다':''},
+    account: '',
+    snsLink: 'https://www.instagram.com/sku_woolim_art/',
+    image:art,
+    top: 147,
+    left: 238,
   },
   {
     //미예대
@@ -705,20 +738,7 @@ export const boothData = [
     top: 238,
     left: 143,
   },
-  {
-    //예대
-    id: 30,
-    boothNumber: 30,
-    boothName: '울림예술대',
-    major: 'COLLEGE OF ARTS',
-    intro:
-      '🚨울림 팔찌 안 차면 수갑 채워드립니다🚨\n당신은 변호사를 선임할 수 있고 …[더보기]',
-    menuDay: {'운영하지 않습니다':''},
-    menuNight: {'운영하지 않습니다':''},
-    account: '',
-    snsLink: 'https://www.instagram.com/sku_woolim_art/',
-    image:art,
-    top: 147,
-    left: 238,
-  },
+  
+  
+  
 ];
