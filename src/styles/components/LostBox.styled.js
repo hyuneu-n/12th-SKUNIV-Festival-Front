@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const ItemBox = styled.div`
-    width: 100%;
-    height: auto;  // 높이를 auto로 설정하여 내용에 맞게 조절
+    width: 170px;
+    height: 95px;  // 높이를 auto로 설정하여 내용에 맞게 조절
     background-color: rgba(246, 246, 246, 0.9);
     color: #000000;
     border-radius: 12px;
