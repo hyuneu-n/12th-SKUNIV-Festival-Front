@@ -8,9 +8,9 @@ export default function MiniTimeTable() {
     const now = new Date();
     return new Date(now.getFullYear(), now.getMonth(), now.getDate());
   }, []);
-
-  const date1 = new Date('2024-05-09');
-  const date2 = new Date('2024-05-10');
+  
+  const date1 = new Date('2024-05-09T00:00:00+09:00'); // KST 기준 자정
+  const date2 = new Date('2024-05-10T00:00:00+09:00'); // KST 기준 자정
 
   // 날짜 비교 로직 수정
   const getDay = useMemo(() => {
