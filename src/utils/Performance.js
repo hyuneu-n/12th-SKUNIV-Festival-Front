@@ -26,7 +26,7 @@ export const Performance = [
   {
     id: 5,
     day: 2,
-    time: '21:00`',
+    time: '21:00',  // 수정된 부분
     info: 'DAY6',
   },
   {
