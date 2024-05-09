@@ -21,6 +21,7 @@ export default function MiniTimeTable() {
     } else if (Day === '2') {
       return Info.Performance.filter((item) => item.day === 2);
     }
+    return [];  // Ensure getList always returns an array
   }
 
   return (
